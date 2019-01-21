@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/Cursor.png","C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/bin/Windows/Content/Cursor.xnb","TextureProcessor","Texture2DContent",188,4181,0.2030934
+"C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/Obstacle.png","C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/bin/Windows/Content/Obstacle.xnb","TextureProcessor","Texture2DContent",232,16469,0
+"C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/Player.png","C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/bin/Windows/Content/Player.xnb","TextureProcessor","Texture2DContent",179,16469,0

@@ -62,7 +62,7 @@ namespace Game1.Framework.Managers
 
             int _Distance;
 
-            if (_LRange < -second.ProjectedX.Width / 2 && _RRange > -second.ProjectedX.Width && _RRange < 0)
+            if (_LRange < -(second.ProjectedX.Width) * 0.5 && _RRange > -second.ProjectedX.Width && _RRange < 0)
             {
                 _Distance = _RRange;
 
@@ -86,7 +86,7 @@ namespace Game1.Framework.Managers
 
             int _Distance;
 
-            if (_BRange < -second.ProjectedY.Height / 2 && _TRange > -second.ProjectedY.Height)
+            if (_BRange < -(second.ProjectedY.Height) * 0.5 && _TRange > -second.ProjectedY.Height)
             {
                 _Distance = _TRange * -1;
                 return _Distance;
