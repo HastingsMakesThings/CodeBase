@@ -1,0 +1,36 @@
+.LOG
+
+17:33 15/05/2018
+Created base Framework.
+TODO:
+- Input Manager
+- Sound Manager
+- Behaviours
+- Lighting engine
+
+16:50 16/05/2018
+Added keyboard inputs and behaviours, also refactored updates of managers into their seperate lists and ran them through a foreach loop.
+TODO
+- Make input manager work with mouse
+- Sound Manager
+- Lighting engine
+
+15:02 17/05/2018
+Added mouse inputs and a cursor image
+TODO
+- Sound Manager
+- Lighting engine
+
+22:31 18/05/2018
+Made start on Collision Manager, got detection almost done need to add more constraints so when left or right collision is detected top or bottom does get actiavted either.
+TODO
+- Finish Collision Manager
+- Physics Manager
+- Sound Manager
+- Lighting engine
+
+22:31 20/05/2018
+Removed previous atempt at collision and started to implement seperating axis theorem. However the Y axis collision is not as accurate and you are required to fully cover the Y axis before collision is detected.
+
+22:24 21/05/2018
+Fixed Y axis collision by getting the distance instead of using Rectangle.intersect. Distance checking is now in place so you can set a preffered distance to start collision detection, I also have the impulse calculation sorted. The x/y impulse methods now return a number the player needs to be moved by. 
