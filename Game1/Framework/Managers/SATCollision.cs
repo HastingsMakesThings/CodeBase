@@ -53,7 +53,7 @@ namespace Game1.Framework.Managers
 
         //The purpose of this method is to cycle through the vertexes of a shape and determine if they are the minimum or maximum values of the shape's projection onto the seperation axis. 
         //A vector for the shape projection is the returned to the caller
-        private Vector2 ShapeProjection(Vector2[] pVerticies, Vector2 pSepAxis)
+        private Vector2[] ShapeProjection(Vector2[] pVerticies, Vector2 pSepAxis)
         {
             //Declare own variable to store the seperation axis
             Vector2 mSepAxis = pSepAxis;
@@ -87,10 +87,11 @@ namespace Game1.Framework.Managers
                 }
             }
 
-            //create a new vector to hold the shape's projection vector
-            Vector2 projectionVect = EdgeCalculator(vertMax, vertMin);
-
-            return projectionVect;
+            //create a new vector array to hold the minimum and maximum values for the shape projection
+            Vector2[] vectValues = new Vector2[2];
+            
+        
+          
         }
 
          
