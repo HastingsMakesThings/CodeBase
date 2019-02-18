@@ -62,7 +62,7 @@
     <Compile Include="Framework\Managers\KeyboardManager.cs" />
     <Compile Include="Framework\Managers\MouseManager.cs" />
     <Compile Include="Framework\Managers\RenderManager.cs" />
-    <Compile Include="Framework\Managers\SATCollision.cs" />
+    <Compile Include="Framework\Managers\Collision\SATCollision.cs" />
     <Compile Include="Framework\Managers\SceneManager.cs" />
     <Compile Include="GameCode\Behaviours\HorizontalMovement.cs" />
     <Compile Include="GameCode\Behaviours\VerticalMovement.cs" />

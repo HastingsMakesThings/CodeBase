@@ -29,8 +29,9 @@ namespace Game1.Framework.Managers
             float nX = sepAxCalc.Y;
             float nY = sepAxCalc.X;
 
+            
             sepAxCalc.X = nX;
-            sepAxCalc.Y = nY;
+            sepAxCalc.Y = (nY* -1); //This is multiplied by -1 to swap its sign as this is required to create a vector normal
 
             //Normalizes this edge normal and returns it to caller.
             Vector2 sepAxis = Vector2.Normalize(sepAxCalc);
@@ -48,11 +49,11 @@ namespace Game1.Framework.Managers
             edgeValue.X = (pVertexA.X - pVertexB.X);
             edgeValue.Y = (pVertexA.Y - pVertexB.Y);
 
+
             return edgeValue;
         }
 
-        //The purpose of this method is to cycle through the vertexes of a shape and determine if they are the minimum or maximum values of the shape's projection onto the seperation axis. 
-        //A vector for the shape projection is the returned to the caller
+        //The purpose of this method is to cycle through the vertexes of a shape and determine if they are the minimum or maximum values of the shape's projection onto the seperation axis. A vector for the shape projection is the returned to the caller
         private Vector2[] ShapeProjection(Vector2[] pVerticies, Vector2 pSepAxis)
         {
             //Declare own variable to store the seperation axis
@@ -89,11 +90,28 @@ namespace Game1.Framework.Managers
 
             //create a new vector array to hold the minimum and maximum values for the shape projection
             Vector2[] vectValues = new Vector2[2];
-            
-        
-          
+
+            //Sets the first value of the vectValues array to the Minimum value
+            vectValues[0] = vertMin;
+
+            //Sets the second value of the vectValues array to the Maximum value
+            vectValues[1] = vertMax;
+
+            //this retursn the minimum and maximum vertexes that give the greatest shape projection onto the seperation axis 
+            return vectValues;
+
         }
 
-         
+        //The function of this method is to find the overlap of two vectors and return a float value of that overlap
+        private float FindOverlap(Vector2[] vertsA, Vector2[] vertsB)
+        {
+            // Creates a float value to return to caller
+            float overlapVal;
+
+
+
+            return overlapVal;
+        }
+
     }
 }

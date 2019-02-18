@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Jenk/Desktop/Game1/Game1/Content/Cursor.png</File>
-    <File>C:/Users/Jenk/Desktop/Game1/Game1/Content/Player.png</File>
-    <File>C:/Users/Jenk/Desktop/Game1/Game1/Content/Obstacle.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png</File>
   </SourceFiles>
 </SourceFileCollection>

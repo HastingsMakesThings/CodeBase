@@ -4,9 +4,9 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/Cursor.png</File>
-    <File>C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/Player.png</File>
-    <File>C:/Users/GALF1_16/Desktop/CodeBase/Game1/Content/Obstacle.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
