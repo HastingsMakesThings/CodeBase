@@ -54,7 +54,7 @@ namespace Game1.Framework.Managers
         }
 
         //The purpose of this method is to cycle through the vertexes of a shape and determine if they are the minimum or maximum values of the shape's projection onto the seperation axis. A vector for the shape projection is the returned to the caller
-        private Vector2[] ShapeProjection(Vector2[] pVerticies, Vector2 pSepAxis)
+        private float[] ShapeProjection(Vector2[] pVerticies, Vector2 pSepAxis)
         {
             //Declare own variable to store the seperation axis
             Vector2 mSepAxis = pSepAxis;
@@ -89,13 +89,13 @@ namespace Game1.Framework.Managers
             }
 
             //create a new vector array to hold the minimum and maximum values for the shape projection
-            Vector2[] vectValues = new Vector2[2];
+            float[] vectValues = new float[2];
 
             //Sets the first value of the vectValues array to the Minimum value
-            vectValues[0] = vertMin;
+            vectValues[0] = dotMin;
 
             //Sets the second value of the vectValues array to the Maximum value
-            vectValues[1] = vertMax;
+            vectValues[1] = dotMax;
 
             //this retursn the minimum and maximum vertexes that give the greatest shape projection onto the seperation axis 
             return vectValues;
@@ -103,12 +103,22 @@ namespace Game1.Framework.Managers
         }
 
         //The function of this method is to find the overlap of two vectors and return a float value of that overlap
-        private float FindOverlap(Vector2[] vertsA, Vector2[] vertsB)
+        private float FindOverlap(float[] vertsA, float[] vertsB, Vector2 pSepAxis)
         {
             // Creates a float value to return to caller
-            float overlapVal;
+            float overlapVal = 0;
 
+            //Creates a collection of vectors to hold the dot values of both shapes
+            float aMinVert = vertsA[0];
+            float aMaxVert = vertsA[1];
 
+            float bMinVert = vertsB[0];
+            float bMaxVert = vertsB[1];
+
+            if(bMaxVert < aMaxVert)
+            {
+                //create 
+            }
 
             return overlapVal;
         }
