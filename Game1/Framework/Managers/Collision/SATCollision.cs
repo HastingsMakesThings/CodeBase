@@ -103,7 +103,7 @@ namespace Game1.Framework.Managers
         }
 
         //The function of this method is to find the overlap of two vectors and return a float value of that overlap
-        private float FindOverlap(float[] vertsA, float[] vertsB, Vector2 pSepAxis)
+        private float FindOverlap(float[] vertsA, float[] vertsB)
         {
             // Creates a float value to return to caller
             float overlapVal = 0;
@@ -115,10 +115,7 @@ namespace Game1.Framework.Managers
             float bMinVert = vertsB[0];
             float bMaxVert = vertsB[1];
 
-            if(bMaxVert < aMaxVert)
-            {
-                //create 
-            }
+            //The overlap is equal to the length of  ((aMax - aMin) + (bMax - bMin) - (distance between The minimum value and maximum value))
 
             return overlapVal;
         }
