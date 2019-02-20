@@ -15,7 +15,10 @@ namespace Game1.Framework.Managers
         {
             //Constructor Code
         }
+        private void TestCollision()
+        {
 
+        }
         //The function of this vector method is to calculate a normalized vector to be used as the seperation axis 
         private Vector2 SeperationAxisCalculator(Vector2 pVertexA, Vector2 pVertexB)
         {
@@ -115,8 +118,30 @@ namespace Game1.Framework.Managers
             float bMinVert = vertsB[0];
             float bMaxVert = vertsB[1];
 
-            //The overlap is equal to the length of  ((aMax - aMin) + (bMax - bMin) - (distance between The minimum value and maximum value))
+            float maxValue;
+            float minValue;
+            //finds the larger of the two max values
+            if (aMaxVert > bMaxVert)
+            {
+                 maxValue = aMaxVert;
+            }
+            else
+            {
+                 maxValue = bMaxVert;
+            }
 
+            //finds the smallest of the two min values
+            if(aMinVert < bMinVert)
+            {
+                 minValue = aMinVert;
+            }
+            else
+            {
+                 minValue = bMinVert;
+            }
+
+            //The overlap is equal to the length of  ((aMax - aMin) + (bMax - bMin) - (distance between The minimum value and maximum value))
+             overlapVal = (((aMaxVert - aMinVert) + (bMaxVert - bMinVert)) - (maxValue - minValue));
             return overlapVal;
         }
 
