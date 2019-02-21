@@ -136,6 +136,10 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             
         }
 
+        public virtual void CollReact(Vector2 pMTV)
+        {
+
+        }
         #region Properties
 
         public float ProXAngle
@@ -213,6 +217,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         {
             get { return _Vertexes; }
         }
+
+
         #endregion
     }
 }

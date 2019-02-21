@@ -69,7 +69,10 @@ namespace Game1.GameCode.PlayerCode
             CalculateVertexes();
         }
 
-
+        public  override void CollReact(Vector2 pMTV)
+        {
+            this.Position = Position + pMTV;
+        }
 
         #region Properties
         #endregion

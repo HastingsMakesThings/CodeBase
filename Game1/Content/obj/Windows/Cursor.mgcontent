@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</SourceFile>
-  <SourceTime>2019-02-18T11:21:58.5604949+00:00</SourceTime>
+  <SourceTime>2019-02-21T14:15:14.0974879+00:00</SourceTime>
   <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Cursor.xnb</DestFile>
-  <DestTime>2019-02-18T11:22:57.9158182+00:00</DestTime>
+  <DestTime>2019-02-21T15:58:29.6563513+00:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
+  <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2017-03-01T15:05:36+00:00</ProcessorTime>
+  <ProcessorTime>2018-12-08T16:35:54+00:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

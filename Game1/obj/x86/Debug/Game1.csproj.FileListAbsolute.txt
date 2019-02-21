@@ -95,3 +95,4 @@ C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Black_right_angled_triangle_2.xnb

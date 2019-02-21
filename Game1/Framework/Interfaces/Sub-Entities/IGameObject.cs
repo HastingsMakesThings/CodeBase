@@ -40,5 +40,7 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         Vector2[] Verts { get; }
 
+        void CollReact(Vector2 pMTV);
+
     }
 }

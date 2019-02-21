@@ -49,6 +49,21 @@ namespace Game1.Framework.Managers
                 //this calls the shape projection method to identify the greatest shape projection of shape B onto the sepearation axis
                 float[] bProj = ShapeProjection(shapeB, mSepAxis);
 
+                //this calculates the midpoint of each shape as a value.
+                float aMean = (aProj.Sum()*0.5f);
+
+                float bMean = (bProj.Sum() * 0.5f);
+
+                float directionMultiplier;
+                //this detects which side are the shapes on relative to eachother on the seperation axis
+                if(aMean >= bMean)
+                {
+                    directionMultiplier = 1;
+                }
+                else
+                {
+                    directionMultiplier = -1;
+                }
                 //This method finds the overlap between the two objects if it is negative the shapes are not colliding 
                 float mOverlap = FindOverlap(aProj, bProj);
 
@@ -63,19 +78,21 @@ namespace Game1.Framework.Managers
                 {
                     mtvNormal = mSepAxis;
 
-                    mtvMag = mOverlap;
+                    mtvMag = mOverlap * directionMultiplier;
                 }
                 // if not, if the overlap is less than the mtvMag then the sep axis and magnitude of the mtv are set
-                else if(mtvMag > mOverlap)
+                else if(Math.Abs(mtvMag) > mOverlap)
                 {
                     mtvNormal = mSepAxis;
 
-                    mtvMag = mOverlap;
+                    mtvMag = mOverlap* directionMultiplier;
                 }   
             }
 
+            
             minTransVec = Vector2.Multiply(mtvNormal, mtvMag);
 
+            
             return minTransVec;
         }
         //The function of this vector method is to calculate a normalized vector to be used as the seperation axis 
@@ -201,6 +218,8 @@ namespace Game1.Framework.Managers
 
             //The overlap is equal to the length of  ((aMax - aMin) + (bMax - bMin) - (distance between The minimum value and maximum value))
              overlapVal = (((aMaxVert - aMinVert) + (bMaxVert - bMinVert)) - (maxValue - minValue));
+
+            
             return overlapVal;
         }
 

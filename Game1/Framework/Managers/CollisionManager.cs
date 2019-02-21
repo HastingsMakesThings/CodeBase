@@ -124,7 +124,9 @@ namespace Game1.Framework.Managers
                         }
                         else
                         {
-                            Console.WriteLine("Collision, {0} ", mMTV);
+                            Console.WriteLine("Collision, {0}", mMTV);
+
+                            first.CollReact(mMTV);
                         }
                     }
                   
