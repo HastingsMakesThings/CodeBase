@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Game1.Framework.Interfaces.Managers;
 using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.Managers
 {
-    class SATCollision
+    class SATCollision : ISATCollision
     {
         //The purpose of this class is to identifiy when a collision has occured 
 
@@ -16,16 +17,16 @@ namespace Game1.Framework.Managers
             //Constructor Code
         }
         //The purpose of this method is to identify when a collision has occured. The Method takes in an array of vectors whch are the vertexes for each shape, Th emethod themn passes through each array and 
-        private void TestCollision(Vector2[] shapeA, Vector2[] shapeB)
+        public Vector2 TestCollisionSignle(Vector2[] shapeA, Vector2[] shapeB)
         {
             //Deffines a variable for the miinimum translation vector
             Vector2 minTransVec;
 
             //Deffines a variable for the direction of the MTV
-            Vector2 mtvNormal;
+            Vector2 mtvNormal = new Vector2();
 
             //Deffines a float for the magnitude of the MTV
-            float mtvMag;
+            float mtvMag =0;
 
             //Inisiate a for loop to cycle through each vertex in the list
             for(int i = 0; i < shapeA.Length; i++)
@@ -41,9 +42,41 @@ namespace Game1.Framework.Managers
                 //This calls the seperationAxisCalculator method to generate a seperation vector
 
                 Vector2 mSepAxis = SeperationAxisCalculator(shapeA[i], shapeA[ii]);
-                
-                //This 
+
+                //This calls the shape projection method to identify the greatest shape projection of shape A onto the seperation axis
+                float[] aProj = ShapeProjection(shapeA, mSepAxis);
+
+                //this calls the shape projection method to identify the greatest shape projection of shape B onto the sepearation axis
+                float[] bProj = ShapeProjection(shapeB, mSepAxis);
+
+                //This method finds the overlap between the two objects if it is negative the shapes are not colliding 
+                float mOverlap = FindOverlap(aProj, bProj);
+
+                //if there is no collision the loop is broken and a zero vector2 is returned
+                if (mOverlap <= 0)
+                {
+                    return Vector2.Zero;
+                }
+
+                //this checks if the loop has been run before, if not the values for mtvMag and Normal are set
+                if(i == 0)
+                {
+                    mtvNormal = mSepAxis;
+
+                    mtvMag = mOverlap;
+                }
+                // if not, if the overlap is less than the mtvMag then the sep axis and magnitude of the mtv are set
+                else if(mtvMag > mOverlap)
+                {
+                    mtvNormal = mSepAxis;
+
+                    mtvMag = mOverlap;
+                }   
             }
+
+            minTransVec = Vector2.Multiply(mtvNormal, mtvMag);
+
+            return minTransVec;
         }
         //The function of this vector method is to calculate a normalized vector to be used as the seperation axis 
         private Vector2 SeperationAxisCalculator(Vector2 pVertexA, Vector2 pVertexB)
@@ -131,7 +164,7 @@ namespace Game1.Framework.Managers
 
         }
 
-        //The function of this method is to find the overlap of two vectors and return a float value of that overlap
+        //The function of this method is to find the overlap of two vectors onto a seperation axis and return a float value of that overlap
         private float FindOverlap(float[] vertsA, float[] vertsB)
         {
             // Creates a float value to return to caller

@@ -43,6 +43,7 @@ namespace Game1.GameCode.PlayerCode
 
         public override void Update()
         {
+
             CalculateProjectedX();
             CalculateProjectedY();
 
@@ -64,6 +65,8 @@ namespace Game1.GameCode.PlayerCode
             {
                 b.Run();
             }
+
+            CalculateVertexes();
         }
 
 

@@ -24,11 +24,14 @@ namespace Game1.Framework.Managers
         // DECLARE a variable of type IGameObject to hold the player
         protected IGameObject _Player;
 
+        protected ISATCollision _CollisionCheck;
         public CollisionManager()
         {
             _WallList = new List<IGameObject>();
             _EnemyList = new List<IGameObject>();
             _InteractableList = new List<IGameObject>();
+
+            _CollisionCheck = new SATCollision();
         }
 
         #region RangeChecking
@@ -109,15 +112,26 @@ namespace Game1.Framework.Managers
         {
             foreach (IGameObject first in _GameList)
             {
-                foreach (IGameObject second in _GameList)
-                {
-                    if ((first != second && second.Type != "Obstacle") && (DistanceBetween(first,second).X < 128 && DistanceBetween(first, second).Y < 128))
+               foreach (IGameObject second in _GameList)
+               {
+                    if(first != second)
                     {
-                        
-                        
+                        Vector2 mMTV = _CollisionCheck.TestCollisionSignle(first.Verts, second.Verts);
+
+                        if (mMTV == Vector2.Zero)
+                        {
+                            // Console.WriteLine("No Collision");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Collision, {0} ", mMTV);
+                        }
                     }
-                }
+                  
+               }
             }
+
+
         }
 
         #endregion

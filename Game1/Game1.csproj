@@ -53,6 +53,7 @@
     <Compile Include="Framework\Interfaces\Managers\IKeyboardManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IMouseManager.cs" />
+    <Compile Include="Framework\Interfaces\Managers\ISATCollision.cs" />
     <Compile Include="Framework\Interfaces\Managers\IRenderManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISceneManager.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IGameObject.cs" />
