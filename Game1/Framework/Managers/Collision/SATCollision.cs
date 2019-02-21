@@ -15,9 +15,35 @@ namespace Game1.Framework.Managers
         {
             //Constructor Code
         }
-        private void TestCollision()
+        //The purpose of this method is to identify when a collision has occured. The Method takes in an array of vectors whch are the vertexes for each shape, Th emethod themn passes through each array and 
+        private void TestCollision(Vector2[] shapeA, Vector2[] shapeB)
         {
+            //Deffines a variable for the miinimum translation vector
+            Vector2 minTransVec;
 
+            //Deffines a variable for the direction of the MTV
+            Vector2 mtvNormal;
+
+            //Deffines a float for the magnitude of the MTV
+            float mtvMag;
+
+            //Inisiate a for loop to cycle through each vertex in the list
+            for(int i = 0; i < shapeA.Length; i++)
+            {
+                int ii = i + 1;
+
+                //identifies if i is at max, if so then ii is set to 0
+                if(ii == shapeA.Length)
+                {
+                    ii = 0;
+                }
+
+                //This calls the seperationAxisCalculator method to generate a seperation vector
+
+                Vector2 mSepAxis = SeperationAxisCalculator(shapeA[i], shapeA[ii]);
+                
+                //This 
+            }
         }
         //The function of this vector method is to calculate a normalized vector to be used as the seperation axis 
         private Vector2 SeperationAxisCalculator(Vector2 pVertexA, Vector2 pVertexB)
