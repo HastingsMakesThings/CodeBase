@@ -19,7 +19,7 @@ namespace Game1.GameCode.Obstacles
 
         public Triangle()
         {
-            Type = "Obstacle";
+            Type = "Triangle";
         }
 
         public override void Update()

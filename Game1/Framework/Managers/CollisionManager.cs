@@ -112,29 +112,44 @@ namespace Game1.Framework.Managers
         {
             foreach (IGameObject first in _GameList)
             {
-               foreach (IGameObject second in _GameList)
-               {
-                    if(first != second)
+                foreach (IGameObject second in _GameList)
+                {
+                    if (first != second)
                     {
-                        Vector2 mMTV = _CollisionCheck.TestCollisionSignle(first.Verts, second.Verts);
+                        Vector2 mMTV1 = _CollisionCheck.TestCollisionSignle(first.Verts, second.Verts);
 
-                        if (mMTV == Vector2.Zero)
+                        if (mMTV1 == Vector2.Zero)
                         {
                             // Console.WriteLine("No Collision");
                         }
                         else
                         {
-                            Console.WriteLine("Collision, {0}", mMTV);
+                            Vector2 mMTV2 = _CollisionCheck.TestCollisionSignle(second.Verts, first.Verts);
 
-                            first.CollReact(mMTV);
+                            if (mMTV2 == Vector2.Zero)
+                            {
+                                // Console.WriteLine("No Collision");
+                            }
+                            else
+                            {
+                                if (Math.Abs(mMTV1.Length()) >= Math.Abs(mMTV2.Length()))
+                                {
+                                    first.CollReact(mMTV1);
+                                }
+                                else
+                                {
+                                    first.CollReact(mMTV2);
+                                }
+                            }
                         }
+
                     }
-                  
-               }
+                }
             }
-
-
         }
+
+
+        
 
         #endregion
 

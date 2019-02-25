@@ -16,6 +16,9 @@ namespace Game1.Framework.Managers
         {
             //Constructor Code
         }
+
+       
+       
         //The purpose of this method is to identify when a collision has occured. The Method takes in an array of vectors whch are the vertexes for each shape, Th emethod themn passes through each array and 
         public Vector2 TestCollisionSignle(Vector2[] shapeA, Vector2[] shapeB)
         {
@@ -89,6 +92,7 @@ namespace Game1.Framework.Managers
                 }   
             }
 
+         
             
             minTransVec = Vector2.Multiply(mtvNormal, mtvMag);
 
