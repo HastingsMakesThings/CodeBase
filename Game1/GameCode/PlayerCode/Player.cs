@@ -11,11 +11,11 @@ using Game1.GameCode.Behaviours;
 using Game1.Framework.EntityCode.Sub_Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-
+using Game1.GameCode.Movers;
 
 namespace Game1.GameCode.PlayerCode
 {
-    class Player : GameObject
+    class Player : Mover
     {
         // List of type IBehaviour prefix with '_'
         protected List<IBehaviour> _BList;
