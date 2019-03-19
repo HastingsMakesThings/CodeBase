@@ -10,6 +10,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
     //This interface is unqiue to all objects that have moment behaviours
     interface IMover
     {
-        void Move(Vector2 pForce);
+        void Move();
+
+        void ApplyForce(Vector2 pForce);
     }
 }
