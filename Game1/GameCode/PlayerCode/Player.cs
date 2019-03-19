@@ -33,12 +33,16 @@ namespace Game1.GameCode.PlayerCode
             // Initialise _BList
             _BList = new List<IBehaviour>();
             // Initialise behaviours
-            _HorMove = new HorizontalMovement(this);
-            _VerMove = new VerticalMovement(this);
+            _HorMove = new MoveHorizontal(this);
+            _VerMove = new MoveVertical(this);
+            
             // Add behaviours into _BList
             _BList.Add(_HorMove);
             _BList.Add(_VerMove);
 
+            _mMass = 20;
+            _maxSpeed = 10;
+            _mFriction = -0.5f;
         }
 
         public override void Update()
@@ -63,9 +67,18 @@ namespace Game1.GameCode.PlayerCode
 
             foreach (IBehaviour b in _BList)
             {
+                if(b is IMoveBehaviour)
+                {
+                    IMoveBehaviour mB = (IMoveBehaviour)b;
+
+                    ApplyForce(mB.Act());
+                }
+                else
                 b.Run();
             }
-
+            
+            Move();
+            
             CalculateVertexes();
         }
 
