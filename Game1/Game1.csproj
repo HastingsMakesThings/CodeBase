@@ -45,6 +45,7 @@
     <Compile Include="Framework\Factories\EntityFactory.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\GameObject.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\MenuItem.cs" />
+    <Compile Include="Framework\Interfaces\IAIMind.cs" />
     <Compile Include="Framework\Interfaces\IState.cs" />
     <Compile Include="Framework\Interfaces\IEntity.cs" />
     <Compile Include="Framework\Interfaces\IEntityFactory.cs" />

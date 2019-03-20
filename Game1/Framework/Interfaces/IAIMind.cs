@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game1.Framework.Interfaces
 {
-    //This provides an interface for AI Minds which will hold all the behaviours that an 
+    //This provides an interface for AI Minds which will hold all the behaviours that an entiy has
     interface IAIMind
     {
     }
