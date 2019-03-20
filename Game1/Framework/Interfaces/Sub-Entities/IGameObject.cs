@@ -42,5 +42,7 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         void CollReact(Vector2 pMTV);
 
+        Vector2 GOPosition { get; }
+
     }
 }

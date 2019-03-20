@@ -44,6 +44,9 @@ namespace Game1.GameCode.States
         protected float _tVerDir;
         protected float _tHorDir;
 
+        //variable for friction
+        protected float _tFriction;
+
         public virtual void Run()
         {
 
@@ -64,6 +67,8 @@ namespace Game1.GameCode.States
             _tVerDir = _mTarget.oVertDir;
 
             _tHorDir = _mTarget.oHorDir;
+
+            _tFriction = _mTarget.oFriction;
         }
         protected virtual void Move()
         {
@@ -81,15 +86,15 @@ namespace Game1.GameCode.States
 
             //Addjust the veloctiy of an object by appling the acceleration
 
-            _tVelocity.X += _mAccel.X;
-            _tVelocity.Y += _mAccel.Y;
+            _tVelocity.X += _mAccel.X - _tFriction;
+            _tVelocity.Y += _mAccel.Y - _tFriction;
 
             //This capps the velocity
             if ((Math.Abs(_tVelocity.X) >= _tMaxSpeed))
-                _tVelocity.X = _tMaxSpeed * _tHorDir;
+                _tVelocity.X = (_tMaxSpeed - _tFriction) * _tHorDir;
 
             if ((Math.Abs(_tVelocity.Y) >= _tMaxSpeed))
-                _tVelocity.Y = _tMaxSpeed * _tVerDir;
+                _tVelocity.Y = (_tMaxSpeed - _tFriction) * _tHorDir;
 
             //update the position of the Game object based on velocity
             _tPosition.X += _tVelocity.X;

@@ -9,5 +9,7 @@ namespace Game1.Framework.Interfaces
     interface IState
     {
         void Run();
+
+       
     }
 }

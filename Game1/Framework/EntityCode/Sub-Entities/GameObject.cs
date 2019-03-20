@@ -224,6 +224,14 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             get { return _Vertexes; }
         }
 
+        public Vector2 GOPosition
+        {
+            get
+            {
+                return Position;
+            }
+        }
+
 
         #endregion
     }
