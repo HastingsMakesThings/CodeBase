@@ -18,11 +18,11 @@ namespace Game1.GameCode.PlayerCode
     class Player : Mover
     {
         // List of type IBehaviour prefix with '_'
-        protected List<IBehaviour> _BList;
+        protected List<IState> _BList;
         // Horizontal behaviour prefix with '_'
-        protected IBehaviour _HorMove;
+        protected IState _HorMove;
         // Vertical behaviour prefix with '_'
-        protected IBehaviour _VerMove;
+        protected IState _VerMove;
 
 
 
@@ -31,7 +31,7 @@ namespace Game1.GameCode.PlayerCode
             // Initialise Type
             Type = "Player";
             // Initialise _BList
-            _BList = new List<IBehaviour>();
+            _BList = new List<IState>();
             // Initialise behaviours
             _HorMove = new MoveHorizontal(this);
             _VerMove = new MoveVertical(this);
@@ -65,19 +65,14 @@ namespace Game1.GameCode.PlayerCode
             else
                 _HorDir = Convert.ToInt32(KeyboardManager.KeyRight) - Convert.ToInt32(KeyboardManager.KeyLeft);
 
-            foreach (IBehaviour b in _BList)
+            foreach (IState b in _BList)
             {
-                if(b is IMoveBehaviour)
-                {
-                    IMoveBehaviour mB = (IMoveBehaviour)b;
-
-                    ApplyForce(mB.Act());
-                }
-                else
+                
+                
                 b.Run();
             }
             
-            Move();
+           
             
             CalculateVertexes();
         }

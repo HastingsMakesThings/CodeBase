@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 namespace Game1.Framework.Interfaces
 {
-    interface IMoveBehaviour : IBehaviour
+    interface IMoveBehaviour : IState
     {
         Vector2 Act();
     }

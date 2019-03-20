@@ -30,46 +30,76 @@ namespace Game1.GameCode.Movers
         //THis sets a max speed
         protected float _maxSpeed;
 
-        public virtual void Move()
+        //This allows the objects mass to be obtained
+        public float oMass
         {
-            //Set the Acceleration of game object based on the force being applied to the gameobject if it does not equal zero
-            if (_mForce.X != 0)
-                _mAccel.X = _mForce.X / _mMass;
-            else
-                _mAccel.X = 0;
-
-            if (_mForce.Y != 0)
-                _mAccel.Y = _mForce.Y / _mMass;
-            else
-                _mAccel.Y = 0;
-
-            //Addjust the veloctiy of an object by appling the acceleration
-
-            _Velocity.X += _mAccel.X;
-            _Velocity.Y += _mAccel.Y;
-
-            //This capps the velocity
-            if ((Math.Abs(_Velocity.X) >= _maxSpeed))
-                _Velocity.X = _maxSpeed * _HorDir;
-
-            if ((Math.Abs(_Velocity.Y) >= _maxSpeed))
-                _Velocity.Y = _maxSpeed * _VerDir;
-            
-            //update the position of the Game object based on velocity
-            _Position.X +=  _Velocity.X;
-            _Position.Y +=  _Velocity.Y;
-
-            //this resets the force
-            _mForce = Vector2.Zero;
-
+            get
+            {
+                return _mMass;
+            }
         }
 
-        public void ApplyForce(Vector2 pForce)
+        //This allows the objects friction to be obtained
+        public float oFriction
         {
-            //this applies a force to the _mForce vector;
-            _mForce.X += pForce.X;
+            get
+            {
+                return _mFriction;
+            }
+        }
 
-            _mForce.Y += pForce.Y;
+        //This allows the objects max speed to be obtained
+        public float oMaxSpeed
+        {
+            get
+            {
+                return _maxSpeed;
+            }
+        }
+
+        //This allows the objects posiotion to be obtained
+        public Vector2 oPostion
+        {
+            get
+            {
+                return _Position;
+            }
+
+            set
+            {
+                _Position = value;
+            }
+        }
+
+        //This allows the objects velocity to be obtained
+        public Vector2 oVelocity
+        {
+            get
+            {
+                return _Velocity;
+            }
+
+            set
+            {
+                _Velocity = value;
+            }
+        }
+
+        //THis allows for the facing directions of the object be retrived
+        public float oVertDir
+        {
+            get
+            {
+                return _VerDir;
+            }
+        }
+
+        public float oHorDir
+        {
+            get
+            {
+                return _HorDir;
+            }
         }
     }
 }
