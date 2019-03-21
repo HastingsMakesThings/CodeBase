@@ -72,10 +72,13 @@
     <Compile Include="Framework\Managers\RenderManager.cs" />
     <Compile Include="Framework\Managers\Collision\SATCollision.cs" />
     <Compile Include="Framework\Managers\SceneManager.cs" />
+    <Compile Include="GameCode\States\Flee.cs" />
     <Compile Include="GameCode\States\HorizontalMovement.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMover.cs" />
     <Compile Include="GameCode\States\MoveHorizontal.cs" />
     <Compile Include="GameCode\States\MoveVertical.cs" />
+    <Compile Include="GameCode\States\Pursue.cs" />
+    <Compile Include="GameCode\States\Seek.cs" />
     <Compile Include="GameCode\States\State.cs" />
     <Compile Include="GameCode\States\VerticalMovement.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\Mover.cs" />

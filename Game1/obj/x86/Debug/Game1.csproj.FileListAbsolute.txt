@@ -125,3 +125,13 @@ C:\Users\Jenk\Desktop\CodeBase-Test\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D
 C:\Users\Jenk\Desktop\CodeBase-Test\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 C:\Users\Jenk\Desktop\CodeBase-Test\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
 C:\Users\Jenk\Desktop\CodeBase-Test\Game1\obj\x86\Debug\Game1.csproj.CopyComplete
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_4tile.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\NPCBoard.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Black_right_angled_triangle_2.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Cursor.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_4tile.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\NPCBoard.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Obstacle.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml

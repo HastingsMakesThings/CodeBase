@@ -16,7 +16,6 @@ namespace Game1.GameCode.Behaviours
         {
             _mTarget = pTarget;
         }
-
         public Vector2 Act()
         {
             Vector2 mForce = new Vector2(0, 0);
