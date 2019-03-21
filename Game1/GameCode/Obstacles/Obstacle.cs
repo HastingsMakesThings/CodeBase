@@ -24,6 +24,7 @@ namespace Game1.GameCode.Obstacles
 
         public override void Update()
         {
+            CalculateVertexes();
         }
 
         #region Properties

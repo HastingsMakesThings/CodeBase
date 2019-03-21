@@ -61,7 +61,6 @@ namespace Game1.Framework.Managers
                     _GameList = scene.GameList;
                     break;
             }
-            
 
         }
 

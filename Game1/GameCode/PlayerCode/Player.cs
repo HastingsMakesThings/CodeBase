@@ -11,18 +11,19 @@ using Game1.GameCode.Behaviours;
 using Game1.Framework.EntityCode.Sub_Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-
+using Game1.GameCode.Movers;
+using Game1.Framework.EntityCode.Sub_Minds;
 
 namespace Game1.GameCode.PlayerCode
 {
-    class Player : GameObject
+    class Player : Mover, IMover
     {
         // List of type IBehaviour prefix with '_'
-        protected List<IBehaviour> _BList;
+        protected List<IState> _BList;
         // Horizontal behaviour prefix with '_'
-        protected IBehaviour _HorMove;
+        protected IState _HorMove;
         // Vertical behaviour prefix with '_'
-        protected IBehaviour _VerMove;
+        protected IState _VerMove;
 
 
 
@@ -30,19 +31,26 @@ namespace Game1.GameCode.PlayerCode
         {
             // Initialise Type
             Type = "Player";
+            // Initialise Mind
+            _MyMind = new PlayerMind(this);
             // Initialise _BList
-            _BList = new List<IBehaviour>();
+            _BList = new List<IState>();
             // Initialise behaviours
-            _HorMove = new HorizontalMovement(this);
-            _VerMove = new VerticalMovement(this);
+            _HorMove = new MoveHorizontal(this);
+            _VerMove = new MoveVertical(this);
+            
             // Add behaviours into _BList
             _BList.Add(_HorMove);
             _BList.Add(_VerMove);
 
+            _mMass = 20;
+            _maxSpeed = 10;
+            _mFriction = -0.5f;
         }
 
         public override void Update()
         {
+
             CalculateProjectedX();
             CalculateProjectedY();
 
@@ -60,15 +68,22 @@ namespace Game1.GameCode.PlayerCode
             else
                 _HorDir = Convert.ToInt32(KeyboardManager.KeyRight) - Convert.ToInt32(KeyboardManager.KeyLeft);
 
-            foreach (IBehaviour b in _BList)
-            {
+            foreach (IState b in _BList)
+            { 
                 b.Run();
             }
+            
+            CalculateVertexes();
         }
 
-
+        public  override void CollReact(Vector2 pMTV)
+        {
+            this.Position = Position + pMTV;
+        }
 
         #region Properties
+
+
         #endregion
 
     }

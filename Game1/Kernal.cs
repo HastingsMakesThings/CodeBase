@@ -40,6 +40,8 @@ namespace Game1
         IMouseManager _MouseMgr;
         // _CollisionMgr will be used to manage collision
         ICollisionManager _CollisionMgr;
+        // _AIMgr will be used to handle the AI
+        IAIManager _AIMgr;
 
 
         public Kernal()
@@ -80,6 +82,7 @@ namespace Game1
             _KeyBMgr = new KeyboardManager();
             _MouseMgr = new MouseManager();
             _CollisionMgr = new CollisionManager();
+            _AIMgr = new AIManager();
 
             // Add managers to _MList
             _MList.Add(_SceneMgr);
@@ -87,6 +90,7 @@ namespace Game1
             _MList.Add(_KeyBMgr);
             _MList.Add(_MouseMgr);
             _MList.Add(_CollisionMgr);
+            _MList.Add(_AIMgr);
 
             // _RenderMgr doesnt get added as its called from within the draw method
             base.Initialize();
@@ -104,7 +108,7 @@ namespace Game1
             _EntityMgr.LoadLevel("Test");
             _SceneMgr.LoadScene("Test");
             _CollisionMgr.GrabGameList(_EntityMgr.GameObjectList);
-
+            _AIMgr.GrabAllMovers(_EntityMgr.GameObjectList);
             // TODO: use this.Content to load your game content here
         }
 

@@ -24,11 +24,14 @@ namespace Game1.Framework.Managers
         // DECLARE a variable of type IGameObject to hold the player
         protected IGameObject _Player;
 
+        protected ISATCollision _CollisionCheck;
         public CollisionManager()
         {
             _WallList = new List<IGameObject>();
             _EnemyList = new List<IGameObject>();
             _InteractableList = new List<IGameObject>();
+
+            _CollisionCheck = new SATCollision();
         }
 
         #region RangeChecking
@@ -111,14 +114,42 @@ namespace Game1.Framework.Managers
             {
                 foreach (IGameObject second in _GameList)
                 {
-                    if ((first != second && second.Type != "Obstacle") && (DistanceBetween(first,second).X < 128 && DistanceBetween(first, second).Y < 128))
+                    if (first != second)
                     {
-                        
-                        
+                        Vector2 mMTV1 = _CollisionCheck.TestCollisionSignle(first.Verts, second.Verts);
+
+                        if (mMTV1 == Vector2.Zero)
+                        {
+                            // Console.WriteLine("No Collision");
+                        }
+                        else
+                        {
+                            Vector2 mMTV2 = _CollisionCheck.TestCollisionSignle(second.Verts, first.Verts);
+
+                            if (mMTV2 == Vector2.Zero)
+                            {
+                                // Console.WriteLine("No Collision");
+                            }
+                            else
+                            {
+                                if (Math.Abs(mMTV1.Length()) >= Math.Abs(mMTV2.Length()))
+                                {
+                                    first.CollReact(mMTV1);
+                                }
+                                else
+                                {
+                                    first.CollReact(mMTV2);
+                                }
+                            }
+                        }
+
                     }
                 }
             }
         }
+
+
+        
 
         #endregion
 

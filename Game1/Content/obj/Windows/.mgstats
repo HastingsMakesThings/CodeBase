@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png","C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Cursor.xnb","TextureProcessor","Texture2DContent",188,4181,0.1429993
+"C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_4tile.png","C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Hastings_4tile.xnb","TextureProcessor","Texture2DContent",765467,6076885,0.2069992
+"C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/NPCBoard.png","C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/NPCBoard.xnb","TextureProcessor","Texture2DContent",3964878,41680981,1.255017
+"C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png","C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Obstacle.xnb","TextureProcessor","Texture2DContent",232,16469,0.010998
+"C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player.png","C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Player.xnb","TextureProcessor","Texture2DContent",179,16469,0.0129989

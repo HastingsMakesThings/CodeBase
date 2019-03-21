@@ -34,7 +34,7 @@ namespace Game1.GameCode.Scenes.Levels
 
             _GameList.Add(pEntityFac.CreateGameObject<Player>(800, 400, "Player", 1, false));
 
-
+            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(800, 700, "Obstacle", 1, true));
         }
 
         public List<IGameObject> GameList

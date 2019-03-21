@@ -29,7 +29,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         // Rectangle for Projected Y prefix with '_'
         protected Rectangle _ProjectedY;
 
-
+        //Deffine an array to hold all of the vertex of the object
+        protected Vector2[] _Vertexes;
 
         protected Boolean _Static;
 
@@ -40,6 +41,9 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Boolean _CollideL;
 
         protected Boolean _CollideR;
+
+
+        
 
         public GameObject()
         {
@@ -71,6 +75,9 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             // if an object is not static then run the methods below in that objects update method
             CalculateProjectedX();
             CalculateProjectedY();
+
+            //Calls the calculate vertexes method
+            CalculateVertexes();
         }
 
         public void CalculateProjectedX()
@@ -109,11 +116,36 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             _ProjectedY = new Rectangle((int)start.X, (int)start.Y, 1, (int)edge.Length());
         }
 
+        //This Declares a method that will calculate the location of the vertexes of each object dependant on their position 
+        protected virtual void CalculateVertexes()
+        {
+            _Vertexes = new Vector2[4];
+
+            _Vertexes[0] = this.Position;
+
+            _Vertexes[1].X = this.Position.X + _Texture.Width;
+            _Vertexes[1].Y = this.Position.Y;
+
+            _Vertexes[2].X = this.Position.X + _Texture.Width;
+            _Vertexes[2].Y = this.Position.Y + _Texture.Height;
+
+            _Vertexes[3].X = this.Position.X;
+            _Vertexes[3].Y = this.Position.Y + _Texture.Height;
+
+        }
+
         public override void Update()
         {
             
         }
 
+        public virtual void CollReact(Vector2 pMTV)
+        {
+
+        }
+
+        //The purpose of this method is to move the game object in a realistic manner
+       
         #region Properties
 
         public float ProXAngle
@@ -185,6 +217,14 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             get { return _VerDir; }
             set { _VerDir = value; }
         }
+
+        //This public accessor allows for obbjects to retrive the vertex list from an object
+        public Vector2[] Verts
+        {
+            get { return _Vertexes; }
+        }
+
+
         #endregion
     }
 }
