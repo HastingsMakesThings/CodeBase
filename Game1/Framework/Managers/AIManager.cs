@@ -50,7 +50,33 @@ namespace Game1.Framework.Managers
                 m.Run();
             }
 
-          
+            CheckEvents();
+        }
+
+        //the purpose of this is to identify if events need to fired off
+        private void CheckEvents()
+        {
+            //new variable for event triggering
+            string evnText;
+
+            foreach (IAIMind m in _MindList)
+            {
+                //checks the content of the event text
+                evnText = m.CreateEvent();
+
+                if(evnText !="")
+                {
+                    //grabs the event triggerer
+                    IGameObject tempObj = m.EventTrigger();
+                    if(tempObj != null)
+                    {
+                        TriggerEvent(evnText, tempObj);
+                    }
+
+                }
+
+            }
+
         }
 
     }

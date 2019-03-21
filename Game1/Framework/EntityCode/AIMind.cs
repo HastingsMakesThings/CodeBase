@@ -14,6 +14,11 @@ namespace Game1.Framework.EntityCode
         private IGameObject pTarget;
         protected Dictionary<string, IState> States;
 
+        //This string holds the ucrrent state of the Player Mind
+        protected string _currentState;
+
+        protected string _event;
+
         public virtual void Run()
         {
 
@@ -29,6 +34,7 @@ namespace Game1.Framework.EntityCode
 
         public  IGameObject EventTrigger()
         {
+            _event = "";
             if (pTarget != null)
                 return pTarget;
             else

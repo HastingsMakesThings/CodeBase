@@ -14,10 +14,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
         // Target of the current mind prefix with '_'
         protected IMover _Target;
 
-        //This string holds the ucrrent state of the Player Mind
-        protected string _currentState;
-
-        protected string _event;
+       
         public PlayerMind(IMover _pTarget)
         {
             _Target = _pTarget;

@@ -15,7 +15,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
             return "no";
         }
 
-        public void Run()
+        public override void Run()
         {
 
         }
