@@ -8,12 +8,17 @@ using Game1.Framework.Interfaces;
 
 namespace Game1.Framework.EntityCode.Sub_Minds
 {
-    class EnemyMind : AIMind, IAIMind
+    class EnemyMind : AIMind
     {
+        public override string CreateEvent()
+        {
+            return "no";
+        }
 
         public void Run()
         {
 
         }
+
     }
 }

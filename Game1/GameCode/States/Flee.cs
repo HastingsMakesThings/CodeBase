@@ -28,7 +28,7 @@ namespace Game1.GameCode.States
             //This calls the update data method, this should happen first
             UpdateData();
 
-            if (_mTarget != null || _mPariah != null)
+            if (_mTarget != null && _mPariah != null)
             {
                 //calls the calculate flee method
                 CalculateFlee();
@@ -39,7 +39,7 @@ namespace Game1.GameCode.States
         }
 
         //sets a new game object to be fled from
-        public void NewPariah(IGameObject pPariah)
+        public void NewTarget(IGameObject pPariah)
         {
             _mPariah = pPariah;
         }

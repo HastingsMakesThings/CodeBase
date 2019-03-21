@@ -112,6 +112,11 @@ namespace Game1.GameCode.States
 
             _mForce.Y += pForce.Y;
         }
+
+        public virtual void NewTarget(IGameObject pTarget)
+        {
+           
+        }
     }
 }
 

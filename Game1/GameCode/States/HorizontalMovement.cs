@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Sub_Entities;
 
-namespace Game1.GameCode.Behaviours
+namespace Game1.GameCode.States
 {
-    class HorizontalMovement : IState
+    class HorizontalMovement : State
     {
         protected IGameObject _Target;
 
@@ -16,6 +16,8 @@ namespace Game1.GameCode.Behaviours
         {
             _Target = pEntity;
         }
+
+       
 
         public void Run()
         {

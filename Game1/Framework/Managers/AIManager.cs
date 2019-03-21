@@ -33,12 +33,24 @@ namespace Game1.Framework.Managers
             }
         }
 
+        public  void TriggerEvent(string pEvent, IGameObject pTrigger)
+        {
+            foreach (IAIMind m in _MindList)
+            {
+                m.EventData(pEvent, pTrigger);
+            }
+        }
+
+        
+
         public void Update()
         {
             foreach (IAIMind m in _MindList)
             {
                 m.Run();
             }
+
+          
         }
 
     }

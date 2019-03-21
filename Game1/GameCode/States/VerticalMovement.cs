@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Sub_Entities;
 
-namespace Game1.GameCode.Behaviours
+namespace Game1.GameCode.States
 {
-    class VerticalMovement : IState
+    class VerticalMovement : State
     {
         protected IGameObject _Target;
 

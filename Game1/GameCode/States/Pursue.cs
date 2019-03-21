@@ -28,7 +28,7 @@ namespace Game1.GameCode.States
         {
             //This calls the update data method, this should happen first
             UpdateData();
-            if (_mTarget != null || _mQuarry != null)
+            if (_mTarget != null && _mQuarry != null)
             {
                 //calls the calculate pursue method
                 CalculatePursue();

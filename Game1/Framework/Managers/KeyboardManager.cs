@@ -22,9 +22,12 @@ namespace Game1.Framework.Managers
         // KeyJump used to check if 'Space' is pressed
         public static Boolean KeyJump;
 
+        public static Boolean oneKey;
         // DECLARE KeyboardState prefix with '_'
         KeyboardState _State = Keyboard.GetState();
 
+
+      
         public KeyboardManager()
         {
             KeyRight = false;
@@ -32,12 +35,15 @@ namespace Game1.Framework.Managers
             KeyUp = false;
             KeyDown = false;
             KeyJump = false;
+
+            oneKey = false;
         }
 
         public void CheckInput()
         {
+            KeyboardState currentState = Keyboard.GetState();
 
-            if (Keyboard.GetState().IsKeyDown(Keys.W) || Keyboard.GetState().IsKeyDown(Keys.Up))
+            if (currentState.IsKeyDown(Keys.W) || currentState.IsKeyDown(Keys.Up))
             {
                 KeyUp = true;
             }
@@ -46,7 +52,7 @@ namespace Game1.Framework.Managers
                 KeyUp = false;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.A) || Keyboard.GetState().IsKeyDown(Keys.Left))
+            if (currentState.IsKeyDown(Keys.A) || currentState.IsKeyDown(Keys.Left))
             {
                 KeyLeft = true;
             }
@@ -55,7 +61,7 @@ namespace Game1.Framework.Managers
                 KeyLeft = false;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.S) || Keyboard.GetState().IsKeyDown(Keys.Down))
+            if (currentState.IsKeyDown(Keys.S) || currentState.IsKeyDown(Keys.Down))
             {
                 KeyDown = true;
             }
@@ -64,7 +70,7 @@ namespace Game1.Framework.Managers
                 KeyDown = false;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.D) || Keyboard.GetState().IsKeyDown(Keys.Right))
+            if (currentState.IsKeyDown(Keys.D) || currentState.IsKeyDown(Keys.Right))
             {
                 KeyRight = true;
             }
@@ -73,13 +79,22 @@ namespace Game1.Framework.Managers
                 KeyRight = false;
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Space))
+            if (currentState.IsKeyDown(Keys.Space))
             {
                 KeyJump = true;
             }
             else
             {
                 KeyJump = false;
+            }
+
+            if(currentState.IsKeyDown(Keys.D1))
+            {
+                oneKey = true;
+            }
+            else
+            {
+                oneKey = false;
             }
         }
 
@@ -88,5 +103,6 @@ namespace Game1.Framework.Managers
             CheckInput();
         }
 
+      
     }
 }

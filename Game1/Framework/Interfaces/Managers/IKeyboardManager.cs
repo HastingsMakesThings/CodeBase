@@ -9,5 +9,7 @@ namespace Game1.Framework.Interfaces.Managers
     interface IKeyboardManager : IManager
     {
         void CheckInput();
+
+      
     }
 }

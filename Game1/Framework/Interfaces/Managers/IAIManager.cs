@@ -11,5 +11,7 @@ namespace Game1.Framework.Interfaces.Managers
     {
 
         void GrabAllMovers(List<IGameObject> _EntList);
+
+         void TriggerEvent(string pEvent, IGameObject pTrigger);
     }
 }

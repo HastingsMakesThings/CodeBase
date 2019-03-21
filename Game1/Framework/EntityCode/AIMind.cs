@@ -14,9 +14,25 @@ namespace Game1.Framework.EntityCode
         private IGameObject pTarget;
         protected Dictionary<string, IState> States;
 
-        public void Run()
+        public virtual void Run()
         {
 
+        }
+
+        public virtual void EventData(string pEvent, IGameObject pTrigger)
+        {
+           
+        }
+
+        public abstract string CreateEvent();
+
+
+        public  IGameObject EventTrigger()
+        {
+            if (pTarget != null)
+                return pTarget;
+            else
+                return null;
         }
     }
 }

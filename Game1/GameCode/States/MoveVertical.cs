@@ -7,9 +7,9 @@ using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Microsoft.Xna.Framework;
 
-namespace Game1.GameCode.Behaviours
+namespace Game1.GameCode.States
 {
-    class MoveVertical : IMoveBehaviour
+    class MoveVertical : State
     {
         IGameObject _mTarget;
         public MoveVertical(IGameObject pTarget)

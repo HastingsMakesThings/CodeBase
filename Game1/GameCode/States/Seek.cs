@@ -28,7 +28,7 @@ namespace Game1.GameCode.States
         {
             //This calls the update data method, this should happen first
             UpdateData();
-            if(_mTarget != null|| _mTelos != null)
+            if(_mTarget != null&& _mTelos != null)
             {
                 //calls the calculate seek method
                 CalculateSeek();

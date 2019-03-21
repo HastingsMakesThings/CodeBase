@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
-using Game1.GameCode.Behaviours;
+using Game1.GameCode.States;
 using Game1.Framework.EntityCode.Sub_Entities;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces;
