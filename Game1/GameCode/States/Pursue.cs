@@ -78,13 +78,15 @@ namespace Game1.GameCode.States
             //create a vector to hold the quarry future position
             Vector2 quarFuture = new Vector2((quarPos.X + (_mQuarry.XVelocity * tragCoeff)), (quarPos.Y + (_mQuarry.YVelocity * tragCoeff)));
 
+
+            Vector2 finalDirection = new Vector2((quarFuture.X - myPos.X), (quarFuture.Y - myPos.Y));
             //This quarry future vector is the location the quarry will be in when the IMover reaches the location
             //normalize that vector
-            quarFuture.Normalize();
+            finalDirection.Normalize();
 
             //The force will be equal to the max speed multplied by the tragectory, this is then sent to apply force
-            Vector2 tragForce = quarFuture * _tMaxSpeed;
-            Console.WriteLine(tragForce);
+            Vector2 tragForce = finalDirection * _tMaxSpeed;
+           
 
             //this sets the directional values to a nutral state
             _tVerDir = 0;

@@ -31,7 +31,7 @@ namespace Game1.GameCode.PlayerCode
 
             _mMass = 15;
             _maxSpeed = 10;
-            _mFriction = -0.5f;
+            _mFriction = -1;
         }
 
         public override void Update()

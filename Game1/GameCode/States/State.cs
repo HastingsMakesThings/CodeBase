@@ -47,6 +47,10 @@ namespace Game1.GameCode.States
         //variable for friction
         protected float _tFriction;
 
+        //variable for drag calculations
+        protected float speed;
+
+        protected Vector2 _mDrag;
         public virtual void Run()
         {
 
@@ -69,10 +73,12 @@ namespace Game1.GameCode.States
             _tHorDir = _mMover.oHorDir;
 
             _tFriction = _mMover.oFriction;
+
+            _mAccel = _mMover.oAccel;
         }
         protected virtual void Move()
         {
-            
+
             //Set the Acceleration of game object based on the force being applied to the target gameobject if it does not equal zero
             if (_mForce.X != 0)
                 _mAccel.X += _mForce.X / _tMass;
@@ -84,22 +90,29 @@ namespace Game1.GameCode.States
             else
                 _mAccel.Y = 0;
 
+            _mMover.oAccel = _mAccel;
             //Addjust the veloctiy of an object by appling the acceleration
 
-            _tVelocity.X += _mAccel.X + (_tFriction *_tHorDir);  
-            _tVelocity.Y += _mAccel.Y + (_tFriction * _tVerDir);
+            _tVelocity.X += _mAccel.X;
+            _tVelocity.Y += _mAccel.Y;
+
+            speed = (float)Math.Sqrt((_tVelocity.X * _tVelocity.X) + (_tVelocity.Y * _tVelocity.Y));
+
+            _mDrag = _tFriction * _tVelocity * speed;
 
             //This capps the velocity
             if ((Math.Abs(_tVelocity.X) >= _tMaxSpeed))
-                _tVelocity.X = (_tMaxSpeed + _tFriction) * _tHorDir;
+                _tVelocity.X = _tMaxSpeed * _tHorDir;
 
             if ((Math.Abs(_tVelocity.Y) >= _tMaxSpeed))
-                _tVelocity.Y = (_tMaxSpeed + _tFriction) * _tVerDir;
-
+                _tVelocity.Y = _tMaxSpeed * _tVerDir;
             
             //update the position of the Game object based on velocity
             _mMover.oPostion += _tVelocity;
 
+            
+
+           // _mMover.oPostion = _tPosition;
             //this resets the force
             _mForce = Vector2.Zero;
 
@@ -107,10 +120,13 @@ namespace Game1.GameCode.States
 
         protected void ApplyForce(Vector2 pForce)
         {
-            //this applies a force to the _mForce vector;
-            _mForce.X += pForce.X;
 
-            _mForce.Y += pForce.Y;
+            //this applies a force to the _mForce vector;
+            _mForce.X += pForce.X ;
+
+            _mForce.Y += pForce.Y ;
+
+           
         }
 
         public virtual void NewTarget(IGameObject pTarget)

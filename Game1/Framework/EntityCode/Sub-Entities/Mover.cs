@@ -116,6 +116,19 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             }
         }
 
+        public Vector2 oAccel
+        {
+            get
+            {
+                return _mAccel;
+            }
 
+            set
+            {
+                _mAccel = value;
+            }
+        }
+
+       
     }
 }
