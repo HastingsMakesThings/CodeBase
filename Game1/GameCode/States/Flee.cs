@@ -18,18 +18,20 @@ namespace Game1.GameCode.States
         IGameObject _mPariah;
 
         //constructor tages the target Imover
-        public Flee(IMover pTarget)
+        public Flee()
         {
-            _mTarget = pTarget;
+            
         }
 
         public override void Run()
         {
-            //This calls the update data method, this should happen first
-            UpdateData();
+            
 
-            if (_mTarget != null && _mPariah != null)
+            if (_mMover != null && _mPariah != null)
             {
+                //This calls the update data method, this should happen first
+                UpdateData();
+
                 //calls the calculate flee method
                 CalculateFlee();
 
@@ -39,7 +41,7 @@ namespace Game1.GameCode.States
         }
 
         //sets a new game object to be fled from
-        public void NewTarget(IGameObject pPariah)
+        public override void NewTarget(IGameObject pPariah)
         {
             _mPariah = pPariah;
         }
@@ -47,7 +49,7 @@ namespace Game1.GameCode.States
         {
             //declare some vectors for the location of both objects
 
-            Vector2 myPos = _mTarget.oPostion;
+            Vector2 myPos = _mMover.oPostion;
 
             Vector2 parPos = _mPariah.Position;
 

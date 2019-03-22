@@ -5,12 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Game1.GameCode.States;
-using Game1.Framework.EntityCode.Sub_Entities;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces;
 
-namespace Game1.GameCode.Movers
-{
+namespace Game1.Framework.EntityCode.Sub_Entities
+{ 
     abstract class Mover : GameObject, IMover
     {
         //realistic movment code
@@ -35,6 +34,8 @@ namespace Game1.GameCode.Movers
         // Player Mind prefix with '_'
         protected IAIMind _MyMind;
 
+
+        
         //This allows the objects mass to be obtained
         public float oMass
         {

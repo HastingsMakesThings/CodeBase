@@ -11,40 +11,25 @@ using Game1.GameCode.States;
 using Game1.Framework.EntityCode.Sub_Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Game1.GameCode.Movers;
 using Game1.Framework.EntityCode.Sub_Minds;
+
 
 namespace Game1.GameCode.PlayerCode
 {
-    class Player : Mover, IMover
+    class Player : Mover
     {
-        // List of type IBehaviour prefix with '_'
-        protected List<IState> _BList;
-        // Horizontal behaviour prefix with '_'
-        protected IState _HorMove;
-        // Vertical behaviour prefix with '_'
-        protected IState _VerMove;
-
-
 
         public Player()
         {
             // Initialise Type
             Type = "Player";
             // Initialise Mind
-            _MyMind = new PlayerMind(this);
-            // Initialise _BList
-            _BList = new List<IState>();
-            // Initialise behaviours
-            _HorMove = new MoveHorizontal(this);
-            _VerMove = new MoveVertical(this);
-            
-            // Add behaviours into _BList
-            _BList.Add(_HorMove);
-            _BList.Add(_VerMove);
+            _MyMind = new PlayerMind();
+            _MyMind.Initalize(this);
+            _MyMind.AddState<_2DMove>("Mover",this);
 
-            _mMass = 20;
-            _maxSpeed = 10;
+            _mMass = 3;
+            _maxSpeed = 20;
             _mFriction = -0.5f;
         }
 
@@ -54,24 +39,8 @@ namespace Game1.GameCode.PlayerCode
             CalculateProjectedX();
             CalculateProjectedY();
 
-            if (_CollideT)
-                _VerDir = Convert.ToInt32(KeyboardManager.KeyDown);
-            else if (_CollideB)
-                _VerDir = Convert.ToInt32(KeyboardManager.KeyUp) * -1;
-            else
-                _VerDir = Convert.ToInt32(KeyboardManager.KeyDown) - Convert.ToInt32(KeyboardManager.KeyUp);
 
-            if (_CollideL)
-                _HorDir = Convert.ToInt32(KeyboardManager.KeyRight);
-            else if (_CollideR)
-                _HorDir = Convert.ToInt32(KeyboardManager.KeyLeft) * -1;
-            else
-                _HorDir = Convert.ToInt32(KeyboardManager.KeyRight) - Convert.ToInt32(KeyboardManager.KeyLeft);
-
-            foreach (IState b in _BList)
-            { 
-                b.Run();
-            }
+           
             
             CalculateVertexes();
         }
@@ -80,11 +49,5 @@ namespace Game1.GameCode.PlayerCode
         {
             this.Position = Position + pMTV;
         }
-
-        #region Properties
-
-
-        #endregion
-
     }
 }

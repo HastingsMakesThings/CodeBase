@@ -21,14 +21,14 @@ namespace Game1.GameCode.States
         public Pursue(IMover pTarget)
         {
             //sets the target Imover that this behaviour will affect
-            _mTarget = pTarget;
+            _mMover = pTarget;
         }
 
         public override void Run()
         {
             //This calls the update data method, this should happen first
             UpdateData();
-            if (_mTarget != null && _mQuarry != null)
+            if (_mMover != null && _mQuarry != null)
             {
                 //calls the calculate pursue method
                 CalculatePursue();
@@ -40,7 +40,7 @@ namespace Game1.GameCode.States
         }
 
         //this method assings a new target for the IMoer to move towards
-        public void NewTarget(IGameObject pQuarry)
+        public override void NewTarget(IGameObject pQuarry)
         {
             _mQuarry = pQuarry;
         }
@@ -51,7 +51,7 @@ namespace Game1.GameCode.States
 
             //declare some vectors for the location of both objects
 
-            Vector2 myPos = _mTarget.oPostion;
+            Vector2 myPos = _mMover.oPostion;
 
             Vector2 quarPos = _mQuarry.Position;
 

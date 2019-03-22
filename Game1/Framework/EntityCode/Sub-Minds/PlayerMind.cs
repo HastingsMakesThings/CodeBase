@@ -11,28 +11,26 @@ namespace Game1.Framework.EntityCode.Sub_Minds
 {
     class PlayerMind : AIMind
     {
-        // Target of the current mind prefix with '_'
-        protected IMover _Target;
+        
 
        
-        public PlayerMind(IMover _pTarget)
+        public PlayerMind()
         {
-            _Target = _pTarget;
-
-            States = new Dictionary<string, IState>();
-            States.Add("Flee", new Flee(_Target));
-
-            _currentState = "Flee";
-
-            _event = "";
+            
         }
+
+        
 
         public override void Run()
         {
             IState temp;
-            States.TryGetValue(_currentState, out temp);
+            
+            if(States.Count > 0)
+            {
+                States.TryGetValue(_currentState, out temp);
 
-            temp.Run();
+                temp.Run();
+            }   
 
         }
 

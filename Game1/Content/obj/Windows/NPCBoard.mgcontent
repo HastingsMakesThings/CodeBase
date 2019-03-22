@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/NPCBoard.png</SourceFile>
-  <SourceTime>2019-03-21T16:30:04.7096174+00:00</SourceTime>
-  <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/NPCBoard.xnb</DestFile>
-  <DestTime>2019-03-21T16:33:35.1245049+00:00</DestTime>
+  <SourceFile>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/NPCBoard.png</SourceFile>
+  <SourceTime>2019-03-21T20:38:10.209714+00:00</SourceTime>
+  <DestFile>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/bin/Windows/NPCBoard.xnb</DestFile>
+  <DestTime>2019-03-21T20:53:59.6509545+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

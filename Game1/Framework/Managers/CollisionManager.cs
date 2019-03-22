@@ -21,8 +21,6 @@ namespace Game1.Framework.Managers
         protected List<IGameObject> _EnemyList;
         // _InteractableList holds all projectiles and pickups in the level
         protected List<IGameObject> _InteractableList;
-        // DECLARE a variable of type IGameObject to hold the player
-        protected IGameObject _Player;
 
         protected ISATCollision _CollisionCheck;
         public CollisionManager()

@@ -44,6 +44,7 @@
     <Compile Include="Framework\EntityCode\AIMind.cs" />
     <Compile Include="Framework\EntityCode\Entity.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\EnemyMind.cs" />
+    <Compile Include="Framework\EntityCode\Sub-Minds\GenericNPC.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\PlayerMind.cs" />
     <Compile Include="Framework\Factories\EntityFactory.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\GameObject.cs" />
@@ -73,15 +74,12 @@
     <Compile Include="Framework\Managers\Collision\SATCollision.cs" />
     <Compile Include="Framework\Managers\SceneManager.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
+    <Compile Include="GameCode\States\2DirectionalMove.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
-    <Compile Include="GameCode\States\HorizontalMovement.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMover.cs" />
-    <Compile Include="GameCode\States\MoveHorizontal.cs" />
-    <Compile Include="GameCode\States\MoveVertical.cs" />
     <Compile Include="GameCode\States\Pursue.cs" />
     <Compile Include="GameCode\States\Seek.cs" />
     <Compile Include="GameCode\States\State.cs" />
-    <Compile Include="GameCode\States\VerticalMovement.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\Mover.cs" />
     <Compile Include="GameCode\Obstacles\Triangle.cs" />
     <Compile Include="GameCode\Obstacles\Obstacle.cs" />

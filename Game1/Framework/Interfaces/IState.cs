@@ -12,5 +12,7 @@ namespace Game1.Framework.Interfaces
         void Run();
 
         void NewTarget(IGameObject pTarget);
+
+        void Initalize(IMover pMover);
     }
 }
