@@ -25,10 +25,12 @@ namespace Game1.GameCode.States
 
         public override void Run()
         {
-            //This calls the update data method, this should happen first
-            UpdateData();
+            
             if (_mMover != null && _mQuarry != null)
             {
+                //This calls the update data method, this should happen first
+                UpdateData();
+
                 //calls the calculate pursue method
                 CalculatePursue();
 
@@ -62,7 +64,7 @@ namespace Game1.GameCode.States
             float TragLenth = newTragectory.Length();
 
             //this variable is the coefficient used to work out how much the object should adjust its ragectory in order to catch the Quarry
-            float tragCoeff;
+            float tragCoeff = 0;
 
             if((TragLenth == 0)||(_tVelocity.Length() == 0 ))
             {
@@ -70,7 +72,7 @@ namespace Game1.GameCode.States
             }
             else
             {
-                tragCoeff = TragLenth / _tVelocity.Length();
+                tragCoeff = Math.Abs(TragLenth / _tVelocity.Length());
             }
 
             //create a vector to hold the quarry future position
@@ -82,6 +84,7 @@ namespace Game1.GameCode.States
 
             //The force will be equal to the max speed multplied by the tragectory, this is then sent to apply force
             Vector2 tragForce = quarFuture * _tMaxSpeed;
+            Console.WriteLine(tragForce);
 
             //this sets the directional values to a nutral state
             _tVerDir = 0;
