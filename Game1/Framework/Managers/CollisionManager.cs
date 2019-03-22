@@ -161,44 +161,58 @@ namespace Game1.Framework.Managers
 
         public void CheckCollision()
         {
+            // create list of regions for teir1 broad phase
             List<IRegion> _RegListTier1 = new List<IRegion>();
-            // Generate regions for tier 1 of broad phase
+            // generate regions for tier 1 of broad phase using screen width,height and origin
             _RegListTier1 = _QuadTree.GenerateQuadrants(0, 0, 1600,900);
-            Console.WriteLine(_RegListTier1.Count);
+            // create list of gameObjects 
+            List<IGameObject> _FinalObjList = new List<IGameObject>();
 
-
-            int i = 1;
-            foreach (IRegion r in _RegListTier1)
+            foreach (IRegion R in _RegListTier1)
             {
                 // create list to hold game objects
+                List<IGameObject> _RegObjListTier1 = new List<IGameObject>();
 
-                foreach(IGameObject g in _GameList)
+                foreach(IGameObject G in _GameList)
                 {
-                    
-                    if (r.CheckBounds(g.XPosition,g.YPosition))
+                    // check if current entity is within bounds
+                    if (R.CheckBounds(G.XPosition,G.YPosition))
                     {
-                        // add g to list
-                        Console.WriteLine("Region: {0}, Object: {1}",i,g);
-                    }
-                    
+                        // if it is add it to the list
+                        _RegObjListTier1.Add(G);
+                    }           
                 }
+                // check to see if the object list for teir 1 is empty
+                if (_RegObjListTier1.Count > 1)
+                {
+                    // if not repeat the proccess
+                    List<IRegion> _RegListTier2 = new List<IRegion>();
+                    // use current regions values to generate the quadrants
+                    _RegListTier2 = _QuadTree.GenerateQuadrants(R.RegionXPos, R.RegionYPos, R.RegionWidth, R.RegionHeight);
 
-                // if list not empty
-                    // generate quadrant(r.x, r.y, r.width, r.height)
+                    foreach (IRegion r in _RegListTier2)
+                    {
+                        List<IGameObject> _RegObjListTier2 = new List<IGameObject>();
 
-                i++;
+                        foreach (IGameObject g in _RegObjListTier1)
+                        {
+                            // check if current entity is within bounds
+                            if (r.CheckBounds(g.XPosition, g.YPosition))
+                            {
+                                // if it is add it to the list
+                                _RegObjListTier2.Add(g);
+                            }
+                        }
+
+                        if (_RegObjListTier2.Count > 2)
+                        {
+                            _FinalObjList = _RegObjListTier2;
+                        }
+                    } 
+                }
             }
 
-            // create a list of IRegion called tier 1
-            // pass in screen values to create four regions
-            // make a for loop, for each region in teir 1 go through game list
-            // and its possition is inside that region add it to the list
-            // if list is empty, end there and go to next region
-            // if it isnt empty, save list of game objects
-            // then send the values of that region back in the quadtree to create another list of four regions called tier 2
-            // then take tier 2 list 
-
-            Collision(_GameList);
+            Collision(_FinalObjList);
         }
 
         public void GrabGameList(List<IGameObject> pGameList)

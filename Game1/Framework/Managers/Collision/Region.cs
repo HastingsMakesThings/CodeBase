@@ -60,7 +60,4 @@ namespace Game1.Framework.Managers.Collision
         }
         #endregion
     }
-
-
-
 }
