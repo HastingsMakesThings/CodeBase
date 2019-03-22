@@ -64,6 +64,7 @@
     <Compile Include="Framework\Interfaces\Managers\ISATCollision.cs" />
     <Compile Include="Framework\Interfaces\Managers\IRenderManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISceneManager.cs" />
+    <Compile Include="Framework\Interfaces\Managers\ISoundManager.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IGameObject.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMenuItem.cs" />
     <Compile Include="Framework\Managers\AIManager.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Framework\Managers\RenderManager.cs" />
     <Compile Include="Framework\Managers\Collision\SATCollision.cs" />
     <Compile Include="Framework\Managers\SceneManager.cs" />
+    <Compile Include="Framework\Managers\SoundManager.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
     <Compile Include="GameCode\States\HorizontalMovement.cs" />

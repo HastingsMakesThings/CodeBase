@@ -30,6 +30,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         void Initialise(float pX, float pY, Texture2D pTexture, float pScale, Boolean pStatic);
 
+        void playSound(string soundClip);
+
         float ProXAngle { get; }
 
         float ProYAngle { get; }

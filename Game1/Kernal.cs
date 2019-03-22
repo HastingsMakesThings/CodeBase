@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Audio;
 using Game1.Framework.Interfaces.Managers;
 using Game1.Framework.Managers;
 
@@ -18,7 +19,7 @@ namespace Game1
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        
         public static int ScreenHeight;
         public static int ScreenWidth;
 
@@ -42,7 +43,8 @@ namespace Game1
         ICollisionManager _CollisionMgr;
         // _AIMgr will be used to handle the AI
         IAIManager _AIMgr;
-
+        // _SoundMgr will be used to handle the sound
+        ISoundManager _SoundMgr;
 
         public Kernal()
         {
@@ -81,6 +83,7 @@ namespace Game1
             _EntityMgr = new EntityManager(Content);
             _KeyBMgr = new KeyboardManager();
             _MouseMgr = new MouseManager();
+            _SoundMgr = new SoundManager(Content);
             _CollisionMgr = new CollisionManager();
             _AIMgr = new AIManager();
 
@@ -89,6 +92,7 @@ namespace Game1
             _MList.Add(_EntityMgr);
             _MList.Add(_KeyBMgr);
             _MList.Add(_MouseMgr);
+            _MList.Add(_SoundMgr);
             _MList.Add(_CollisionMgr);
             _MList.Add(_AIMgr);
 
