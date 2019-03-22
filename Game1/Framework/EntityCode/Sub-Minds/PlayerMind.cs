@@ -7,33 +7,38 @@ using Game1.Framework.EntityCode;
 using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.GameCode.States;
+using Game1.Framework.Managers;
 namespace Game1.Framework.EntityCode.Sub_Minds
 {
     class PlayerMind : AIMind
     {
-        // Target of the current mind prefix with '_'
-        protected IMover _Target;
+        
 
        
-        public PlayerMind(IMover _pTarget)
+        public PlayerMind()
         {
-            _Target = _pTarget;
-
-            States = new Dictionary<string, IState>();
-            States.Add("Flee", new Flee(_Target));
-
-            _currentState = "Flee";
-
-            _event = "";
+            
         }
+
+        
 
         public override void Run()
         {
             IState temp;
-            States.TryGetValue(_currentState, out temp);
+            
+            if(States.Count > 0)
+            {
+                States.TryGetValue(_currentState, out temp);
 
-            temp.Run();
+                temp.Run();
+            }
 
+            if (KeyboardManager.oneKey)
+                _event = "Flee from Me";
+            if (KeyboardManager.twoKey)
+                _event = "Seek Me";
+            if (KeyboardManager.threeKey)
+                _event = "Pursue Me";
         }
 
         public override void EventData(string pEvent, IGameObject pTrigger)
@@ -51,6 +56,19 @@ namespace Game1.Framework.EntityCode.Sub_Minds
         public override String CreateEvent()
         {
             return  _event;
+        }
+
+        public override void Initalize(IMover _pTarget)
+        {
+            _mMover = _pTarget;
+
+            States = new Dictionary<string, IState>();
+
+            _event = "";
+
+            this._pTarget = (IGameObject)_pTarget;
+
+
         }
     }
 }

@@ -18,18 +18,19 @@ namespace Game1.GameCode.States
         //The _mQuarry is the gameobject that the State persues out
         IGameObject _mQuarry;
         //constructor, takes in a target Mover
-        public Pursue(IMover pTarget)
+        public Pursue()
         {
-            //sets the target Imover that this behaviour will affect
-            _mTarget = pTarget;
+            
         }
 
         public override void Run()
         {
-            //This calls the update data method, this should happen first
-            UpdateData();
-            if (_mTarget != null && _mQuarry != null)
+            
+            if (_mMover != null && _mQuarry != null)
             {
+                //This calls the update data method, this should happen first
+                UpdateData();
+
                 //calls the calculate pursue method
                 CalculatePursue();
 
@@ -40,7 +41,7 @@ namespace Game1.GameCode.States
         }
 
         //this method assings a new target for the IMoer to move towards
-        public void NewTarget(IGameObject pQuarry)
+        public override void NewTarget(IGameObject pQuarry)
         {
             _mQuarry = pQuarry;
         }
@@ -51,7 +52,7 @@ namespace Game1.GameCode.States
 
             //declare some vectors for the location of both objects
 
-            Vector2 myPos = _mTarget.oPostion;
+            Vector2 myPos = _mMover.oPostion;
 
             Vector2 quarPos = _mQuarry.Position;
 
@@ -63,25 +64,44 @@ namespace Game1.GameCode.States
             float TragLenth = newTragectory.Length();
 
             //this variable is the coefficient used to work out how much the object should adjust its ragectory in order to catch the Quarry
-            float tragCoeff;
+            float tragCoeff = 0;
+
             if((TragLenth == 0)||(_tVelocity.Length() == 0 ))
             {
                 tragCoeff = 0;
             }
             else
             {
-                tragCoeff = TragLenth / _tVelocity.Length();
+                tragCoeff = Math.Abs(TragLenth / _tVelocity.Length());
             }
 
             //create a vector to hold the quarry future position
             Vector2 quarFuture = new Vector2((quarPos.X + (_mQuarry.XVelocity * tragCoeff)), (quarPos.Y + (_mQuarry.YVelocity * tragCoeff)));
 
+
+            Vector2 finalDirection = new Vector2((quarFuture.X - myPos.X), (quarFuture.Y - myPos.Y));
             //This quarry future vector is the location the quarry will be in when the IMover reaches the location
             //normalize that vector
-            quarFuture.Normalize();
+            finalDirection.Normalize();
 
             //The force will be equal to the max speed multplied by the tragectory, this is then sent to apply force
-            Vector2 tragForce = quarFuture * _tMaxSpeed;
+            Vector2 tragForce = finalDirection * _tMaxSpeed;
+           
+
+            //this sets the directional values to a nutral state
+            _tVerDir = 0;
+            _tHorDir = 0;
+
+            //This should add values to the vertical direction so that if one key is pressed it moves in that direction, if both are pressed, no additional movment
+            if (tragForce.Y > 0)
+                _tVerDir += 1;
+            if (tragForce.Y < 0)
+                _tVerDir += -1;
+
+            if (tragForce.X > 0)
+                _tHorDir += 1;
+            if (tragForce.X < 0)
+                _tHorDir += -1;
 
             // apply the new force with the apply force method
             ApplyForce(tragForce);

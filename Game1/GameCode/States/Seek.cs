@@ -18,17 +18,16 @@ namespace Game1.GameCode.States
         //The _mTelos is the gameobject that the State seeks out
         IGameObject _mTelos;
         //constructor, takes in a target Mover
-        public Seek(IMover pTarget )
+        public Seek( )
         {
-            //sets the target Imover that this behaviour will affect
-            _mTarget = pTarget;
+           
         }
 
         public override void Run()
         {
             //This calls the update data method, this should happen first
             UpdateData();
-            if(_mTarget != null&& _mTelos != null)
+            if(_mMover != null&& _mTelos != null)
             {
                 //calls the calculate seek method
                 CalculateSeek();
@@ -40,7 +39,7 @@ namespace Game1.GameCode.States
         }
 
         //this method assings a new target for the IMoer to move towards
-        public void NewTarget(IGameObject pTelos)
+        public override void NewTarget(IGameObject pTelos)
         {
             _mTelos = pTelos;
         }
@@ -51,7 +50,7 @@ namespace Game1.GameCode.States
             
             //declare some vectors for the location of both objects
 
-            Vector2 myPos = _mTarget.oPostion;
+            Vector2 myPos = _mMover.oPostion;
 
             Vector2 telPos = _mTelos.Position;
 
@@ -64,6 +63,21 @@ namespace Game1.GameCode.States
 
             //The force will be equal to the max speed multplied by the tragectory, hthis is then sent to apply force
             Vector2 tragForce = newTragectory * _tMaxSpeed;
+
+            //this sets the directional values to a nutral state
+            _tVerDir = 0;
+            _tHorDir = 0;
+
+            //This should add values to the vertical direction so that if one key is pressed it moves in that direction, if both are pressed, no additional movment
+            if (tragForce.Y > 0)
+                _tVerDir += 1;
+            if (tragForce.Y < 0)
+                _tVerDir += -1;
+
+            if (tragForce.X > 0)
+                _tHorDir += 1;
+            if (tragForce.X < 0)
+                _tHorDir += -1;
 
             // apply the new force with the apply force method
             ApplyForce(tragForce);

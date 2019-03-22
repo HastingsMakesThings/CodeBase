@@ -155,7 +155,7 @@ namespace Game1.Framework.Managers
         }
 
 
-        
+
 
         #endregion
 
@@ -165,7 +165,7 @@ namespace Game1.Framework.Managers
             List<IRegion> _RegListTier1 = new List<IRegion>();
             // generate regions for tier 1 of broad phase using screen width,height and origin
             _RegListTier1 = _QuadTree.GenerateQuadrants(0, 0, 1600,900);
-            // create list of gameObjects 
+            // create list of gameObjects
             List<IGameObject> _FinalObjList = new List<IGameObject>();
 
             foreach (IRegion R in _RegListTier1)
@@ -180,7 +180,7 @@ namespace Game1.Framework.Managers
                     {
                         // if it is add it to the list
                         _RegObjListTier1.Add(G);
-                    }           
+                    }
                 }
                 // check to see if the object list for teir 1 is empty
                 if (_RegObjListTier1.Count > 1)
@@ -208,7 +208,7 @@ namespace Game1.Framework.Managers
                         {
                             _FinalObjList = _RegObjListTier2;
                         }
-                    } 
+                    }
                 }
             }
 
@@ -223,7 +223,7 @@ namespace Game1.Framework.Managers
         public void Update()
         {
             CheckCollision();
-            
+
         }
 
         #region Properties

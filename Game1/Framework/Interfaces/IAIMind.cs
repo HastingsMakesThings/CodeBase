@@ -22,5 +22,10 @@ namespace Game1.Framework.Interfaces
 
         //this allows the Mind to return the game object its attached to in order to allow it t be publicised
         IGameObject EventTrigger();
+
+        //This allows states to be added
+        void AddState<T>(String pKey, IMover pMover) where T : IState, new();
+
+        void Initalize(IMover _pTarget);
     }
 }

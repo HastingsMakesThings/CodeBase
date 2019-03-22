@@ -44,6 +44,7 @@
     <Compile Include="Framework\EntityCode\AIMind.cs" />
     <Compile Include="Framework\EntityCode\Entity.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\EnemyMind.cs" />
+    <Compile Include="Framework\EntityCode\Sub-Minds\GenericNPC.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\PlayerMind.cs" />
     <Compile Include="Framework\Factories\EntityFactory.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\GameObject.cs" />
@@ -79,19 +80,17 @@
     <Compile Include="Framework\Managers\SceneManager.cs" />
     <Compile Include="Framework\Managers\SoundManager.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
+    <Compile Include="GameCode\States\2DirectionalMove.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
-    <Compile Include="GameCode\States\HorizontalMovement.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMover.cs" />
-    <Compile Include="GameCode\States\MoveHorizontal.cs" />
-    <Compile Include="GameCode\States\MoveVertical.cs" />
     <Compile Include="GameCode\States\Pursue.cs" />
     <Compile Include="GameCode\States\Seek.cs" />
     <Compile Include="GameCode\States\State.cs" />
-    <Compile Include="GameCode\States\VerticalMovement.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\Mover.cs" />
     <Compile Include="GameCode\Obstacles\Triangle.cs" />
     <Compile Include="GameCode\Obstacles\Obstacle.cs" />
     <Compile Include="GameCode\Scenes\Menus\TestMenu.cs" />
+    <Compile Include="GameCode\States\TextureEdit.cs" />
     <Compile Include="GameCode\UI\Cursor.cs" />
     <Compile Include="GameCode\PlayerCode\Player.cs" />
     <Compile Include="GameCode\Scenes\Levels\TestScene.cs" />
@@ -116,7 +115,7 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

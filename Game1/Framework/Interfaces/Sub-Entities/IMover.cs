@@ -33,6 +33,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         //And Staring Kristian Nairn as..
         float oHorDir { get; }
 
+        Vector2 oAccel { get; set; }
+
         IAIMind getMind { get; }
     }
 }
