@@ -36,5 +36,7 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         Vector2 oAccel { get; set; }
 
         IAIMind getMind { get; }
+
+        int textureSets { get; set; }
     }
 }

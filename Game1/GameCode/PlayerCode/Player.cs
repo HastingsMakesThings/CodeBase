@@ -27,11 +27,15 @@ namespace Game1.GameCode.PlayerCode
             // Initialise Mind
             _MyMind = new PlayerMind();
             _MyMind.Initalize(this);
+            _MyMind.AddState<TextureEdit>("Tex", this);
             _MyMind.AddState<_2DMove>("Mover",this);
+            
 
             _mMass = 20;
             _maxSpeed = 10;
             _mFriction = -6;
+          //  float tWidth4 = _Texture.Width / 4;
+
         }
 
         public override void Update()
@@ -45,13 +49,17 @@ namespace Game1.GameCode.PlayerCode
 
             CalculateVertexes();
 
-            
-            
+
+            //Vector2 textueBounds = new Vector2((_Texture.Width / 4), _Texture.Height);
+
+            //_textureBounds = textueBounds;
+            _Texture = _textures[_texNum];
         }
 
         public  override void CollReact(Vector2 pMTV)
         {
             this.Position = Position + pMTV;
+            
         }
     }
 }

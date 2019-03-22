@@ -199,3 +199,6 @@ C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86
 C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
 C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\obj\x86\Debug\Game1.csprojResolveAssemblyReference.cache
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player1.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player2.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player3.xnb

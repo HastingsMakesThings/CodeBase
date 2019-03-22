@@ -23,15 +23,25 @@ namespace Game1.Framework.Factories
 
         // CreateEntity generates objects of type IGameObject
         // Pass in X and Y position, Texture, Scale and its Static state
-        public IGameObject CreateGameObject<T>(float pX, float pY, string pTexture, float pScale, Boolean pStatic) where T : IGameObject, new()
+        public IGameObject CreateGameObject<T>(float pX, float pY, string[] pTexture, float pScale, Boolean pStatic) where T : IGameObject, new()
         {
             try
             {
                 IGameObject _GameObject = new T();
 
-                Texture2D _Texture = _Content.Load<Texture2D>(pTexture);
+               
+                
 
-                _GameObject.Initialise(pX, pY, _Texture, pScale, pStatic);
+                _GameObject.Initialise(pX, pY, pScale, pStatic, pTexture.Count());
+
+                foreach (string temptex in pTexture)
+                {
+                    Texture2D _Texture = _Content.Load<Texture2D>(temptex);
+
+                    _GameObject.AddTexture(_Texture);
+                }
+
+                _GameObject.Setup();
 
                 return _GameObject;
 

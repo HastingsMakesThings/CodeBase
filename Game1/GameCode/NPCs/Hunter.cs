@@ -23,6 +23,7 @@ namespace Game1.GameCode.NPCs
             _MyMind = new GenericNPC();
             _MyMind.Initalize(this);
             _MyMind.AddState<Pursue>("Pursue", this);
+            
 
             _mMass = 3;
             _maxSpeed = 5;

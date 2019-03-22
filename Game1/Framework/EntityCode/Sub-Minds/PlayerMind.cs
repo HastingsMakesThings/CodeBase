@@ -29,7 +29,10 @@ namespace Game1.Framework.EntityCode.Sub_Minds
             if(States.Count > 0)
             {
                 States.TryGetValue(_currentState, out temp);
+               
+                temp.Run();
 
+                States.TryGetValue("Tex", out temp);
                 temp.Run();
             }
 

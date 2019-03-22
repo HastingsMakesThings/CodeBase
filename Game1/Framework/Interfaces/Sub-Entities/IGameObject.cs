@@ -28,7 +28,11 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         int VerDir { get; set; }
 
-        void Initialise(float pX, float pY, Texture2D pTexture, float pScale, Boolean pStatic);
+        void Initialise(float pX, float pY, float pScale, Boolean pStatic, int pTexNums);
+
+        void Setup();
+
+        void AddTexture(Texture2D pTexture);
 
         float ProXAngle { get; }
 

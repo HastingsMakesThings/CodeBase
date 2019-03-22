@@ -168,10 +168,8 @@ namespace Game1.Framework.Managers
             // create list of gameObjects
             List<IGameObject> _FinalObjList = new List<IGameObject>();
 
-            for (int ter1 = 0; ter1 < _RegListTier1.Count; ter1++)
+            foreach (IRegion R in _RegListTier1)
             {
-                
-                IRegion R = _RegListTier1[ter1];
                 // create list to hold game objects
                 List<IGameObject> _RegObjListTier1 = new List<IGameObject>();
 
@@ -206,17 +204,15 @@ namespace Game1.Framework.Managers
                             }
                         }
 
-                        if (_RegObjListTier2.Count > 1)
+                        if (_RegObjListTier2.Count > 2)
                         {
                             _FinalObjList = _RegObjListTier2;
-
-                            Collision(_FinalObjList);
                         }
                     }
                 }
             }
 
-           
+            Collision(_FinalObjList);
         }
 
         public void GrabGameList(List<IGameObject> pGameList)

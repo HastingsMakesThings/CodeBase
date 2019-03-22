@@ -28,6 +28,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Rectangle _ProjectedX;
         // Rectangle for Projected Y prefix with '_'
         protected Rectangle _ProjectedY;
+        protected int _texNum;
 
         //Deffine an array to hold all of the vertex of the object
         protected Vector2[] _Vertexes;
@@ -47,14 +48,14 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         public GameObject()
         {
-
+            _texNum = 0;
         }
 
-        public void Initialise(float pX, float pY, Texture2D pTexture, float pScale, Boolean pStatic)
+        public void Initialise(float pX, float pY, float pScale, Boolean pStatic, int pTexNums)
         {
-            _Texture = pTexture;
+           
 
-            _Origin = new Vector2(0, _Texture.Height);
+          
 
             _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
             _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
@@ -63,21 +64,22 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
             _Static = pStatic;
 
-            if (Type != "Obstacle")
-            {
-                Console.WriteLine("{0} Created!", _Texture);
-                Console.WriteLine("X:{0}, Y:{1}", _Position.X, _Position.Y);
-                Console.WriteLine("Scale:{0}, Static:{1}", _Scale, _Static);
-            }
+            _textures = new Texture2D[pTexNums];
+           
 
-            // Run this once so objects get their starting axies projected
-            // if an object is static then there is no need to run this more than once
-            // if an object is not static then run the methods below in that objects update method
-            CalculateProjectedX();
-            CalculateProjectedY();
 
-            //Calls the calculate vertexes method
-            CalculateVertexes();
+           
+        }
+
+        public void AddTexture(Texture2D pTexture)
+        {
+            _textures[_texNum] = pTexture;
+            
+
+            _textureBounds = new Vector2(pTexture.Width, pTexture.Height);
+
+            _Texture = _textures[_texNum];
+            _texNum++;
         }
 
         public void CalculateProjectedX()
@@ -144,8 +146,30 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
+        public void Setup()
+        {
+            if (Type != "Obstacle")
+            {
+                Console.WriteLine("{0} Created!", _Texture);
+                Console.WriteLine("X:{0}, Y:{1}", _Position.X, _Position.Y);
+                Console.WriteLine("Scale:{0}, Static:{1}", _Scale, _Static);
+            }
+
+
+            // Run this once so objects get their starting axies projected
+            // if an object is static then there is no need to run this more than once
+            // if an object is not static then run the methods below in that objects update method
+            CalculateProjectedX();
+            CalculateProjectedY();
+
+            //Calls the calculate vertexes method
+            CalculateVertexes();
+
+            _texNum = _texNum - 1;
+        }
+
         //The purpose of this method is to move the game object in a realistic manner
-       
+
         #region Properties
 
         public float ProXAngle
