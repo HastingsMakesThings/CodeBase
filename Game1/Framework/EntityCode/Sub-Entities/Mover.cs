@@ -9,7 +9,7 @@ using Game1.Framework.EntityCode.Sub_Entities;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces;
 
-namespace Game1.GameCode.Movers
+namespace Game1.Framework.EntityCode.Sub_Entities
 {
     abstract class Mover : GameObject, IMover
     {

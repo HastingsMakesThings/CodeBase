@@ -29,12 +29,12 @@ namespace Game1.GameCode.Scenes.Levels
 
             for (int i = 0; i < 1; i++)
             {
-                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((64 * i) + 800, 500, "Obstacle", 1, true));
+                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((64 * i) + 200, 500, "Obstacle", 1, true));
             }
 
-            _GameList.Add(pEntityFac.CreateGameObject<Player>(800, 400, "Player", 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Player>(300, 400, "Player", 1, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(800, 700, "Obstacle", 1, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(1100, 700, "Obstacle", 1, true));
         }
 
         public List<IGameObject> GameList

@@ -11,7 +11,7 @@ using Game1.GameCode.States;
 using Game1.Framework.EntityCode.Sub_Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Game1.GameCode.Movers;
+using Game1.Framework.EntityCode.Sub_Entities;
 using Game1.Framework.EntityCode.Sub_Minds;
 
 namespace Game1.GameCode.PlayerCode

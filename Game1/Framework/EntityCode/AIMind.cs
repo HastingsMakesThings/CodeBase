@@ -14,7 +14,7 @@ namespace Game1.Framework.EntityCode
         private IGameObject pTarget;
         protected Dictionary<string, IState> States;
 
-        //This string holds the ucrrent state of the Player Mind
+        //This string holds the current state of the Player Mind
         protected string _currentState;
 
         protected string _event;
