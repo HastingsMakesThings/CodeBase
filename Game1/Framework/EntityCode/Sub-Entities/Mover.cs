@@ -9,14 +9,14 @@ using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces;
 
 namespace Game1.Framework.EntityCode.Sub_Entities
-{ 
+{
     abstract class Mover : GameObject, IMover
     {
         //realistic movment code
 
         //DECLAREsome physics instance variables
 
-        //Value for the mass of the Gameobject 
+        //Value for the mass of the Gameobject
         protected float _mMass;
 
         //a value for the acceleration
@@ -35,7 +35,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected IAIMind _MyMind;
 
 
-        
+
         //This allows the objects mass to be obtained
         public float oMass
         {

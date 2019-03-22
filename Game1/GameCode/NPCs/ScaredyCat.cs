@@ -37,6 +37,6 @@ namespace Game1.GameCode.NPCs
             this.Position = Position + pMTV;
         }
 
-       
+
     }
 }

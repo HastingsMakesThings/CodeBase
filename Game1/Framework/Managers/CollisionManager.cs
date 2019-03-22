@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
+using Game1.Framework.Managers.Collision;
+using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Managers;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.GameCode.Obstacles;
@@ -21,15 +23,19 @@ namespace Game1.Framework.Managers
         protected List<IGameObject> _EnemyList;
         // _InteractableList holds all projectiles and pickups in the level
         protected List<IGameObject> _InteractableList;
-
+        // DECLARE a variable of type IGameObject to hold the player
+        protected IGameObject _Player;
+        protected IQuadTree _QuadTree;
         protected ISATCollision _CollisionCheck;
+
         public CollisionManager()
         {
             _WallList = new List<IGameObject>();
             _EnemyList = new List<IGameObject>();
             _InteractableList = new List<IGameObject>();
-
+            _QuadTree = new QuadTree();
             _CollisionCheck = new SATCollision();
+
         }
 
         #region RangeChecking
@@ -106,11 +112,12 @@ namespace Game1.Framework.Managers
 
         #region Collision
 
-        public void Collision()
+        public void Collision(List<IGameObject> pGList)
         {
-            foreach (IGameObject first in _GameList)
+
+            foreach (IGameObject first in pGList)
             {
-                foreach (IGameObject second in _GameList)
+                foreach (IGameObject second in pGList)
                 {
                     if (first != second)
                     {
@@ -144,16 +151,54 @@ namespace Game1.Framework.Managers
                     }
                 }
             }
+
         }
 
 
-        
+
 
         #endregion
 
         public void CheckCollision()
         {
-            Collision();
+            List<IRegion> _RegListTier1 = new List<IRegion>();
+            // Generate regions for tier 1 of broad phase
+            _RegListTier1 = _QuadTree.GenerateQuadrants(0, 0, 1600,900);
+            Console.WriteLine(_RegListTier1.Count);
+
+
+            int i = 1;
+            foreach (IRegion r in _RegListTier1)
+            {
+                // create list to hold game objects
+
+                foreach(IGameObject g in _GameList)
+                {
+
+                    if (r.CheckBounds(g.XPosition,g.YPosition))
+                    {
+                        // add g to list
+                        Console.WriteLine("Region: {0}, Object: {1}",i,g);
+                    }
+
+                }
+
+                // if list not empty
+                    // generate quadrant(r.x, r.y, r.width, r.height)
+
+                i++;
+            }
+
+            // create a list of IRegion called tier 1
+            // pass in screen values to create four regions
+            // make a for loop, for each region in teir 1 go through game list
+            // and its possition is inside that region add it to the list
+            // if list is empty, end there and go to next region
+            // if it isnt empty, save list of game objects
+            // then send the values of that region back in the quadtree to create another list of four regions called tier 2
+            // then take tier 2 list
+
+            Collision(_GameList);
         }
 
         public void GrabGameList(List<IGameObject> pGameList)
@@ -164,7 +209,7 @@ namespace Game1.Framework.Managers
         public void Update()
         {
             CheckCollision();
-            
+
         }
 
         #region Properties

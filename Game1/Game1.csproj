@@ -50,6 +50,7 @@
     <Compile Include="Framework\EntityCode\Sub-Entities\GameObject.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\MenuItem.cs" />
     <Compile Include="Framework\Interfaces\IAIMind.cs" />
+    <Compile Include="Framework\Interfaces\IRegion.cs" />
     <Compile Include="Framework\Interfaces\IState.cs" />
     <Compile Include="Framework\Interfaces\IEntity.cs" />
     <Compile Include="Framework\Interfaces\IEntityFactory.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Framework\Interfaces\Managers\IKeyboardManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IMouseManager.cs" />
+    <Compile Include="Framework\Interfaces\IQuadTree.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISATCollision.cs" />
     <Compile Include="Framework\Interfaces\Managers\IRenderManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISceneManager.cs" />
@@ -67,6 +69,8 @@
     <Compile Include="Framework\Interfaces\Sub-Entities\IMenuItem.cs" />
     <Compile Include="Framework\Managers\AIManager.cs" />
     <Compile Include="Framework\Managers\CollisionManager.cs" />
+    <Compile Include="Framework\Managers\Collision\QuadTree.cs" />
+    <Compile Include="Framework\Managers\Collision\Region.cs" />
     <Compile Include="Framework\Managers\EntityManager.cs" />
     <Compile Include="Framework\Managers\KeyboardManager.cs" />
     <Compile Include="Framework\Managers\MouseManager.cs" />
