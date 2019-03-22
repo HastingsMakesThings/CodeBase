@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Cursor.png</SourceFile>
-  <SourceTime>2019-03-21T20:38:10.179772+00:00</SourceTime>
-  <DestFile>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/bin/Windows/Cursor.xnb</DestFile>
-  <DestTime>2019-03-21T20:53:58.2998176+00:00</DestTime>
+  <SourceFile>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</SourceFile>
+  <SourceTime>2019-03-21T20:41:19.280036+00:00</SourceTime>
+  <DestFile>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Cursor.xnb</DestFile>
+  <DestTime>2019-03-22T11:59:12.0312693+00:00</DestTime>
   <Importer>TextureImporter</Importer>
-  <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
+  <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
-  <ProcessorTime>2017-03-01T15:05:36+00:00</ProcessorTime>
+  <ProcessorTime>2018-12-08T16:35:54+00:00</ProcessorTime>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>255,0,255,255</Value>

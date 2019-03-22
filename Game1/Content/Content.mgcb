@@ -25,6 +25,12 @@
 /processorParam:TextureFormat=Color
 /build:Cursor.png
 
+#begin EH.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:EH.wav
+
 #begin Hastings_4tile.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -60,6 +66,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Obstacle.png
+
+#begin OH.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:OH.wav
 
 #begin Player.png
 /importer:TextureImporter

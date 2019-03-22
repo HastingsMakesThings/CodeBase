@@ -65,6 +65,7 @@
     <Compile Include="Framework\Interfaces\Managers\ISATCollision.cs" />
     <Compile Include="Framework\Interfaces\Managers\IRenderManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISceneManager.cs" />
+    <Compile Include="Framework\Interfaces\Managers\ISoundManager.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IGameObject.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMenuItem.cs" />
     <Compile Include="Framework\Managers\AIManager.cs" />
@@ -77,8 +78,7 @@
     <Compile Include="Framework\Managers\RenderManager.cs" />
     <Compile Include="Framework\Managers\Collision\SATCollision.cs" />
     <Compile Include="Framework\Managers\SceneManager.cs" />
-    <Compile Include="GameCode\NPCs\Buddy.cs" />
-    <Compile Include="GameCode\NPCs\Hunter.cs" />
+    <Compile Include="Framework\Managers\SoundManager.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
     <Compile Include="GameCode\States\2DirectionalMove.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
@@ -115,7 +115,7 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

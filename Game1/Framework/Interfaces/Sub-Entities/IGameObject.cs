@@ -34,6 +34,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         void AddTexture(Texture2D pTexture);
 
+        void playSound(string soundClip);
+
         float ProXAngle { get; }
 
         float ProYAngle { get; }
