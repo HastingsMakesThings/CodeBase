@@ -202,3 +202,7 @@ C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\obj\x86\Debug\G
 C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player1.xnb
 C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player2.xnb
 C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player3.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\EH.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\OH.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\EH.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\OH.xnb

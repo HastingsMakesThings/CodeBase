@@ -79,6 +79,8 @@
     <Compile Include="Framework\Managers\Collision\SATCollision.cs" />
     <Compile Include="Framework\Managers\SceneManager.cs" />
     <Compile Include="Framework\Managers\SoundManager.cs" />
+    <Compile Include="GameCode\NPCs\Buddy.cs" />
+    <Compile Include="GameCode\NPCs\Hunter.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
     <Compile Include="GameCode\States\2DirectionalMove.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
