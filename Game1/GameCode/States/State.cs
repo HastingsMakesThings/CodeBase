@@ -75,10 +75,15 @@ namespace Game1.GameCode.States
             _tFriction = _mMover.oFriction;
 
             _mAccel = _mMover.oAccel;
+
+            speed = (float)Math.Sqrt((_tVelocity.X * _tVelocity.X) + (_tVelocity.Y * _tVelocity.Y));
+           // Console.WriteLine(speed);
+            _mDrag = _tFriction * _tVelocity * speed;
         }
         protected virtual void Move()
         {
 
+           
             //Set the Acceleration of game object based on the force being applied to the target gameobject if it does not equal zero
             if (_mForce.X != 0)
                 _mAccel.X += _mForce.X / _tMass;
@@ -90,28 +95,27 @@ namespace Game1.GameCode.States
             else
                 _mAccel.Y = 0;
 
+            
             _mMover.oAccel = _mAccel;
             //Addjust the veloctiy of an object by appling the acceleration
+            
 
             _tVelocity.X += _mAccel.X;
             _tVelocity.Y += _mAccel.Y;
 
-            speed = (float)Math.Sqrt((_tVelocity.X * _tVelocity.X) + (_tVelocity.Y * _tVelocity.Y));
-
-            _mDrag = _tFriction * _tVelocity * speed;
-
+            _tVelocity -= _mDrag;
             //This capps the velocity
             if ((Math.Abs(_tVelocity.X) >= _tMaxSpeed))
-                _tVelocity.X = _tMaxSpeed * _tHorDir;
+                _tVelocity.X = (_tMaxSpeed* _tHorDir);
 
             if ((Math.Abs(_tVelocity.Y) >= _tMaxSpeed))
-                _tVelocity.Y = _tMaxSpeed * _tVerDir;
+                _tVelocity.Y = (_tMaxSpeed * _tVerDir);
             
             //update the position of the Game object based on velocity
             _mMover.oPostion += _tVelocity;
 
-            
 
+           
            // _mMover.oPostion = _tPosition;
             //this resets the force
             _mForce = Vector2.Zero;

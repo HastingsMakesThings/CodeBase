@@ -29,9 +29,9 @@ namespace Game1.GameCode.PlayerCode
             _MyMind.Initalize(this);
             _MyMind.AddState<_2DMove>("Mover",this);
 
-            _mMass = 15;
+            _mMass = 20;
             _maxSpeed = 10;
-            _mFriction = -1;
+            _mFriction = -6;
         }
 
         public override void Update()

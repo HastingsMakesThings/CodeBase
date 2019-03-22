@@ -90,6 +90,7 @@
     <Compile Include="GameCode\Obstacles\Triangle.cs" />
     <Compile Include="GameCode\Obstacles\Obstacle.cs" />
     <Compile Include="GameCode\Scenes\Menus\TestMenu.cs" />
+    <Compile Include="GameCode\States\TextureEdit.cs" />
     <Compile Include="GameCode\UI\Cursor.cs" />
     <Compile Include="GameCode\PlayerCode\Player.cs" />
     <Compile Include="GameCode\Scenes\Levels\TestScene.cs" />
