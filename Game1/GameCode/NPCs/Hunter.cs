@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.EntityCode.Sub_Entities;
 using Game1.Framework.Interfaces;
 using Game1.Framework.EntityCode.Sub_Minds;
@@ -12,24 +11,22 @@ using Microsoft.Xna.Framework;
 
 namespace Game1.GameCode.NPCs
 {
-    //the ScaredyCat is a NPC that will flee from a trigger
-    class ScaredyCat : Mover
+    class Hunter : Mover
     {
-        public ScaredyCat()
+        public Hunter()
         {
-            //ConstructorCode
+            // ConstructorCode
 
-            Type = "ScaredyCat";
+            Type = "Hunter";
 
             //initalise mind
             _MyMind = new GenericNPC();
             _MyMind.Initalize(this);
-            _MyMind.AddState<Flee>("Flee", this);
+            _MyMind.AddState<Pursue>("Pursue", this);
 
-            _mMass = 5;
-            _maxSpeed = 10;
+            _mMass = 3;
+            _maxSpeed = 5;
             _mFriction = -0.5f;
-
         }
 
         public override void CollReact(Vector2 pMTV)
@@ -42,6 +39,5 @@ namespace Game1.GameCode.NPCs
         {
             CalculateVertexes();
         }
-
     }
 }

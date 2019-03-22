@@ -29,8 +29,8 @@ namespace Game1.GameCode.PlayerCode
             _MyMind.Initalize(this);
             _MyMind.AddState<_2DMove>("Mover",this);
 
-            _mMass = 3;
-            _maxSpeed = 20;
+            _mMass = 15;
+            _maxSpeed = 10;
             _mFriction = -0.5f;
         }
 
@@ -44,6 +44,9 @@ namespace Game1.GameCode.PlayerCode
 
 
             CalculateVertexes();
+
+            
+            
         }
 
         public  override void CollReact(Vector2 pMTV)

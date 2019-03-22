@@ -18,10 +18,9 @@ namespace Game1.GameCode.States
         //The _mQuarry is the gameobject that the State persues out
         IGameObject _mQuarry;
         //constructor, takes in a target Mover
-        public Pursue(IMover pTarget)
+        public Pursue()
         {
-            //sets the target Imover that this behaviour will affect
-            _mMover = pTarget;
+            
         }
 
         public override void Run()
@@ -64,6 +63,7 @@ namespace Game1.GameCode.States
 
             //this variable is the coefficient used to work out how much the object should adjust its ragectory in order to catch the Quarry
             float tragCoeff;
+
             if((TragLenth == 0)||(_tVelocity.Length() == 0 ))
             {
                 tragCoeff = 0;
@@ -82,6 +82,21 @@ namespace Game1.GameCode.States
 
             //The force will be equal to the max speed multplied by the tragectory, this is then sent to apply force
             Vector2 tragForce = quarFuture * _tMaxSpeed;
+
+            //this sets the directional values to a nutral state
+            _tVerDir = 0;
+            _tHorDir = 0;
+
+            //This should add values to the vertical direction so that if one key is pressed it moves in that direction, if both are pressed, no additional movment
+            if (tragForce.Y > 0)
+                _tVerDir += 1;
+            if (tragForce.Y < 0)
+                _tVerDir += -1;
+
+            if (tragForce.X > 0)
+                _tHorDir += 1;
+            if (tragForce.X < 0)
+                _tHorDir += -1;
 
             // apply the new force with the apply force method
             ApplyForce(tragForce);

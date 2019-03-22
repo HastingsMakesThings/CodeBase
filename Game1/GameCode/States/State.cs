@@ -75,27 +75,28 @@ namespace Game1.GameCode.States
             
             //Set the Acceleration of game object based on the force being applied to the target gameobject if it does not equal zero
             if (_mForce.X != 0)
-                _mAccel.X = (_mForce.X - _tFriction) / _tMass;
+                _mAccel.X += _mForce.X / _tMass;
             else
                 _mAccel.X = 0;
 
             if (_mForce.Y != 0)
-                _mAccel.Y = (_mForce.Y - _tFriction) / _tMass;
+                _mAccel.Y += _mForce.Y / _tMass;
             else
                 _mAccel.Y = 0;
 
             //Addjust the veloctiy of an object by appling the acceleration
 
-            _tVelocity.X += _mAccel.X; 
-            _tVelocity.Y += _mAccel.Y;
+            _tVelocity.X += _mAccel.X + (_tFriction *_tHorDir);  
+            _tVelocity.Y += _mAccel.Y + (_tFriction * _tVerDir);
 
             //This capps the velocity
             if ((Math.Abs(_tVelocity.X) >= _tMaxSpeed))
-                _tVelocity.X = (_tMaxSpeed - _tFriction) * _tHorDir;
+                _tVelocity.X = (_tMaxSpeed + _tFriction) * _tHorDir;
 
             if ((Math.Abs(_tVelocity.Y) >= _tMaxSpeed))
-                _tVelocity.Y = (_tMaxSpeed - _tFriction) * _tHorDir;
+                _tVelocity.Y = (_tMaxSpeed + _tFriction) * _tVerDir;
 
+            
             //update the position of the Game object based on velocity
             _mMover.oPostion += _tVelocity;
 

@@ -23,6 +23,8 @@ namespace Game1.Framework.Managers
         public static Boolean KeyJump;
 
         public static Boolean oneKey;
+        public static Boolean twoKey;
+        public static Boolean threeKey;
         // DECLARE KeyboardState prefix with '_'
         KeyboardState _State = Keyboard.GetState();
 
@@ -95,6 +97,24 @@ namespace Game1.Framework.Managers
             else
             {
                 oneKey = false;
+            }
+
+            if (currentState.IsKeyDown(Keys.D2))
+            {
+                twoKey = true;
+            }
+            else
+            {
+                twoKey = false;
+            }
+
+            if (currentState.IsKeyDown(Keys.D3))
+            {
+                threeKey = true;
+            }
+            else
+            {
+                threeKey = false;
             }
         }
 

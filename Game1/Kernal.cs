@@ -89,8 +89,9 @@ namespace Game1
             _MList.Add(_EntityMgr);
             _MList.Add(_KeyBMgr);
             _MList.Add(_MouseMgr);
-            _MList.Add(_CollisionMgr);
             _MList.Add(_AIMgr);
+            _MList.Add(_CollisionMgr);
+           
 
             // _RenderMgr doesnt get added as its called from within the draw method
             base.Initialize();

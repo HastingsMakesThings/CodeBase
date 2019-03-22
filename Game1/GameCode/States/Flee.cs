@@ -34,9 +34,11 @@ namespace Game1.GameCode.States
 
                 //calls the calculate flee method
                 CalculateFlee();
-
+                if (_mForce == Vector2.Zero)
+                    Console.WriteLine("No");
                 //Calss the Move method, this should happen last
                 Move();
+
             }
         }
 
@@ -62,6 +64,21 @@ namespace Game1.GameCode.States
 
             //The force will be equal to the max speed multplied by the tragectory, hthis is then sent to apply force
             Vector2 tragForce = newTragectory * _tMaxSpeed;
+
+            //this sets the directional values to a nutral state
+            _tVerDir = 0;
+            _tHorDir = 0;
+
+            //This should add values to the vertical direction so that if one key is pressed it moves in that direction, if both are pressed, no additional movment
+            if (tragForce.Y >0)
+                _tVerDir += 1;
+            if (tragForce.Y < 0)
+                _tVerDir += -1;
+
+            if (tragForce.X > 0)
+                _tHorDir += 1;
+            if (tragForce.X < 0)
+                _tHorDir += -1;
 
             // apply the new force with the apply force method
             ApplyForce(tragForce);

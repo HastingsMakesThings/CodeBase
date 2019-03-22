@@ -164,7 +164,7 @@ namespace Game1.Framework.Managers
             List<IRegion> _RegListTier1 = new List<IRegion>();
             // Generate regions for tier 1 of broad phase
             _RegListTier1 = _QuadTree.GenerateQuadrants(0, 0, 1600,900);
-            Console.WriteLine(_RegListTier1.Count);
+           // Console.WriteLine(_RegListTier1.Count);
 
 
             int i = 1;
@@ -178,7 +178,7 @@ namespace Game1.Framework.Managers
                     if (r.CheckBounds(g.XPosition,g.YPosition))
                     {
                         // add g to list
-                        Console.WriteLine("Region: {0}, Object: {1}",i,g);
+                     //   Console.WriteLine("Region: {0}, Object: {1}",i,g);
                     }
 
                 }

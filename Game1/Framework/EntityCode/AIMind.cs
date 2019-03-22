@@ -13,7 +13,7 @@ namespace Game1.Framework.EntityCode
         // Target of the current mind prefix with '_'
         protected IMover _mMover;
 
-        private IGameObject _pTarget;
+        protected IGameObject _pTarget;
         protected Dictionary<string, IState> States;
 
         //This string holds the current state of the Player Mind
@@ -38,7 +38,10 @@ namespace Game1.Framework.EntityCode
         {
             _event = "";
             if (_pTarget != null)
+            {
                 return _pTarget;
+            }
+                
             else
                 return null;
         }
@@ -69,13 +72,15 @@ namespace Game1.Framework.EntityCode
             }
         }
 
-        public void Initalize(IMover _pTarget)
+        public virtual void Initalize(IMover _pTarget)
         {
             _mMover = _pTarget;
 
             States = new Dictionary<string, IState>();
 
             _event = "";
+
+            
         }
     }
 }
