@@ -19,7 +19,7 @@ namespace Game1.Framework.Animation
         int aFrameCount { get; }
 
         //This gets the width and height of the frame
-        int aFrameWeight { get; }
+        int aFrameHeight { get; }
         int aFrameWidth { get; }
 
         //This holds the speed at wich the animation is played
@@ -32,5 +32,11 @@ namespace Game1.Framework.Animation
 
         //this starts the animation playing
         void Start();
+
+        //this sets the Animation up with a texture to use
+        void Initalize(Texture2D pTexture, float pFrmSpeed, bool pLoop);
+
+        //this sets the animation to play
+        void Play();
     }
 }

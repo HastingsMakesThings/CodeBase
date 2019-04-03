@@ -41,6 +41,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Framework\Animation\Animation.cs" />
     <Compile Include="Framework\Animation\IAnimation.cs" />
     <Compile Include="Framework\EntityCode\AIMind.cs" />
     <Compile Include="Framework\EntityCode\Entity.cs" />
