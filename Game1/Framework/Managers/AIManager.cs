@@ -8,7 +8,7 @@ using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Managers;
 using Game1.Framework.EntityCode.Sub_Entities;
-
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.Managers
 {
@@ -43,7 +43,7 @@ namespace Game1.Framework.Managers
 
         
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             foreach (IAIMind m in _MindList)
             {

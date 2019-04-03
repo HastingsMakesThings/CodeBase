@@ -53,7 +53,10 @@ namespace Game1.Framework.Managers
         }
         
 
-        public void Update() { }
+        public void Update(GameTime gameTime)
+        {
+
+        }
 
     }
 }

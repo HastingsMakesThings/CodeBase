@@ -69,11 +69,11 @@ namespace Game1.Framework.Managers
             get { return _GameList; }
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             foreach (IGameObject g in _GameList)
             {
-                g.Update();
+                g.Update(gameTime);
             }
         }
 

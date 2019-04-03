@@ -39,7 +39,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             Console.WriteLine("Scale:{0}, Path:{1}", _Scale, _Path);
         }
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             
         }

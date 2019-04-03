@@ -224,7 +224,7 @@ namespace Game1.Framework.Managers
             _GameList = pGameList;
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             CheckCollision();
 
