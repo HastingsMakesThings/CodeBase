@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.Animation
 {
@@ -26,6 +27,8 @@ namespace Game1.Framework.Animation
         protected int _mCurrentFrm;
         //if the texture looping or not
         protected bool _mLooping;
+        //a timer varibale for the animation loop
+        protected float _mTimer;
         #endregion
 
         #region //Properties
@@ -71,43 +74,63 @@ namespace Game1.Framework.Animation
             }
         }
 
+        //returns the height of the animation
         public int aFrameHeight
         {
             get
             {
-                throw new NotImplementedException();
+                return _mFrmHeight;
             }
         }
 
+        //returns the width of the animation
         public int aFrameWidth
         {
             get
             {
-                throw new NotImplementedException();
+                return _mFrmWidth;
             }
         }
 
+        //returns if the animation 
         public bool aIsLooping
         {
             get
             {
-                throw new NotImplementedException();
+                return _mLooping;
             }
         }
         #endregion
-        public void Initalize(Texture2D pTexture, float pFrmSpeed, bool pLoop)
+
+        //This Initalizes the animation
+        public void Initalize(Texture2D pTexture, float pFrmSpeed, bool pLoop, int pCount)
         {
-            throw new NotImplementedException();
+            //sets the instance variables to the values of the parameters
+            _mTexture = pTexture;
+            _mFrmSpeed = pFrmSpeed;
+            _mLooping = pLoop;
+            _mFrmCount = pCount;
+
+            //sets up t6exture height and width
+            _mFrmHeight = _mTexture.Height;
+            _mFrmWidth = (_mTexture.Width / _mFrmCount);
+
+            //initalise instance variables
+            _mCurrentFrm = 1;
+
+            _mTimer = 0;
         }
 
-        public void Play()
+        public void Play(GameTime gameTime)
         {
-            throw new NotImplementedException();
+            _mTimer += gameTime.ElapsedGameTime.Milliseconds;
+
         }
 
         public void Start()
         {
-            throw new NotImplementedException();
+            _mCurrentFrm = 1;
+            _mTimer = 0;
         }
     }
 }

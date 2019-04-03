@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,9 +35,9 @@ namespace Game1.Framework.Animation
         void Start();
 
         //this sets the Animation up with a texture to use
-        void Initalize(Texture2D pTexture, float pFrmSpeed, bool pLoop);
+        void Initalize(Texture2D pTexture, float pFrmSpeed, bool pLoop, int pCount);
 
         //this sets the animation to play
-        void Play();
+        void Play(GameTime gametime);
     }
 }
