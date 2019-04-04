@@ -28,8 +28,12 @@ namespace Game1.Framework.Animation
 
         //this lets the system know if the annimation loops
         bool aIsLooping { get; }
+
         //this returns the texture that will be displayed in the draw method
         Texture2D aActiveTexture { get; }
+
+        //this returns a rectamgle that will hold the texture frame
+        Rectangle aActiveFrame { get; }
 
         //this starts the animation playing
         void Start();
