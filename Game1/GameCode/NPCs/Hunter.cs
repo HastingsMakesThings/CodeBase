@@ -35,7 +35,7 @@ namespace Game1.GameCode.NPCs
         }
 
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             CalculateVertexes();
         }

@@ -142,7 +142,7 @@ namespace Game1
 
             foreach (IManager m in _MList)
             {
-                m.Update();
+                m.Update(gameTime);
             }
             
             base.Update(gameTime);

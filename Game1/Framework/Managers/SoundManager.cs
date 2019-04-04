@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Audio;
 using Game1.Framework.Interfaces.Managers;
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.Managers
 {
@@ -38,7 +39,7 @@ namespace Game1.Framework.Managers
             }
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             PlaySounds();
         }

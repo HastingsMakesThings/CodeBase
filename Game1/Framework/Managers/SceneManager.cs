@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Factories;
 using Game1.GameCode.Scenes.Menus;
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.Managers
 {
@@ -65,11 +66,11 @@ namespace Game1.Framework.Managers
             
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             foreach (IMenuItem s in _SceneList)
             {
-                s.Update();
+                s.Update(gameTime);
             }
         }
 

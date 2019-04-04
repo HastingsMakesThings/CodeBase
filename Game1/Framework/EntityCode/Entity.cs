@@ -28,7 +28,7 @@ namespace Game1.Framework.EntityCode
 
         protected Vector2 _textureBounds;
 
-        public abstract void Update();
+        public abstract void Update(GameTime gameTime);
 
         protected Texture2D[] _textures;
         #region Properties

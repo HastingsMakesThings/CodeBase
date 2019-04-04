@@ -4,15 +4,21 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</File>
-    <File>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/EH.wav</File>
-    <File>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Hastings_4tile.png</File>
-    <File>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/NPCBoard.png</File>
-    <File>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png</File>
-    <File>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/OH.wav</File>
-    <File>C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Player.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/EH.wav</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_4tile.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/NPCBoard.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/OH.wav</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player1.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player2.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player3.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

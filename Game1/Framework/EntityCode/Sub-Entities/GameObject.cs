@@ -141,7 +141,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             
         }
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             
         }
