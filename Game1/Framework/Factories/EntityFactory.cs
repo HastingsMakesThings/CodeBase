@@ -8,6 +8,7 @@ using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.EntityCode;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Game1.Framework.Animations;
 
 namespace Game1.Framework.Factories
 {
@@ -23,7 +24,7 @@ namespace Game1.Framework.Factories
 
         // CreateEntity generates objects of type IGameObject
         // Pass in X and Y position, Texture, Scale and its Static state
-        public IGameObject CreateGameObject<T>(float pX, float pY, string[] pTexture, float pScale, Boolean pStatic) where T : IGameObject, new()
+        public IGameObject CreateGameObject<T>(float pX, float pY, IAnimation pAnim, float pScale, Boolean pStatic) where T : IGameObject, new()
         {
             try
             {
@@ -32,14 +33,9 @@ namespace Game1.Framework.Factories
                
                 
 
-                _GameObject.Initialise(pX, pY, pScale, pStatic, pTexture.Count());
+            
 
-                foreach (string temptex in pTexture)
-                {
-                    Texture2D _Texture = _Content.Load<Texture2D>(temptex);
-
-                    _GameObject.AddTexture(_Texture);
-                }
+               
 
                 _GameObject.Setup();
 

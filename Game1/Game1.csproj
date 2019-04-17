@@ -41,13 +41,14 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Framework\Animation\Animation.cs" />
-    <Compile Include="Framework\Animation\IAnimation.cs" />
+    <Compile Include="Framework\Animations\Animation.cs" />
+    <Compile Include="Framework\Animations\IAnimation.cs" />
     <Compile Include="Framework\EntityCode\AIMind.cs" />
     <Compile Include="Framework\EntityCode\Entity.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\EnemyMind.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\GenericNPC.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\PlayerMind.cs" />
+    <Compile Include="Framework\Factories\AnimationFactory.cs" />
     <Compile Include="Framework\Factories\EntityFactory.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\GameObject.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\MenuItem.cs" />
@@ -58,7 +59,7 @@
     <Compile Include="Framework\Interfaces\IEntityFactory.cs" />
     <Compile Include="Framework\Interfaces\IMoveBehaviour.cs" />
     <Compile Include="Framework\Interfaces\Managers\IAIManager.cs" />
-    <Compile Include="Framework\Interfaces\Managers\IAnimationManager.cs" />
+    <Compile Include="Framework\Interfaces\Managers\IAnimationFactory.cs" />
     <Compile Include="Framework\Interfaces\Managers\ICollisionManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IEntityManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IKeyboardManager.cs" />

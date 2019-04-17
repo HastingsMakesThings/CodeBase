@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Game1.Framework.Animation
+namespace Game1.Framework.Animations
 {
     //IAnimation is an interface for animation of entities
     //The Function of each animation is to convert a selection of sprites on a sprite sheet into a single texture in time with the entity

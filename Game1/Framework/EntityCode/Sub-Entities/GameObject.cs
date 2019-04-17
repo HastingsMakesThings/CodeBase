@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.EntityCode;
+using Game1.Framework.Animations;
 
 namespace Game1.Framework.EntityCode.Sub_Entities
 {
@@ -43,7 +44,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         protected Boolean _CollideR;
 
-
+        protected Dictionary<string, IAnimation> _mAnim;
         
 
         public GameObject()
@@ -51,36 +52,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             _texNum = 0;
         }
 
-        public void Initialise(float pX, float pY, float pScale, Boolean pStatic, int pTexNums)
-        {
-           
+     
 
-          
-
-            _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
-            _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
-
-            _Scale = pScale;
-
-            _Static = pStatic;
-
-            _textures = new Texture2D[pTexNums];
-           
-
-
-           
-        }
-
-        public void AddTexture(Texture2D pTexture)
-        {
-            _textures[_texNum] = pTexture;
-            
-
-            _textureBounds = new Vector2(pTexture.Width, pTexture.Height);
-
-            _Texture = _textures[_texNum];
-            _texNum++;
-        }
 
         public void CalculateProjectedX()
         {
@@ -151,14 +124,17 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Setup()
+        public void Initialise(Dictionary<string, IAnimation> pAnim, float pX, float pY, float pScale, bool pStatic)
         {
-            if (Type != "Obstacle")
-            {
-                Console.WriteLine("{0} Created!", _Texture);
-                Console.WriteLine("X:{0}, Y:{1}", _Position.X, _Position.Y);
-                Console.WriteLine("Scale:{0}, Static:{1}", _Scale, _Static);
-            }
+            //sets up th animation
+            _mAnim = pAnim;
+
+            _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
+            _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
+
+            _Scale = pScale;
+
+            _Static = pStatic;
 
 
             // Run this once so objects get their starting axies projected
@@ -169,8 +145,6 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
             //Calls the calculate vertexes method
             CalculateVertexes();
-
-            _texNum = _texNum - 1;
         }
 
         //The purpose of this method is to move the game object in a realistic manner

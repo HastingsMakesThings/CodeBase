@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
-namespace Game1.Framework.Animation
+namespace Game1.Framework.Animations
 {
      class Animation : IAnimation
     {
