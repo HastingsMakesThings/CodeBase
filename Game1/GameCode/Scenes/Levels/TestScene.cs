@@ -12,6 +12,8 @@ using Game1.GameCode.PlayerCode;
 using Game1.GameCode.Obstacles;
 using Game1.GameCode.NPCs;
 using Game1.Framework.Interfaces.Sub_Entities;
+using Game1.Framework.Interfaces.Managers;
+using Game1.Framework.Animations;
 
 namespace Game1.GameCode.Scenes.Levels
 {
@@ -19,40 +21,44 @@ namespace Game1.GameCode.Scenes.Levels
     {
         protected List<IGameObject> _GameList;
 
+        //animation factory for creating animations in the sceene
+        private IAnimationFactory _mAnimFac;
+
         public TestScene()
         {
             _GameList = new List<IGameObject>();
+
+            //Construct animation factory
+            _mAnimFac = new AnimationFactory();
         }
 
         public void setup(ContentManager pContent, IEntityFactory pEntityFac)
         {
-            String[] obst = new string[1];
-            obst[0] = "Obstacle";
+            //initalkise animation factory
+            _mAnimFac.Initialize(pContent);
 
-            string[] pl = new string[1];
-            pl[0] = "player";
+            //Animation for the player charcater
+            IDictionary<string, IAnimation> PlayerAnim = new Dictionary<string, IAnimation>();
+            PlayerAnim.Add("Idle", _mAnimFac.CreatAnimation("Hastings_Front_02", 1, true, 8));
 
-            string[] Hastings = new string[4];
-            Hastings[0] = "player";
-            Hastings[1] = "player1";
-            Hastings[2] = "player2";
-            Hastings[3] = "player3";
-
+            //Animation for the obstacles
+            IDictionary<string, IAnimation> ObsAnim = new Dictionary<string, IAnimation>();
+            ObsAnim.Add("Idle", _mAnimFac.CreatAnimation("Obstacle", 1, false, 1));
 
             for (int i = 0; i < 1; i++)
             {
-                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((64 * i) + 200, 500, obst, 1, true));
+                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((64 * i) + 200, 500, ObsAnim, 1, true));
             }
 
-            _GameList.Add(pEntityFac.CreateGameObject<Player>(300, 400, Hastings, 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Player>(300, 400, PlayerAnim, 1, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(1100, 700, obst, 1, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(1100, 700, ObsAnim, 1, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Hunter>(200, 200, pl, 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Hunter>(200, 200, ObsAnim, 1, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<ScaredyCat>(600, 600, pl, 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<ScaredyCat>(600, 600, ObsAnim, 1, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Buddy>(600, 400, pl, 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Buddy>(600, 400, ObsAnim, 1, false));
         }
 
         public List<IGameObject> GameList

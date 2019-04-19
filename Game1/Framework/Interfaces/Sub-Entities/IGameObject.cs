@@ -29,7 +29,7 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         int VerDir { get; set; }
 
-        void Initialise(Dictionary<string, IAnimation> pAnim , float pX, float pY, float pScale, bool pStatic);
+        void Initialise(IDictionary<string, IAnimation> pAnim , float pX, float pY, float pScale, bool pStatic);
     
         void playSound(string soundClip);
 

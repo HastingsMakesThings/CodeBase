@@ -23,22 +23,14 @@ namespace Game1.Framework.Factories
 
 
         // CreateEntity generates objects of type IGameObject
-        // Pass in X and Y position, Texture, Scale and its Static state
-        public IGameObject CreateGameObject<T>(float pX, float pY, IAnimation pAnim, float pScale, Boolean pStatic) where T : IGameObject, new()
+        // Pass in X and Y position, Animation dictonary, Scale and its Static state
+        public IGameObject CreateGameObject<T>(float pX, float pY, IDictionary<string, IAnimation> pAnim, float pScale, Boolean pStatic) where T : IGameObject, new()
         {
             try
             {
                 IGameObject _GameObject = new T();
 
-               
-                
-
-            
-
-               
-
-                _GameObject.Setup();
-
+                _GameObject.Initialise(pAnim, pX, pY, pScale, pStatic);
                 return _GameObject;
 
             }

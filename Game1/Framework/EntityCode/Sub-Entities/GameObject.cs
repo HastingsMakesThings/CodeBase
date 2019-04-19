@@ -44,7 +44,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         protected Boolean _CollideR;
 
-        protected Dictionary<string, IAnimation> _mAnim;
+        protected IDictionary<string, IAnimation> _mAnim;
         
 
         public GameObject()
@@ -124,7 +124,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Initialise(Dictionary<string, IAnimation> pAnim, float pX, float pY, float pScale, bool pStatic)
+        public void Initialise(IDictionary<string, IAnimation> pAnim, float pX, float pY, float pScale, bool pStatic)
         {
             //sets up th animation
             _mAnim = pAnim;
