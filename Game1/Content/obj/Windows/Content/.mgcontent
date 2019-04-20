@@ -14,8 +14,16 @@
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player1.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player2.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player3.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Back_02.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Front_02.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Left_02.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Right_02.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
