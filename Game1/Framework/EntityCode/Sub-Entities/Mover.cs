@@ -129,18 +129,6 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             }
         }
 
-        public int textureSets
-        {
-            get
-            {
-                return _texNum;
-            }
-
-            set
-            {
-                _texNum = value;
-   
-            }
-        }
+      
     }
 }

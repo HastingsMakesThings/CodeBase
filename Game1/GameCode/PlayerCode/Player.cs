@@ -39,20 +39,12 @@ namespace Game1.GameCode.PlayerCode
 
         public override void Update(GameTime gameTime)
         {
-
             CalculateProjectedX();
             CalculateProjectedY();
 
-
-
-
+            _mActiveAnim.Play(gameTime);
+            _textureBounds = _mActiveAnim.aActiveFrame;
             CalculateVertexes();
-
-
-            //Vector2 textueBounds = new Vector2((_Texture.Width / 4), _Texture.Height);
-
-            //_textureBounds = textueBounds;
-            _Texture = _textures[_texNum];
         }
 
         public  override void CollReact(Vector2 pMTV)

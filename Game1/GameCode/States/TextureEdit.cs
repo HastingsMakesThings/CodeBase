@@ -29,15 +29,7 @@ namespace Game1.GameCode.States
 
             Vector2 Change = tempPos - currentPos;
 
-            if (Change.X > 0)
-                _mMover.textureSets =1;
-            
-            if (Change.Y > 0)
-                _mMover.textureSets = 2;
-            if(Change.X < 0)
-                _mMover.textureSets = 3;
-            if (Change.Y < 0)
-                _mMover.textureSets = 0;
+           
 
         }
 

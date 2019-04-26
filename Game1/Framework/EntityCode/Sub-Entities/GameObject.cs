@@ -29,7 +29,12 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Rectangle _ProjectedX;
         // Rectangle for Projected Y prefix with '_'
         protected Rectangle _ProjectedY;
-        protected int _texNum;
+
+        //a value for the active animation string
+        protected string _mAnimstr;
+
+        //a value for the active animation
+        protected IAnimation _mActiveAnim;
 
         //Deffine an array to hold all of the vertex of the object
         protected Vector2[] _Vertexes;
@@ -49,7 +54,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         public GameObject()
         {
-            _texNum = 0;
+            
         }
 
      
@@ -94,18 +99,19 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         //This Declares a method that will calculate the location of the vertexes of each object dependant on their position 
         protected virtual void CalculateVertexes()
         {
+
             _Vertexes = new Vector2[4];
 
             _Vertexes[0] = this.Position;
 
-            _Vertexes[1].X = this.Position.X + _Texture.Width;
+            _Vertexes[1].X = this.Position.X + _textureBounds.Width;
             _Vertexes[1].Y = this.Position.Y;
 
-            _Vertexes[2].X = this.Position.X + _Texture.Width;
-            _Vertexes[2].Y = this.Position.Y + _Texture.Height;
+            _Vertexes[2].X = this.Position.X + _textureBounds.Width;
+            _Vertexes[2].Y = this.Position.Y + _textureBounds.Height;
 
             _Vertexes[3].X = this.Position.X;
-            _Vertexes[3].Y = this.Position.Y + _Texture.Height;
+            _Vertexes[3].Y = this.Position.Y + _textureBounds.Height;
 
         }
 
@@ -124,10 +130,24 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Initialise(IDictionary<string, IAnimation> pAnim, float pX, float pY, float pScale, bool pStatic)
+        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic)
         {
             //sets up th animation
             _mAnim = pAnim;
+
+            //sets the active animation stign to the provided string
+            _mAnimstr = pStartAnim;
+
+            //this grabs the animation from the animation list
+            _mAnim.TryGetValue(_mAnimstr, out _mActiveAnim);
+
+            //this starts the animation in motion
+            _mActiveAnim.Start();
+
+            //finds the animation frame that shoudl be played first
+            _Texture = _mActiveAnim.aActiveTexture;
+            _textureBounds = _mActiveAnim.aActiveFrame;
+            
 
             _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
             _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;

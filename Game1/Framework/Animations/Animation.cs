@@ -159,7 +159,7 @@ namespace Game1.Framework.Animations
         private void SetFrame()
         {
             //this just catches if the selected frame is not on the spritesheet
-            if (_mCurrentFrm > _mFrmCount)
+            if (_mCurrentFrm >= _mFrmCount)
                 _mCurrentFrm = 0;
             //creates a new rectangle that sets the bound sof the active frame
             Rectangle tempTangle = new Rectangle((_mFrmWidth * _mCurrentFrm), 0, _mFrmWidth, _mFrmHeight);
