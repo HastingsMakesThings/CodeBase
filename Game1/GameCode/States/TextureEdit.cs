@@ -15,7 +15,7 @@ namespace Game1.GameCode.States
 
         }
 
-        public override void Run()
+        public override void Run(GameTime gametime)
         {
             CheckTextures();
         }
@@ -29,7 +29,30 @@ namespace Game1.GameCode.States
 
             Vector2 Change = tempPos - currentPos;
 
-           
+           if(Change.X > 0)
+            {
+                _mMover.currentText = "Left";
+            }
+
+            if (Change.X < 0)
+            {
+                _mMover.currentText = "Right";
+            }
+
+            if (Change.Y > 0)
+            {
+                _mMover.currentText = "Up";
+            }
+
+            if (Change.Y < 0)
+            {
+                _mMover.currentText = "Down";
+            }
+
+            if(Change.Y == 0 && Change.X ==0)
+            {
+                _mMover.currentText = "Idle";
+            }
 
         }
 

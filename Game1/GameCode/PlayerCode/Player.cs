@@ -28,12 +28,11 @@ namespace Game1.GameCode.PlayerCode
             _MyMind.Initalize(this);
             _MyMind.AddState<TextureEdit>("Tex", this);
             _MyMind.AddState<_2DMove>("Mover",this);
-            
 
+            _currAnim = "Idle";
             _mMass = 20;
             _maxSpeed = 10;
             _mFriction = -6;
-          //  float tWidth4 = _Texture.Width / 4;
 
         }
 
@@ -42,15 +41,31 @@ namespace Game1.GameCode.PlayerCode
             CalculateProjectedX();
             CalculateProjectedY();
 
+            TextureChange();
             _mActiveAnim.Play(gameTime);
+            _Texture = _mActiveAnim.aActiveTexture;
             _textureBounds = _mActiveAnim.aActiveFrame;
             CalculateVertexes();
         }
 
-        public  override void CollReact(Vector2 pMTV)
+        //the funciton of this method is to change texttures based on the movment of this object
+        private void TextureChange()
+        {
+            //if the animationstring is not the same as the current animation then the animation is changed to the new value
+           if(_mAnimstr != _currAnim)
+            {
+                _mAnim.TryGetValue(_currAnim, out _mActiveAnim);
+                _mActiveAnim.Start();
+
+                _mAnimstr = _currAnim;
+            }
+
+        }
+
+        public override void CollReact(Vector2 pMTV)
         {
             this.Position = Position + pMTV;
-            
         }
+
     }
 }

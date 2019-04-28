@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces.Managers;
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.Interfaces
 {
@@ -12,7 +13,7 @@ namespace Game1.Framework.Interfaces
     interface IAIMind
     {
         //This run method is used to activate the run method
-        void Run();
+        void Run(GameTime gametime);
 
         //this method is used to gain any vital information from the AIManager
         void EventData(string pEvent, IGameObject pTrigger);

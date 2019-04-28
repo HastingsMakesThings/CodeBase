@@ -23,7 +23,7 @@ namespace Game1.GameCode.States
             
         }
 
-        public override void Run()
+        public override void Run(GameTime gametime)
         {
             
             if (_mMover != null && _mQuarry != null)

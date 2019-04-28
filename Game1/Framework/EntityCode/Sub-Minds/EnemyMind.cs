@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Game1.Framework.EntityCode;
 using Game1.Framework.Interfaces;
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.EntityCode.Sub_Minds
 {
@@ -15,7 +16,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
             return "no";
         }
 
-        public override void Run()
+        public override void Run(GameTime gametime)
         {
 
         }

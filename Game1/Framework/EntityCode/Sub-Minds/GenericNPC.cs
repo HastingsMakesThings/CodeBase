@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces;
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.EntityCode.Sub_Minds
 {
     class GenericNPC : AIMind
     {
-        public override void Run()
+        public override void Run(GameTime gametime)
         {
             IState temp;
 
@@ -18,7 +19,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
             {
                 States.TryGetValue(_currentState, out temp);
 
-                temp.Run();
+                temp.Run(gametime);
             }
         }
         //this method is used to asses if the mind is creating an event

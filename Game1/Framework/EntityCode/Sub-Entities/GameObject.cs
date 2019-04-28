@@ -104,14 +104,15 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
             _Vertexes[0] = this.Position;
 
-            _Vertexes[1].X = this.Position.X + _textureBounds.Width;
+            _Vertexes[1].X = this.Position.X + (_textureBounds.Width * _Scale);
             _Vertexes[1].Y = this.Position.Y;
 
-            _Vertexes[2].X = this.Position.X + _textureBounds.Width;
-            _Vertexes[2].Y = this.Position.Y + _textureBounds.Height;
+            _Vertexes[2].X = this.Position.X + (_textureBounds.Width * _Scale);
+            _Vertexes[2].Y = this.Position.Y + (_textureBounds.Height *_Scale);
 
             _Vertexes[3].X = this.Position.X;
-            _Vertexes[3].Y = this.Position.Y + _textureBounds.Height;
+            _Vertexes[3].Y = this.Position.Y + (_textureBounds.Height * _Scale);
+
 
         }
 

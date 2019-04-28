@@ -39,8 +39,11 @@ namespace Game1.GameCode.Scenes.Levels
 
             //Animation for the player charcater
             IDictionary<string, IAnimation> PlayerAnim = new Dictionary<string, IAnimation>();
-            PlayerAnim.Add("Idle", _mAnimFac.CreatAnimation("Hastings_Front_02", 200, true, 8));
-
+            PlayerAnim.Add("Idle", _mAnimFac.CreatAnimation("Hastings_Front_02", 100, false, 8));
+            PlayerAnim.Add("Down", _mAnimFac.CreatAnimation("Hastings_Front_02", 100, true, 8));
+            PlayerAnim.Add("Up", _mAnimFac.CreatAnimation("Hastings_Back_02", 100, true, 8));
+            PlayerAnim.Add("Right", _mAnimFac.CreatAnimation("Hastings_Right_02", 100, true, 8));
+            PlayerAnim.Add("Left", _mAnimFac.CreatAnimation("Hastings_Left_02", 100, true, 8));
             //Animation for the obstacles
             IDictionary<string, IAnimation> ObsAnim = new Dictionary<string, IAnimation>();
             ObsAnim.Add("Idle", _mAnimFac.CreatAnimation("Obstacle", 1, false, 1));

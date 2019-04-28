@@ -29,6 +29,7 @@ namespace Game1.Framework.Animations
         protected bool _mLooping;
         //a timer varibale for the animation loop
         protected float _mTimer;
+        
         #endregion
 
         #region //Properties
@@ -119,7 +120,7 @@ namespace Game1.Framework.Animations
             _mFrmSpeed = pFrmSpeed;
             _mLooping = pLoop;
             _mFrmCount = pCount;
-
+           
             //sets up t6exture height and width
             _mFrmHeight = _mTexture.Height;
             _mFrmWidth = (_mTexture.Width / _mFrmCount);
@@ -134,8 +135,11 @@ namespace Game1.Framework.Animations
 
         public void Play(GameTime gameTime)
         {
-            //As timer increases the timer is checked a gains tthe framespedd, if the timer matches or exceeds the framespeed the frame is changed
-            _mTimer += gameTime.ElapsedGameTime.Milliseconds;
+            if(_mLooping)
+            {
+                //As timer increases the timer is checked a gains tthe framespedd, if the timer matches or exceeds the framespeed the frame is changed
+                _mTimer += gameTime.ElapsedGameTime.Milliseconds;
+            }
 
             if(_mTimer >= _mFrmSpeed)
             {
