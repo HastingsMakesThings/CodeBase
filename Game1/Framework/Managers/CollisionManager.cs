@@ -239,7 +239,7 @@ namespace Game1.Framework.Managers
         public void Update(GameTime gameTime)
         {
             CheckCollision();
-
+           // Collision(_GameList);
         }
 
         #region Properties
