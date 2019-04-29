@@ -14,10 +14,11 @@ using Game1.GameCode.NPCs;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces.Managers;
 using Game1.Framework.Animations;
+using Game1.Framework.Interfaces.Scenes;
 
 namespace Game1.GameCode.Scenes.Levels
 {
-    class TestScene
+    class TestScene: IScene
     {
         protected List<IGameObject> _GameList;
 

@@ -16,9 +16,13 @@ namespace Game1.Framework.Factories
     {
         private ContentManager _Content;
 
+
+        private int _IDCounter;
         public EntityFactory(ContentManager pContent)
         {
             _Content = pContent;
+
+            _IDCounter = 0;
         }
 
 
@@ -30,7 +34,8 @@ namespace Game1.Framework.Factories
             {
                 IGameObject _GameObject = new T();
 
-                _GameObject.Initialise(pAnim, pStartAnim, pX, pY, pScale, pStatic, pRigid);
+                _GameObject.Initialise(pAnim, pStartAnim, pX, pY, pScale, pStatic, pRigid, _IDCounter);
+                _IDCounter++;
                 return _GameObject;
 
             }
@@ -51,8 +56,8 @@ namespace Game1.Framework.Factories
 
                 Texture2D _Texture = _Content.Load<Texture2D>(pTexture);
 
-                _MenuItem.Initialise(pX, pY, _Texture, pScale, pPath);
-
+                _MenuItem.Initialise(pX, pY, _Texture, pScale, pPath,_IDCounter);
+                _IDCounter++;
                 return _MenuItem;
 
             }

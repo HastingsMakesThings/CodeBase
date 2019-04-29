@@ -10,6 +10,6 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 {
     interface IMenuItem : IEntity
     {
-        void Initialise(float pX, float pY, Texture2D pTexture, float pScale, string pPath);
+        void Initialise(float pX, float pY, Texture2D pTexture, float pScale, string pPath, int pID);
     }
 }

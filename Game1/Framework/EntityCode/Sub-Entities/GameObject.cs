@@ -132,8 +132,10 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid)
+        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID)
         {
+            //sets up ID
+            _mID = pID;
             //sets up th animation
             _mAnim = pAnim;
 

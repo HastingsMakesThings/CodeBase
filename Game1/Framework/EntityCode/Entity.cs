@@ -28,6 +28,9 @@ namespace Game1.Framework.EntityCode
 
         protected Rectangle _textureBounds;
 
+        //protected Entity ID
+        protected int _mID;
+
         public abstract void Update(GameTime gameTime);
 
         protected Texture2D[] _textures;
@@ -83,6 +86,14 @@ namespace Game1.Framework.EntityCode
         public Texture2D Texture
         {
             get { return _Texture; }
+        }
+
+        public int EntityID
+        {
+            get
+            {
+                return _mID;
+            }
         }
 
         #endregion

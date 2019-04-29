@@ -14,15 +14,16 @@ namespace Game1.Framework.EntityCode.Sub_Entities
     class MenuItem : Entity, IMenuItem
     {
         protected string _Path;
+        
 
         public MenuItem()
         {
 
         }
 
-        public void Initialise(float pX, float pY, Texture2D pTexture, float pScale, string pPath)
+        public void Initialise(float pX, float pY, Texture2D pTexture, float pScale, string pPath, int pID)
         {
-
+            _mID = pID;
             _Texture = pTexture;
 
             _Origin = new Vector2(0, _Texture.Height);

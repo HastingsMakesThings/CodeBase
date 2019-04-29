@@ -74,6 +74,18 @@ namespace Game1.Framework.Managers
             }
         }
 
+        //this method is used to remove an entity from the sceene list
+        public void RemoveEntity(int entID)
+        {
+            throw new NotImplementedException();
+        }
+
+        //this method is used to add an entity to the scene list
+        public void AddEntity(IEntity pNewEnt)
+        {
+            throw new NotImplementedException();
+        }
+
         #region Properties
 
         public List<IMenuItem> SceneList
