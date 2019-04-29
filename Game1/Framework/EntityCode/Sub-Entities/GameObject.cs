@@ -50,7 +50,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Boolean _CollideR;
 
         protected IDictionary<string, IAnimation> _mAnim;
-        
+
+        protected bool _mRigid;
 
         public GameObject()
         {
@@ -131,7 +132,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic)
+        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid)
         {
             //sets up th animation
             _mAnim = pAnim;
@@ -157,6 +158,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
             _Static = pStatic;
 
+            _mRigid = pRigid;
 
             // Run this once so objects get their starting axies projected
             // if an object is static then there is no need to run this more than once
@@ -248,6 +250,10 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             get { return _Vertexes; }
         }
 
+        public bool Rigid
+        {
+            get { return _mRigid; }
+        }
 
         #endregion
     }

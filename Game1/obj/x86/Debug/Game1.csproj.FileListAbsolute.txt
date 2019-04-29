@@ -214,3 +214,7 @@ C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Front_02.xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Left_02.xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Right_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Back_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Front_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Left_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Right_02.xnb

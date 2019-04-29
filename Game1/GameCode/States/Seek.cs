@@ -42,6 +42,7 @@ namespace Game1.GameCode.States
         public override void NewTarget(IGameObject pTelos)
         {
             _mTelos = pTelos;
+           
         }
 
         //this method is used to calculate the direction that the object should take in order to seek the object
@@ -68,7 +69,7 @@ namespace Game1.GameCode.States
             _tVerDir = 0;
             _tHorDir = 0;
 
-            //This should add values to the vertical direction so that if one key is pressed it moves in that direction, if both are pressed, no additional movment
+            //This should add values to the vertical direction 
             if (tragForce.Y > 0)
                 _tVerDir += 1;
             if (tragForce.Y < 0)

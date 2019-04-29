@@ -138,12 +138,15 @@ namespace Game1.Framework.Managers
                             {
                                 if (Math.Abs(mMTV1.Length()) >= Math.Abs(mMTV2.Length()))
                                 {
+                                    //checks if the object can be passed through
+                                    if(second.Rigid)
                                     first.CollReact(mMTV1);
-                                    Console.WriteLine(first.Type, mMTV1);
+                                   
                                 }
                                 else
-                                {
-                                    first.CollReact(mMTV2);
+                                {   //checks if the object can be passed through
+                                    if (second.Rigid)
+                                        first.CollReact(mMTV2);
                                 }
                             }
                         }

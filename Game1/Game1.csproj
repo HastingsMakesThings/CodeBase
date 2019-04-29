@@ -88,6 +88,7 @@
     <Compile Include="GameCode\NPCs\Buddy.cs" />
     <Compile Include="GameCode\NPCs\Hunter.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
+    <Compile Include="Framework\EntityCode\Sub-Entities\TriggerBox.cs" />
     <Compile Include="GameCode\States\2DirectionalMove.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMover.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="GameCode\Obstacles\Obstacle.cs" />
     <Compile Include="GameCode\Scenes\Menus\TestMenu.cs" />
     <Compile Include="GameCode\States\TextureEdit.cs" />
+    <Compile Include="GameCode\Triggers\ScoreBox.cs" />
     <Compile Include="GameCode\UI\Cursor.cs" />
     <Compile Include="GameCode\PlayerCode\Player.cs" />
     <Compile Include="GameCode\Scenes\Levels\TestScene.cs" />

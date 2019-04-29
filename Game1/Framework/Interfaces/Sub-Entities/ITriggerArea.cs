@@ -13,7 +13,6 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         //this method allows for a trigger obbject to be given a retrun value to identify if this trigger activates an event in the TriggerObject
         string IsTrigger(string[] pTriggers);
 
-        //this recantgle deffines what area the trigger objects effect is
-        Rectangle TriggArea { get; }
+       
     }
 }

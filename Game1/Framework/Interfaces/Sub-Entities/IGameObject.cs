@@ -29,7 +29,7 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         int VerDir { get; set; }
 
-        void Initialise(IDictionary<string, IAnimation> pAnim ,string pStartAnim, float pX, float pY, float pScale, bool pStatic);
+        void Initialise(IDictionary<string, IAnimation> pAnim ,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid);
     
         void playSound(string soundClip);
 
@@ -44,6 +44,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         Vector2[] Verts { get; }
 
         void CollReact(Vector2 pMTV);
+
+        bool Rigid { get; }
 
 
     }
