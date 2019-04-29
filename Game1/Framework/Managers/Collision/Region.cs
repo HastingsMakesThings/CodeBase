@@ -21,7 +21,7 @@ namespace Game1.Framework.Managers.Collision
             _Y = _pY;
             _Width = _pWidth;
             _Height = _pHeight;
-           // Console.WriteLine("Left: {0}, Right: {1}, Top: {2}, Bottom: {3}", _X,_X + _Width,_Y,_Y + _Height);
+           //Console.WriteLine("Left: {0}, Right: {1}, Top: {2}, Bottom: {3}", _X,_X + _Width,_Y,_Y + _Height);
         }
 
         public Boolean CheckBounds(float _pX, float _pY)

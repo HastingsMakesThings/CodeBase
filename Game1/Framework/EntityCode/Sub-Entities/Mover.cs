@@ -34,7 +34,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         // Player Mind prefix with '_'
         protected IAIMind _MyMind;
 
-
+        //strign that represents the curent animation beign played
+        protected string _currAnim;
 
         //This allows the objects mass to be obtained
         public float oMass
@@ -129,17 +130,16 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             }
         }
 
-        public int textureSets
+        public string currentText
         {
             get
             {
-                return _texNum;
+                return _currAnim;
             }
 
             set
             {
-                _texNum = value;
-   
+                _currAnim = value;
             }
         }
     }

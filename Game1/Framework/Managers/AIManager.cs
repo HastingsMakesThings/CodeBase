@@ -47,7 +47,7 @@ namespace Game1.Framework.Managers
         {
             foreach (IAIMind m in _MindList)
             {
-                m.Run();
+                m.Run(gameTime);
             }
 
             CheckEvents();

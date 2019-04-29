@@ -10,19 +10,16 @@ namespace Game1.Framework.Managers.Collision
 {
     class QuadTree : IQuadTree
     {
-        protected List<IRegion> _RegList;
+       // protected List<IRegion> _RegList;
 
         public QuadTree()
         {
-            _RegList = new List<IRegion>();
+           // _RegList = new List<IRegion>();
         }
 
         public List<IRegion> GenerateQuadrants(float xPos, float yPos, float width, float height)
         {
-            if (_RegList != null)
-            {
-                _RegList.Clear();
-            } 
+            List<IRegion> _RegList = new List<IRegion>();
 
             float hWidth = width * 0.5f;
             float hHeight = height * 0.5f;

@@ -40,5 +40,7 @@ namespace Game1.GameCode.NPCs
         {
             CalculateVertexes();
         }
+
+
     }
 }

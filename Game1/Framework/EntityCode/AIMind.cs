@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Sub_Entities;
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.EntityCode
 {
@@ -21,7 +22,7 @@ namespace Game1.Framework.EntityCode
 
         protected string _event;
 
-        public virtual void Run()
+        public virtual void Run(GameTime gametime)
         {
 
         }

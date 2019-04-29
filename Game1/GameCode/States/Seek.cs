@@ -23,7 +23,7 @@ namespace Game1.GameCode.States
            
         }
 
-        public override void Run()
+        public override void Run(GameTime gametime)
         {
             //This calls the update data method, this should happen first
             UpdateData();

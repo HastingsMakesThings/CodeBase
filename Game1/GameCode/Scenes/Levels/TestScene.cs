@@ -39,26 +39,29 @@ namespace Game1.GameCode.Scenes.Levels
 
             //Animation for the player charcater
             IDictionary<string, IAnimation> PlayerAnim = new Dictionary<string, IAnimation>();
-            PlayerAnim.Add("Idle", _mAnimFac.CreatAnimation("Hastings_Front_02", 1, true, 8));
-
+            PlayerAnim.Add("Idle", _mAnimFac.CreatAnimation("Hastings_Front_02", 100, false, 8));
+            PlayerAnim.Add("Down", _mAnimFac.CreatAnimation("Hastings_Front_02", 100, true, 8));
+            PlayerAnim.Add("Up", _mAnimFac.CreatAnimation("Hastings_Back_02", 100, true, 8));
+            PlayerAnim.Add("Right", _mAnimFac.CreatAnimation("Hastings_Right_02", 100, true, 8));
+            PlayerAnim.Add("Left", _mAnimFac.CreatAnimation("Hastings_Left_02", 100, true, 8));
             //Animation for the obstacles
             IDictionary<string, IAnimation> ObsAnim = new Dictionary<string, IAnimation>();
             ObsAnim.Add("Idle", _mAnimFac.CreatAnimation("Obstacle", 1, false, 1));
 
             for (int i = 0; i < 1; i++)
             {
-                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((64 * i) + 200, 500, ObsAnim, 1, true));
+                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((64 * i) + 200, 500, ObsAnim, "Idle", 1, true));
             }
 
-            _GameList.Add(pEntityFac.CreateGameObject<Player>(300, 400, PlayerAnim, 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Player>(300, 400, PlayerAnim, "Idle", 0.1f, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(1100, 700, ObsAnim, 1, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(1100, 700, ObsAnim, "Idle", 1, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Hunter>(200, 200, ObsAnim, 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Hunter>(200, 200, ObsAnim, "Idle", 1, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<ScaredyCat>(600, 600, ObsAnim, 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<ScaredyCat>(600, 600, ObsAnim, "Idle", 1, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Buddy>(600, 400, ObsAnim, 1, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Buddy>(600, 400, ObsAnim, "Idle", 1,  false));
         }
 
         public List<IGameObject> GameList

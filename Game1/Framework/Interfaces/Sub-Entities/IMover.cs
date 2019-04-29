@@ -37,6 +37,6 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         IAIMind getMind { get; }
 
-        int textureSets { get; set; }
+        string currentText { get; set; }
     }
 }
