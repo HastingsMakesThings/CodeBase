@@ -16,8 +16,15 @@ using Game1.Framework.EntityCode.Sub_Minds;
 
 namespace Game1.GameCode.PlayerCode
 {
-    class Player : Mover
+    class Player : Mover , ITriggerObject
     {
+        public string[] objTriggers
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
 
         public Player()
         {
@@ -67,5 +74,9 @@ namespace Game1.GameCode.PlayerCode
             this.Position = Position + pMTV;
         }
 
+        public void ActiveTrigger(string pEvent)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
