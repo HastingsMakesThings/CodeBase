@@ -163,9 +163,7 @@ namespace Game1
             _RenderMgr.Draw(spriteBatch, _EntityMgr.GameObjectList);
             // DRAW SceneList
             _RenderMgr.Draw(spriteBatch, _SceneMgr.SceneList);
-            // DRAW Axis
-            _RenderMgr.DrawAxies(spriteBatch, _EntityMgr.GameObjectList);
-
+           
             base.Draw(gameTime);
         }
     }

@@ -16,7 +16,5 @@ namespace Game1.Framework.Interfaces.Managers
 
         void Draw(SpriteBatch pSprite, List<IMenuItem> pEnts);
 
-        void DrawAxies(SpriteBatch pSprite, List<IGameObject> pEnts);
-
     }
 }

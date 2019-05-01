@@ -15,6 +15,6 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         //this method is called if the object is activated by a trigger, the method is sent with a string to detemrine what effect the trigger has on the object
         void ActiveTrigger(string pEvent);
 
-
+        void AddTrigger(string pTrigger);
     }
 }

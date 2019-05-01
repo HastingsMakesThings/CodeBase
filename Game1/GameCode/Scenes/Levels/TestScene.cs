@@ -45,6 +45,7 @@ namespace Game1.GameCode.Scenes.Levels
             PlayerAnim.Add("Up", _mAnimFac.CreatAnimation("Hastings_Back_02", 100, true, 8));
             PlayerAnim.Add("Right", _mAnimFac.CreatAnimation("Hastings_Right_02", 100, true, 8));
             PlayerAnim.Add("Left", _mAnimFac.CreatAnimation("Hastings_Left_02", 100, true, 8));
+
             //Animation for the obstacles
             IDictionary<string, IAnimation> ObsAnim = new Dictionary<string, IAnimation>();
             ObsAnim.Add("Idle", _mAnimFac.CreatAnimation("Obstacle", 1, false, 1));
@@ -54,7 +55,7 @@ namespace Game1.GameCode.Scenes.Levels
                 _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((200 * i) + 64, 500, ObsAnim, "Idle", 1, true, true));
             }
 
-            _GameList.Add(pEntityFac.CreateGameObject<Player>(300, 400, PlayerAnim, "Idle", 0.1f, false, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Player>(300, 400, PlayerAnim, "Idle", 0.07f, false, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<Triangle>(1100, 700, ObsAnim, "Idle", 1, true, true));
 

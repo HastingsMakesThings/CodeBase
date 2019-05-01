@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Game1.Framework.EntityCode.Sub_Entities
 {
     //The funciton of this abstract is to providde a framework for objects that react to triggers on collision
-    abstract class TriggerObject : ITriggerObject
+    abstract class TriggerObject :GameObject, ITriggerObject
     {
         //Instacne variables
         protected string[] _mTriggers;
@@ -23,6 +23,11 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         //this holds the reaction that entities will perform when triggered
         public virtual void ActiveTrigger(string pEvent)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddTrigger(string pTrigger)
         {
             throw new NotImplementedException();
         }
