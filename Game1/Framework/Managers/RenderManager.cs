@@ -25,14 +25,17 @@ namespace Game1.Framework.Managers
         {
             List<IGameObject> tempEnts  = pEnts.OrderBy(order => order.lowestPoint).ToList<IGameObject>();
             float layer = 0;
+            pSprite.Begin();
             foreach (IGameObject temp in tempEnts)
             {
-                pSprite.Begin();
-                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, layer);
-                pSprite.End();
+                
+                    if(temp.Visible)
+                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (layer + temp.RenderLayer));
+               
 
                 layer += 0.001f;
             }
+            pSprite.End();
         }
 
         public void Draw(SpriteBatch pSprite, List<IMenuItem> pEnts)

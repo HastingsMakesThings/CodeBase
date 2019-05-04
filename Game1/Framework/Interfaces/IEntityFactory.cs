@@ -10,7 +10,7 @@ namespace Game1.Framework.Interfaces
 {
     interface IEntityFactory
     {
-        IGameObject CreateGameObject<T>(float pX, float pY, IDictionary<string, IAnimation> pAnim, string pStartAnim, float pScale, Boolean pState, bool pRigid, float pRendLayer) where T : IGameObject, new();
+        IGameObject CreateGameObject<T>(float pX, float pY, IDictionary<string, IAnimation> pAnim, string pStartAnim, float pScale, Boolean pState, bool pRigid, float pRendLayer, bool pVisibility) where T : IGameObject, new();
 
         IMenuItem CreateMenuItem<T>(float pX, float pY, string pTexture, float pScale, string pPath) where T : IMenuItem, new();
     }

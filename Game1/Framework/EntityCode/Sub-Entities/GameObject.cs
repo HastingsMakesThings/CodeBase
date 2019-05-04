@@ -48,12 +48,17 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Boolean _CollideL;
 
         protected Boolean _CollideR;
-
+        
+        //Holds a library of animations
         protected IDictionary<string, IAnimation> _mAnim;
 
+        //declares if the objecft collides with other objects
         protected bool _mRigid;
 
+        //declares which layer the sprite gets rendered to
         protected float _mRenderLayer;
+
+        protected bool _mVisibility;
 
         public GameObject()
         {
@@ -135,7 +140,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID, float pRednLayer)
+        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID, float pRednLayer, bool pVisible)
         {
             //sets up ID
             _mID = pID;
@@ -156,6 +161,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             _textureBounds = _mActiveAnim.aActiveFrame;
 
             _mRenderLayer = pRednLayer;
+
+            _mVisibility = pVisible;
 
             _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
             _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
@@ -273,7 +280,15 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         {
             get
             {
-                throw new NotImplementedException();
+                return _mRenderLayer;
+            }
+        }
+
+        public bool Visible
+        {
+            get
+            {
+                return _mVisibility;
             }
         }
 
