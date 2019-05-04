@@ -89,6 +89,7 @@
     <Compile Include="Framework\Managers\SceneManager.cs" />
     <Compile Include="Framework\Managers\SoundManager.cs" />
     <Compile Include="GameCode\Managers\MakeHasteManager.cs" />
+    <Compile Include="GameCode\Minds\PlayerTrigBoxMind.cs" />
     <Compile Include="GameCode\NPCs\Buddy.cs" />
     <Compile Include="GameCode\NPCs\Hunter.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
@@ -100,12 +101,14 @@
     <Compile Include="GameCode\States\Follow.cs" />
     <Compile Include="GameCode\States\Pursue.cs" />
     <Compile Include="GameCode\States\Seek.cs" />
+    <Compile Include="GameCode\States\Shadow.cs" />
     <Compile Include="GameCode\States\State.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\Mover.cs" />
     <Compile Include="GameCode\Obstacles\Triangle.cs" />
     <Compile Include="GameCode\Obstacles\Obstacle.cs" />
     <Compile Include="GameCode\Scenes\Menus\TestMenu.cs" />
     <Compile Include="GameCode\States\TextureEdit.cs" />
+    <Compile Include="GameCode\Triggers\PlayerTrigBox.cs" />
     <Compile Include="GameCode\Triggers\ScoreBox.cs" />
     <Compile Include="GameCode\UI\Cursor.cs" />
     <Compile Include="GameCode\PlayerCode\Player.cs" />

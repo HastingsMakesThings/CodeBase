@@ -1,24 +1,30 @@
-﻿
+﻿using Game1.Framework.EntityCode.Sub_Entities;
 using Game1.Framework.Interfaces.Sub_Entities;
+using Game1.GameCode.Minds;
+using Game1.GameCode.States;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
 
-namespace Game1.Framework.EntityCode.Sub_Entities
+namespace Game1.GameCode.Triggers
 {
-    //the funciton of this entity is to act as a trigger area in that sets of 
-    abstract class ITriggerBox : GameObject, ITriggerArea
+    //this object is the trigger box that follows the player 
+    class PlayerTrigBox : Mover, ITriggerArea
     {
+        //instacne variables
         //protected strign array for all the triggers that the triggerbox holds
-        protected string[] _myTriggers;
+        private string[] _myTriggers;
 
-        //protercted string that acts as the default if no trigger is met, such as if the apossing trigger object can ignore collision with this object
-        protected string _mDefault;
+        public PlayerTrigBox()
+        {
+            _MyMind = new PlayerTrigBoxMind();
+            _MyMind.Initalize(this);
+            _MyMind.AddState<Shadow>("Shadow", this);
 
-        
+            _myTriggers = new string[0];
+        }
         //this funciton is used to identify if any of the strings in the pTriggers is relevent to this Triger area
         public virtual string IsTrigger(string[] pTriggers)
         {

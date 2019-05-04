@@ -29,7 +29,7 @@ namespace Game1.Framework.Managers
             {
                     IMover tempMover = (IMover)current;
                     _MindList.Add(tempMover.getMind);
-                    Console.WriteLine("Current Mind Count:{0} ", _MindList.Count);
+                  //  Console.WriteLine("Current Mind Count:{0} ", _MindList.Count);
             }
         }
 

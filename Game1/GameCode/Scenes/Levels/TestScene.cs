@@ -15,6 +15,7 @@ using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Interfaces.Managers;
 using Game1.Framework.Animations;
 using Game1.Framework.Interfaces.Scenes;
+using Game1.GameCode.Triggers;
 
 namespace Game1.GameCode.Scenes.Levels
 {
@@ -64,6 +65,8 @@ namespace Game1.GameCode.Scenes.Levels
             _GameList.Add(pEntityFac.CreateGameObject<ScaredyCat>(600, 600, ObsAnim, "Idle", 1, false, true, 0.01f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<Buddy>(600, 400, ObsAnim, "Idle", 1,  false, false, 0.01f, true));
+
+            _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, ObsAnim, "Idle",2, false, false, 0.01f, false));
         }
 
         public List<IGameObject> GameList

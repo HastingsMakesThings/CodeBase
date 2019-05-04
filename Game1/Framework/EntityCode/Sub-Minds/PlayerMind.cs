@@ -44,6 +44,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
                 _event = "Seek Me";
             if (KeyboardManager.threeKey)
                 _event = "Pursue Me";
+
         }
 
         public override void EventData(string pEvent, IGameObject pTrigger)
@@ -69,7 +70,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
 
             States = new Dictionary<string, IState>();
 
-            _event = "";
+            _event = "PlayerCreated";
 
             this._pTarget = (IGameObject)_pTarget;
 

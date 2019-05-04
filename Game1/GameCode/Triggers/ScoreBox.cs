@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Game1.GameCode.Triggers
 {
     //this entity produces string if the correct entity is brought onto it
-    class ScoreBox: TriggerBox 
+    class ScoreBox: ITriggerBox 
     {
         //instance variables
         
