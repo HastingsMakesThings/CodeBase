@@ -30,7 +30,7 @@ namespace Game1.Framework.Managers
             {
                 
                     if(temp.Visible)
-                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (layer + temp.RenderLayer));
+                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (temp.RenderLayer + layer));
                
 
                 layer += 0.001f;
