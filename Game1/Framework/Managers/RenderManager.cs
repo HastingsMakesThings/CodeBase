@@ -31,7 +31,7 @@ namespace Game1.Framework.Managers
                     pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, layer);
                 pSprite.End();
 
-                layer += 0.01f;
+                layer += 0.001f;
             }
         }
 

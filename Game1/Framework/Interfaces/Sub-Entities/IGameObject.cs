@@ -29,7 +29,7 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         int VerDir { get; set; }
 
-        void Initialise(IDictionary<string, IAnimation> pAnim ,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int ID);
+        void Initialise(IDictionary<string, IAnimation> pAnim ,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int ID, float pRednLayer);
     
         void playSound(string soundClip);
 
@@ -48,6 +48,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         bool Rigid { get; }
 
         float lowestPoint { get; }
+
+        float RenderLayer { get; }
 
 
     }

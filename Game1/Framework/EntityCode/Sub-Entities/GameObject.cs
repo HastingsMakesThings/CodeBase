@@ -53,6 +53,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         protected bool _mRigid;
 
+        protected float _mRenderLayer;
+
         public GameObject()
         {
             
@@ -133,7 +135,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID)
+        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID, float pRednLayer)
         {
             //sets up ID
             _mID = pID;
@@ -152,7 +154,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             //finds the animation frame that shoudl be played first
             _Texture = _mActiveAnim.aActiveTexture;
             _textureBounds = _mActiveAnim.aActiveFrame;
-            
+
+            _mRenderLayer = pRednLayer;
 
             _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
             _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
@@ -263,6 +266,14 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             get
             {
                return Position.Y + (_textureBounds.Height * _Scale);
+            }
+        }
+
+        public float RenderLayer
+        {
+            get
+            {
+                throw new NotImplementedException();
             }
         }
 
