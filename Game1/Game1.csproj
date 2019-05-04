@@ -96,6 +96,7 @@
     <Compile Include="GameCode\States\2DirectionalMove.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMover.cs" />
+    <Compile Include="GameCode\States\Follow.cs" />
     <Compile Include="GameCode\States\Pursue.cs" />
     <Compile Include="GameCode\States\Seek.cs" />
     <Compile Include="GameCode\States\State.cs" />

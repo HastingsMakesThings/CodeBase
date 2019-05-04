@@ -63,7 +63,7 @@ namespace Game1.GameCode.Scenes.Levels
 
             _GameList.Add(pEntityFac.CreateGameObject<ScaredyCat>(600, 600, ObsAnim, "Idle", 1, false, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Buddy>(600, 400, ObsAnim, "Idle", 1,  false, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Buddy>(600, 400, ObsAnim, "Idle", 1,  false, false));
         }
 
         public List<IGameObject> GameList

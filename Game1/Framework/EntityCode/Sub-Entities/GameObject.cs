@@ -103,10 +103,11 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
             _Vertexes = new Vector2[4];
 
-            _Vertexes[0] = this.Position;
+            _Vertexes[0].X = this.Position.X;
+            _Vertexes[0].Y = this.Position.Y + (_textureBounds.Height * (_Scale * 0.75f));
 
             _Vertexes[1].X = this.Position.X + (_textureBounds.Width * _Scale);
-            _Vertexes[1].Y = this.Position.Y;
+            _Vertexes[1].Y = this.Position.Y + (_textureBounds.Height * (_Scale * 0.75f));
 
             _Vertexes[2].X = this.Position.X + (_textureBounds.Width * _Scale);
             _Vertexes[2].Y = this.Position.Y + (_textureBounds.Height *_Scale);
@@ -255,6 +256,14 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         public bool Rigid
         {
             get { return _mRigid; }
+        }
+
+        public float lowestPoint
+        {
+            get
+            {
+               return Position.Y + (_textureBounds.Height * _Scale);
+            }
         }
 
         #endregion

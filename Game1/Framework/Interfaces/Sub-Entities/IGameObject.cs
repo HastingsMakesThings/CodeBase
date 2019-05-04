@@ -47,6 +47,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         bool Rigid { get; }
 
+        float lowestPoint { get; }
+
 
     }
 }

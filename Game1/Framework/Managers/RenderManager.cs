@@ -23,11 +23,15 @@ namespace Game1.Framework.Managers
 
         public void Draw(SpriteBatch pSprite, List<IGameObject> pEnts)
         {
-            foreach (IGameObject temp in pEnts)
+            List<IGameObject> tempEnts  = pEnts.OrderBy(order => order.lowestPoint).ToList<IGameObject>();
+            float layer = 0;
+            foreach (IGameObject temp in tempEnts)
             {
                 pSprite.Begin();
-                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, 0f);
+                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, layer);
                 pSprite.End();
+
+                layer += 0.01f;
             }
         }
 
@@ -52,7 +56,8 @@ namespace Game1.Framework.Managers
             }
         }
         
-
+        //the funciton of this method ius to srt the entities so that entites which have a lower y value are rendered first so that the layering of objects looks correct
+      
         public void Update(GameTime gameTime)
         {
 
