@@ -16,7 +16,7 @@ namespace Game1.GameCode.Minds
 
         public PlayerTrigBoxMind()
         {
-            _event = "GrabPLayer";
+            _event = "";
         } 
         public override string CreateEvent()
         {
@@ -45,6 +45,8 @@ namespace Game1.GameCode.Minds
 
                     tempState.NewTarget(pTrigger);
                 }
+
+            base.EventData(pEvent, pTrigger);
         }
     }
 }

@@ -23,6 +23,8 @@ namespace Game1.Framework.Managers
         // KeyJump used to check if 'Space' is pressed
         public static Boolean KeyJump;
 
+        //cheks if the jump key was pressed before
+        private bool spacePrev;
         public static Boolean oneKey;
         public static Boolean twoKey;
         public static Boolean threeKey;
@@ -40,6 +42,8 @@ namespace Game1.Framework.Managers
             KeyJump = false;
 
             oneKey = false;
+
+            spacePrev = false;
         }
 
         public void CheckInput()
@@ -84,7 +88,12 @@ namespace Game1.Framework.Managers
 
             if (currentState.IsKeyDown(Keys.Space))
             {
+                spacePrev = true;
+            }
+            else if(spacePrev)
+            {
                 KeyJump = true;
+                spacePrev = false;
             }
             else
             {

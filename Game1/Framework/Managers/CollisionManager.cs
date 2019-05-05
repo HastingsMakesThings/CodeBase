@@ -136,6 +136,19 @@ namespace Game1.Framework.Managers
                             }
                             else
                             {
+                                //checks if the objects are can trigger eachother
+                                if (first is ITriggerObject)
+                                    if (second is ITriggerArea)
+                                    {
+                                        //casts them to the correct objects
+                                        ITriggerObject firstTrigObj = (ITriggerObject)first;
+
+                                        ITriggerArea secondTrigArea = (ITriggerArea)second;
+
+                                        //this mess of a call figures out if these objkects have a related trigger
+                                        firstTrigObj.ActiveTrigger(secondTrigArea.IsTrigger(firstTrigObj.objTriggers));
+                                    }
+
                                 if (Math.Abs(mMTV1.Length()) >= Math.Abs(mMTV2.Length()))
                                 {
                                     //checks if the object can be passed through

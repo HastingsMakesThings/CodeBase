@@ -45,12 +45,14 @@ namespace Game1.Framework.Managers
 
         public void Update(GameTime gameTime)
         {
+            CheckEvents();
+
             foreach (IAIMind m in _MindList)
             {
                 m.Run(gameTime);
             }
 
-            CheckEvents();
+           
         }
 
         //the purpose of this is to identify if events need to fired off
@@ -71,6 +73,7 @@ namespace Game1.Framework.Managers
                     if(tempObj != null)
                     {
                         TriggerEvent(evnText, tempObj);
+                        
                     }
 
                 }

@@ -41,15 +41,25 @@ namespace Game1.GameCode.Scenes.Levels
 
             //Animation for the player charcater
             IDictionary<string, IAnimation> PlayerAnim = new Dictionary<string, IAnimation>();
-            PlayerAnim.Add("Idle", _mAnimFac.CreatAnimation("Hastings_Front_02", 100, false, 8));
+            PlayerAnim.Add("Idle", _mAnimFac.CreatAnimation("SpriteSheetC.H.", 50, false, 5));
             PlayerAnim.Add("Down", _mAnimFac.CreatAnimation("Hastings_Front_02", 100, true, 8));
             PlayerAnim.Add("Up", _mAnimFac.CreatAnimation("Hastings_Back_02", 100, true, 8));
             PlayerAnim.Add("Right", _mAnimFac.CreatAnimation("Hastings_Right_02", 100, true, 8));
             PlayerAnim.Add("Left", _mAnimFac.CreatAnimation("Hastings_Left_02", 100, true, 8));
+            //arms raised animations
+            PlayerAnim.Add("Idle_H", _mAnimFac.CreatAnimation("SpriteSheet_Front_ArmsRaised01", 50, false, 8));
+            PlayerAnim.Add("Down_H", _mAnimFac.CreatAnimation("SpriteSheet_Front_ArmsRaised01", 100, true, 8));
+            PlayerAnim.Add("Up_H", _mAnimFac.CreatAnimation("SpriteSheet_Back_ArmsRaised01", 100, true, 8));
+            PlayerAnim.Add("Right_H", _mAnimFac.CreatAnimation("SpriteSheet_Right_ArmsRaised01", 100, true, 8));
+            PlayerAnim.Add("Left_H", _mAnimFac.CreatAnimation("SpriteSheet_Left_ArmsRaised01", 100, true, 8));
+
 
             //Animation for the obstacles
             IDictionary<string, IAnimation> ObsAnim = new Dictionary<string, IAnimation>();
             ObsAnim.Add("Idle", _mAnimFac.CreatAnimation("Obstacle", 1, false, 1));
+
+            IDictionary<string, IAnimation> BoxAnim = new Dictionary<string, IAnimation>();
+            BoxAnim.Add("Idle", _mAnimFac.CreatAnimation("Player2", 1, false, 1));
 
             for (int i = 0; i < 2; i++)
             {
@@ -67,6 +77,8 @@ namespace Game1.GameCode.Scenes.Levels
             _GameList.Add(pEntityFac.CreateGameObject<Buddy>(600, 400, ObsAnim, "Idle", 1,  false, false, 0.01f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, ObsAnim, "Idle",2, false, false, 0.01f, false));
+
+            _GameList.Add(pEntityFac.CreateGameObject<PickupAble>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
         }
 
         public List<IGameObject> GameList

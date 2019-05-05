@@ -37,6 +37,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         //strign that represents the curent animation beign played
         protected string _currAnim;
 
+
+        
         //This allows the objects mass to be obtained
         public float oMass
         {
@@ -140,6 +142,14 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             set
             {
                 _currAnim = value;
+            }
+        }
+
+        public bool SetRigid
+        {
+            set
+            {
+                _mRigid = value;
             }
         }
     }

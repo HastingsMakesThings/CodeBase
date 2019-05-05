@@ -89,9 +89,11 @@
     <Compile Include="Framework\Managers\SceneManager.cs" />
     <Compile Include="Framework\Managers\SoundManager.cs" />
     <Compile Include="GameCode\Managers\MakeHasteManager.cs" />
+    <Compile Include="GameCode\Minds\PickUpMind.cs" />
     <Compile Include="GameCode\Minds\PlayerTrigBoxMind.cs" />
     <Compile Include="GameCode\NPCs\Buddy.cs" />
     <Compile Include="GameCode\NPCs\Hunter.cs" />
+    <Compile Include="GameCode\NPCs\PickupAble.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\TriggerBox.cs" />
     <Compile Include="GameCode\States\2DirectionalMove.cs" />
@@ -99,6 +101,8 @@
     <Compile Include="GameCode\States\Flee.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMover.cs" />
     <Compile Include="GameCode\States\Follow.cs" />
+    <Compile Include="GameCode\States\InActive.cs" />
+    <Compile Include="GameCode\States\PlayerTexEdit.cs" />
     <Compile Include="GameCode\States\Pursue.cs" />
     <Compile Include="GameCode\States\Seek.cs" />
     <Compile Include="GameCode\States\Shadow.cs" />

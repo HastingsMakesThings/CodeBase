@@ -38,5 +38,7 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         IAIMind getMind { get; }
 
         string currentText { get; set; }
+
+        bool SetRigid { set; }
     }
 }
