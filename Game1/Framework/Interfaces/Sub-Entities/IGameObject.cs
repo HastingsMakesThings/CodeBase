@@ -53,6 +53,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         bool Visible { get; }
 
+        bool Static { get; }
+
 
     }
 }

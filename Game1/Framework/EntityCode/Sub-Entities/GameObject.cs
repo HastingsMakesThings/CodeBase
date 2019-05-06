@@ -251,6 +251,11 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             }
         }
 
+        public bool Static
+        {
+            get { return _Static; }
+        }
+
         #endregion
     }
 }

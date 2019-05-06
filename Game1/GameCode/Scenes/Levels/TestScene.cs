@@ -63,12 +63,12 @@ namespace Game1.GameCode.Scenes.Levels
 
             for (int i = 0; i < 2; i++)
             {
-                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((200 * i) + 64, 500, ObsAnim, "Idle", 1, true, true, 0.01f, true));
+                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>((200 * i) + 64, 500, ObsAnim, "Idle", 1, false, true, 0.01f, true));
             }
 
-            _GameList.Add(pEntityFac.CreateGameObject<Player>(300, 400, PlayerAnim, "Idle", 0.07f, false, true, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Player>(800, 600, PlayerAnim, "Idle", 0.07f, true, true, 0.01f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(1100, 700, ObsAnim, "Idle", 1, true, true, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Triangle>(1100, 700, ObsAnim, "Idle", 1, false, true, 0.01f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<Hunter>(200, 200, ObsAnim, "Idle", 1, false, true, 0.01f, true));
 

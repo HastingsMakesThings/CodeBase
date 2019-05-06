@@ -18,6 +18,8 @@ namespace Game1.GameCode.PlayerCode
 {
     class Player : Mover
     {
+        //instance variables
+        private bool _isColliding;
 
         public Player()
         {
@@ -34,6 +36,8 @@ namespace Game1.GameCode.PlayerCode
             _mMass = 20;
             _maxSpeed = 10;
             _mFriction = -6;
+
+            _isColliding = false;
 
         }
 
@@ -64,6 +68,15 @@ namespace Game1.GameCode.PlayerCode
         public override void CollReact(Vector2 pMTV)
         {
             this.Position = Position + pMTV;
+
+            _isColliding = true;
+        }
+
+        //this is used for the camera
+        public bool IsColl
+        {
+            get { return _isColliding; }
+            set { _isColliding = value; }
         }
 
 

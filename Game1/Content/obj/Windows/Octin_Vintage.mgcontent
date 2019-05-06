@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Octin_Vintage.spritefont</SourceFile>
-  <SourceTime>2019-05-06T09:35:48.5012769+01:00</SourceTime>
-  <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Octin_Vintage.xnb</DestFile>
-  <DestTime>2019-05-06T09:43:16.1908011+01:00</DestTime>
+  <SourceFile>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Octin_Vintage.spritefont</SourceFile>
+  <SourceTime>2019-05-06T11:05:24+01:00</SourceTime>
+  <DestFile>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/bin/Windows/Octin_Vintage.xnb</DestFile>
+  <DestTime>2019-05-06T16:05:26.1892831+01:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
-  <ImporterTime>2015-04-29T18:14:44+01:00</ImporterTime>
+  <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
-  <ProcessorTime>2015-04-29T18:14:44+01:00</ProcessorTime>
+  <ProcessorTime>2017-03-01T15:05:36+00:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
   <Parameters>
     <Key>TextureFormat</Key>
     <Value>Compressed</Value>

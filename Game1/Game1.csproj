@@ -59,6 +59,7 @@
     <Compile Include="Framework\Interfaces\IEntity.cs" />
     <Compile Include="Framework\Interfaces\IEntityFactory.cs" />
     <Compile Include="Framework\Interfaces\IMoveBehaviour.cs" />
+    <Compile Include="Framework\Interfaces\Managers\!CameraManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IAIManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IAnimationFactory.cs" />
     <Compile Include="Framework\Interfaces\Managers\ICollisionManager.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Framework\Managers\EntityManager.cs" />
     <Compile Include="Framework\Managers\KeyboardManager.cs" />
     <Compile Include="Framework\Managers\MouseManager.cs" />
+    <Compile Include="Framework\Managers\CameraManager.cs" />
     <Compile Include="Framework\Managers\RenderManager.cs" />
     <Compile Include="Framework\Managers\Collision\SATCollision.cs" />
     <Compile Include="Framework\Managers\SceneManager.cs" />
@@ -101,7 +103,9 @@
     <Compile Include="GameCode\NPCs\Patient.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\TriggerBox.cs" />
+    <Compile Include="GameCode\Obstacles\Enviroment.cs" />
     <Compile Include="GameCode\PlayerCode\PatientInformation.cs" />
+    <Compile Include="GameCode\States\MoveInBox.cs" />
     <Compile Include="GameCode\States\2DirectionalMove.cs" />
     <Compile Include="GameCode\States\Carried.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
