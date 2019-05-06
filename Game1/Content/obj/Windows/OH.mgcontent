@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/OH.wav</SourceFile>
-  <SourceTime>2019-03-22T12:45:01.3475898+00:00</SourceTime>
-  <DestFile>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/bin/Windows/OH.xnb</DestFile>
-  <DestTime>2019-05-04T10:42:19.4882117+01:00</DestTime>
+  <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/OH.wav</SourceFile>
+  <SourceTime>2019-05-06T09:36:07.0335961+01:00</SourceTime>
+  <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/OH.xnb</DestFile>
+  <DestTime>2019-05-06T09:37:22.785827+01:00</DestTime>
   <Importer>WavImporter</Importer>
-  <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
+  <ImporterTime>2015-04-29T18:14:44+01:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>
-  <ProcessorTime>2017-03-01T15:05:36+00:00</ProcessorTime>
+  <ProcessorTime>2015-04-29T18:14:44+01:00</ProcessorTime>
   <Parameters>
     <Key>Quality</Key>
     <Value>Best</Value>
