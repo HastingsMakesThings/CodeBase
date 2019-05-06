@@ -78,7 +78,9 @@ namespace Game1.GameCode.Scenes.Levels
 
             _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, ObsAnim, "Idle",2, false, false, 0.01f, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<PickupAble>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Room>(0, 0, ObsAnim, "Idle", 2, false, false, 0.01f, false));
+
+            _GameList.Add(pEntityFac.CreateGameObject<Patient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
         }
 
         public List<IGameObject> GameList

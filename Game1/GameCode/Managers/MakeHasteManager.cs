@@ -15,7 +15,6 @@ namespace Game1.GameCode.Managers
         //instance variables
         //a variable for the player token
         private IGameObject _mPLayer;
-           
         
         public float CurrentScore
         {

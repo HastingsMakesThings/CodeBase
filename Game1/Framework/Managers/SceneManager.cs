@@ -31,12 +31,16 @@ namespace Game1.Framework.Managers
 
         protected List<IMenuItem> _SceneList;
 
+        protected List<ITextElement> _TextList;
+
 
         public SceneManager(ContentManager pContent)
         {
             _Content = pContent;
 
             _SceneList = new List<IMenuItem>();
+
+            _TextList = new List<ITextElement>();
 
             _EntityFac = new EntityFactory(_Content);
         }
@@ -61,6 +65,8 @@ namespace Game1.Framework.Managers
                     menu.setup(_Content, _EntityFac);
 
                     _SceneList = menu.MenuList;
+
+                    _TextList = menu.TextList;
                     break;
             }
             
@@ -91,6 +97,11 @@ namespace Game1.Framework.Managers
         public List<IMenuItem> SceneList
         {
             get { return _SceneList; }
+        }
+
+        public List<ITextElement> TextList
+        {
+            get { return _TextList; }
         }
 
         #endregion

@@ -12,19 +12,19 @@ using Game1.Framework.EntityCode.Sub_Entities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Game1.Framework.EntityCode.Sub_Minds;
-
+using Game1.GameCode.Minds;
 
 namespace Game1.GameCode.PlayerCode
 {
     class Player : Mover
     {
-      
+
         public Player()
         {
             // Initialise Type
             Type = "Player";
             // Initialise Mind
-            _MyMind = new PlayerMind();
+            _MyMind = new HastingsMind();
             _MyMind.Initalize(this);
             _MyMind.AddState<TextureEdit>("Tex", this);
             _MyMind.AddState<PlayerTexEdit>("PlayTex", this);
@@ -39,8 +39,6 @@ namespace Game1.GameCode.PlayerCode
 
         public override void Update(GameTime gameTime)
         {
-            CalculateProjectedX();
-            CalculateProjectedY();
 
             TextureChange();
             _mActiveAnim.Play(gameTime);
@@ -68,6 +66,6 @@ namespace Game1.GameCode.PlayerCode
             this.Position = Position + pMTV;
         }
 
-       
+
     }
 }

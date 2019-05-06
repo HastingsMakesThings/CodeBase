@@ -16,5 +16,7 @@ namespace Game1.Framework.Interfaces.Managers
 
         void Draw(SpriteBatch pSprite, List<IMenuItem> pEnts);
 
+        void Draw(SpriteBatch pSprite, SpriteFont pFont, List<ITextElement> pText);
+
     }
 }

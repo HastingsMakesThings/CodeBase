@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</SourceFile>
-  <SourceTime>2019-04-29T14:54:53.0505325+01:00</SourceTime>
-  <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Content/Cursor.xnb</DestFile>
-  <DestTime>2019-04-29T15:07:43.3648074+01:00</DestTime>
+  <SourceFile>C:/Users/Jenk/Desktop/CodeBase-master/Game1/Content/Cursor.png</SourceFile>
+  <SourceTime>2019-05-06T11:05:23.2991377+01:00</SourceTime>
+  <DestFile>C:/Users/Jenk/Desktop/CodeBase-master/Game1/Content/bin/Windows/Content/Cursor.xnb</DestFile>
+  <DestTime>2019-05-06T11:06:44.0079162+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -4,25 +4,27 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Cursor.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/EH.wav</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Hastings_4tile.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/NPCBoard.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Obstacle.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/OH.wav</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Player.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Player1.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Player2.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Player3.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Hastings_Back_02.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Hastings_Front_02.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Hastings_Left_02.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/Hastings_Right_02.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/C.H.Idle_Front.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/SpriteSheet_Back_ArmsRaised01.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/SpriteSheet_Front_ArmsRaised01.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/SpriteSheet_Left_ArmsRaised01.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/SpriteSheet_Right_ArmsRaised01.png</File>
-    <File>C:/Users/Finn/Desktop/Temp_Folder_forWorkTransfer/CodeBase/Game1/Content/SpriteSheetC.H..png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Clipboard_sprite.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/EH.wav</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_4tile.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/NPCBoard.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Octin_Vintage.spritefont</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/OH.wav</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player1.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player2.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player3.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Back_02.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Front_02.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Left_02.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Right_02.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/C.H.Idle_Front.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheet_Back_ArmsRaised01.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheet_Front_ArmsRaised01.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheet_Left_ArmsRaised01.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheet_Right_ArmsRaised01.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheetC.H..png</File>
   </SourceFiles>
 </SourceFileCollection>

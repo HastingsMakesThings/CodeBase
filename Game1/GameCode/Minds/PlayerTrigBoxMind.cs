@@ -16,8 +16,8 @@ namespace Game1.GameCode.Minds
 
         public PlayerTrigBoxMind()
         {
-            _event = "";
-        } 
+            _event = "GrabPLayer";
+        }
         public override string CreateEvent()
         {
             return _event;

@@ -1,8 +1,17 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Cursor.png","C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Cursor.xnb","TextureProcessor","Texture2DContent",188,4181,0.3568356
-"C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/EH.wav","C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/EH.xnb","SoundEffectProcessor","SoundEffectContent",55340,55401,0.2914832
-"C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Hastings_4tile.png","C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Hastings_4tile.xnb","TextureProcessor","Texture2DContent",765467,6076885,0.2163945
-"C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/NPCBoard.png","C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/NPCBoard.xnb","TextureProcessor","Texture2DContent",3964878,41680981,1.393905
-"C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png","C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Obstacle.xnb","TextureProcessor","Texture2DContent",232,16469,0.0129645
-"C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/OH.wav","C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/OH.xnb","SoundEffectProcessor","SoundEffectContent",43052,43113,0.1316475
-"C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/Player.png","C:/Users/Jenk/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Player.xnb","TextureProcessor","Texture2DContent",179,16469,0.0089778
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Clipboard_sprite.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Clipboard_sprite.xnb","TextureProcessor","Texture2DContent",535134,1433685,0.2249063
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Cursor.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Cursor.xnb","TextureProcessor","Texture2DContent",188,4181,0.0009979
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/EH.wav","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/EH.xnb","SoundEffectProcessor","SoundEffectContent",55340,55401,0.1944819
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Hastings_4tile.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Hastings_4tile.xnb","TextureProcessor","Texture2DContent",765467,6076885,0.2024576
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Hastings_Back_02.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Hastings_Back_02.xnb","TextureProcessor","Texture2DContent",4684631,54345685,1.439443
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Hastings_Front_02.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Hastings_Front_02.xnb","TextureProcessor","Texture2DContent",4650969,54345685,1.756352
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Hastings_Left_02.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Hastings_Left_02.xnb","TextureProcessor","Texture2DContent",5326005,54345685,1.452522
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Hastings_Right_02.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Hastings_Right_02.xnb","TextureProcessor","Texture2DContent",3819897,54345685,1.765206
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/NPCBoard.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/NPCBoard.xnb","TextureProcessor","Texture2DContent",3964878,41680981,1.979397
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Obstacle.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Obstacle.xnb","TextureProcessor","Texture2DContent",232,16469,0.0049874
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Octin_Vintage.spritefont","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Octin_Vintage.xnb","FontDescriptionProcessor","SpriteFontContent",2062,21521,0.3071805
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/OH.wav","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/OH.xnb","SoundEffectProcessor","SoundEffectContent",43052,43113,0.3705235
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Player.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Player.xnb","TextureProcessor","Texture2DContent",179,16469,0.0179521
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Player1.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Player1.xnb","TextureProcessor","Texture2DContent",274,16469,0.0099722
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Player2.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Player2.xnb","TextureProcessor","Texture2DContent",271,16469,0.0169547
+"C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Player3.png","C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Player3.xnb","TextureProcessor","Texture2DContent",271,16469,0.0209453

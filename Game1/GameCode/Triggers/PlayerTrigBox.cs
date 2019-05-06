@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework;
 
 namespace Game1.GameCode.Triggers
 {
-    //this object is the trigger box that follows the player 
+    //this object is the trigger box that follows the player
     class PlayerTrigBox : Mover, ITriggerArea
     {
         //instacne variables

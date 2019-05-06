@@ -11,12 +11,17 @@ using Microsoft.Xna.Framework;
 
 namespace Game1.GameCode.NPCs
 {   //the purpos eof this class is to be an objct that the player can pick up
-    class PickupAble : Mover, ITriggerObject
+    abstract class PickupAble : Mover, ITriggerObject
     {
         //Instacne variables
         protected string[] _mTriggers;
 
         public PickupAble()
+        {
+            
+        }
+
+        public void Initialise()
         {
             //ConstructorCode
 
