@@ -28,9 +28,6 @@ namespace Game1.Framework.Managers
         //this holds an object for the player
         private Player _mPlayer;
 
-        //sets a difinative position for the target
-        private Vector2 _targetPos; 
-
         public CamearaManager(float pSpeed)
         {
             _mCameraSpeed = pSpeed;
@@ -48,8 +45,6 @@ namespace Game1.Framework.Managers
                if(g is Player)
                 {
                     _mPlayer = (Player)g;
-
-                    _targetPos = _mPlayer.Position;
 
                     break;
                 }
@@ -71,7 +66,7 @@ namespace Game1.Framework.Managers
                 }
             }
 
-            
+            _mPlayer.IsColl = false;
         }
 
         private void CalculateMove()
@@ -94,13 +89,6 @@ namespace Game1.Framework.Managers
 
             //this extends the magnitued of the the vector by the quantity of the cam speed
             _mCamMove = _mCamMove * _mCameraSpeed;
-
-            if( _mPlayer.Position != _targetPos)
-            {
-                _mCamMove += (_targetPos - _mPlayer.Position);
-
-                _mPlayer.Position = _targetPos;
-            }
         }
     }
 }

@@ -23,8 +23,6 @@ namespace Game1.Framework.EntityCode.Sub_Minds
         public PlayerMind()
         {
             _CurrentSet = "Tex";
-
-           
         }
 
 
@@ -42,8 +40,6 @@ namespace Game1.Framework.EntityCode.Sub_Minds
 
                 States.TryGetValue(_CurrentSet, out temp);
                 temp.Run(gametime);
-
-              
             }
 
             if (KeyboardManager.oneKey)

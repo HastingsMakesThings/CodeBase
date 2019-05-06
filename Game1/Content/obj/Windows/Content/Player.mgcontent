@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Jenk/Desktop/CodeBase-master/Game1/Content/Player.png</SourceFile>
-  <SourceTime>2019-05-06T11:05:23.6747755+01:00</SourceTime>
-  <DestFile>C:/Users/Jenk/Desktop/CodeBase-master/Game1/Content/bin/Windows/Content/Player.xnb</DestFile>
-  <DestTime>2019-05-06T11:06:46.9497899+01:00</DestTime>
+  <SourceFile>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Player.png</SourceFile>
+  <SourceTime>2019-05-06T17:41:49.3025763+01:00</SourceTime>
+  <DestFile>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/bin/Windows/Content/Player.xnb</DestFile>
+  <DestTime>2019-05-06T17:45:07.2604937+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
-using Game1.Framework.Managers;
-
 namespace Game1.GameCode.States
 {
     class TextureEdit : State
@@ -24,35 +22,38 @@ namespace Game1.GameCode.States
 
         private void CheckTextures()
         {
-            if(KeyboardManager.KeyLeft && KeyboardManager.KeyRight)
-            {
-                _mMover.currentText = "Idle";
-            }
-            else if (KeyboardManager.KeyLeft)
+            Vector2 tempPos = _tPosition;
+            UpdateData();
+
+            Vector2 currentPos = _mMover.oPostion;
+
+            Vector2 Change = tempPos - currentPos;
+
+           if(Change.X > 0)
             {
                 _mMover.currentText = "Left";
             }
-            else if (KeyboardManager.KeyRight)
+
+            if (Change.X < 0)
             {
                 _mMover.currentText = "Right";
             }
-            else if(KeyboardManager.KeyUp && KeyboardManager.KeyDown)
-            {
-                _mMover.currentText = "Idle";
-            }
-            else if (KeyboardManager.KeyUp)
+
+            if (Change.Y > 0)
             {
                 _mMover.currentText = "Up";
             }
-            else if (KeyboardManager.KeyDown)
+
+            if (Change.Y < 0)
             {
                 _mMover.currentText = "Down";
             }
-            else
+
+            if(Change.Y == 0 && Change.X ==0)
             {
                 _mMover.currentText = "Idle";
             }
-          
+
         }
 
     }
