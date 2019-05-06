@@ -17,23 +17,23 @@ namespace Game1.Framework.EntityCode.Sub_Minds
         //instance variables
         string _CurrentSet;
 
-       
+
         public PlayerMind()
         {
             _CurrentSet = "Tex";
         }
 
-        
+
 
         public override void Run(GameTime gametime)
         {
             _event = "";
             IState temp;
-            
+
             if(States.Count > 0)
             {
                 States.TryGetValue(_currentState, out temp);
-               
+
                 temp.Run(gametime);
 
                 States.TryGetValue(_CurrentSet, out temp);

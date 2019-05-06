@@ -38,7 +38,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected string _currAnim;
 
 
-        
+
         //This allows the objects mass to be obtained
         public float oMass
         {

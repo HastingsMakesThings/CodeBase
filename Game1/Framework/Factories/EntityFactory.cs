@@ -48,15 +48,13 @@ namespace Game1.Framework.Factories
 
         // CreateEntity generates objects of type IMenuItem
         // Pass in X and Y position, Texture, Scale and its Path
-        public IMenuItem CreateMenuItem<T>(float pX, float pY, string pTexture, float pScale, string pPath) where T : IMenuItem, new()
+        public IMenuItem CreateMenuItem<T>(float pX, float pY, IDictionary<string, IAnimation> pAnim, string pStartAnim, float pScale, Boolean pStatic, bool pRigid, float pRendLayer, bool pVisibility) where T : IMenuItem, new()
         {
             try
             {
                 IMenuItem _MenuItem = new T();
 
-                Texture2D _Texture = _Content.Load<Texture2D>(pTexture);
-
-                _MenuItem.Initialise(pX, pY, _Texture, pScale, pPath,_IDCounter);
+                _MenuItem.Initialise(pAnim, pStartAnim, pX, pY, pScale, pStatic, pRigid, _IDCounter, pRendLayer, pVisibility);
                 _IDCounter++;
                 return _MenuItem;
 
@@ -67,5 +65,26 @@ namespace Game1.Framework.Factories
             }
             return null;
         }
+
+        // CreateEntity generates objects of type IMenuItem
+        // Pass in X and Y position, Texture, Scale and its Path
+        public ITextElement CreateTextElement<T>(IMenuItem pParent, string pValue, int pOffX, int pOffY) where T : ITextElement, new()
+        {
+            try
+            {
+                ITextElement _TextElement = new T();
+
+                _TextElement.Initialise(pParent, pValue, pOffX, pOffY);
+                _IDCounter++;
+                return _TextElement;
+
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine("Failure to create TextElement. Error{0}", e);
+            }
+            return null;
+        }
+
     }
 }

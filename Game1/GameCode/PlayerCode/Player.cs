@@ -18,7 +18,7 @@ namespace Game1.GameCode.PlayerCode
 {
     class Player : Mover
     {
-      
+
         public Player()
         {
             // Initialise Type
@@ -39,8 +39,6 @@ namespace Game1.GameCode.PlayerCode
 
         public override void Update(GameTime gameTime)
         {
-            CalculateProjectedX();
-            CalculateProjectedY();
 
             TextureChange();
             _mActiveAnim.Play(gameTime);
@@ -68,6 +66,6 @@ namespace Game1.GameCode.PlayerCode
             this.Position = Position + pMTV;
         }
 
-       
+
     }
 }

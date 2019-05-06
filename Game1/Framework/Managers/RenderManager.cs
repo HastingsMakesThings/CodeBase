@@ -28,10 +28,10 @@ namespace Game1.Framework.Managers
             pSprite.Begin();
             foreach (IGameObject temp in tempEnts)
             {
-                
+
                     if(temp.Visible)
                     pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (temp.RenderLayer + layer));
-               
+
 
                 layer += 0.001f;
             }
@@ -40,10 +40,24 @@ namespace Game1.Framework.Managers
 
         public void Draw(SpriteBatch pSprite, List<IMenuItem> pEnts)
         {
+            pSprite.Begin();
             foreach (IMenuItem temp in pEnts)
             {
+
+                  
+                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, 1);
+
+
+            }
+            pSprite.End();
+        }
+
+        public void Draw(SpriteBatch pSprite, SpriteFont pFont, List<ITextElement> pText)
+        {
+            foreach (ITextElement temp in pText)
+            {
                 pSprite.Begin();
-                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, 0f);
+                pSprite.DrawString(pFont, "" + temp.getValue, new Vector2(temp.getParent.XPosition + temp.getXOffest, temp.getParent.YPosition + temp.getYOffest), Color.Black);
                 pSprite.End();
             }
         }
@@ -58,9 +72,9 @@ namespace Game1.Framework.Managers
                 pSprite.End();
             }
         }
-        
+
         //the funciton of this method ius to srt the entities so that entites which have a lower y value are rendered first so that the layering of objects looks correct
-      
+
         public void Update(GameTime gameTime)
         {
 

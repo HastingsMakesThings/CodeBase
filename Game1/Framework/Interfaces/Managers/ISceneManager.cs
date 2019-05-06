@@ -13,6 +13,8 @@ namespace Game1.Framework.Interfaces.Managers
 
         List<IMenuItem> SceneList { get; }
 
+        List<ITextElement> TextList { get; }
+
         void LoadScene(string pScene);
 
         

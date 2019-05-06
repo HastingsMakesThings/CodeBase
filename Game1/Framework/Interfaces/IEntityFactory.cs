@@ -12,6 +12,8 @@ namespace Game1.Framework.Interfaces
     {
         IGameObject CreateGameObject<T>(float pX, float pY, IDictionary<string, IAnimation> pAnim, string pStartAnim, float pScale, Boolean pState, bool pRigid, float pRendLayer, bool pVisibility) where T : IGameObject, new();
 
-        IMenuItem CreateMenuItem<T>(float pX, float pY, string pTexture, float pScale, string pPath) where T : IMenuItem, new();
+        IMenuItem CreateMenuItem<T>(float pX, float pY, IDictionary<string, IAnimation> pAnim, string pStartAnim, float pScale, Boolean pState, bool pRigid, float pRendLayer, bool pVisibility) where T : IMenuItem, new();
+
+        ITextElement CreateTextElement<T>(IMenuItem pParent, string pValue, int pOffX, int pOffY) where T : ITextElement, new();
     }
 }

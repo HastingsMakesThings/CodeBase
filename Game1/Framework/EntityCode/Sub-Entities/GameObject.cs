@@ -48,7 +48,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Boolean _CollideL;
 
         protected Boolean _CollideR;
-        
+
         //Holds a library of animations
         protected IDictionary<string, IAnimation> _mAnim;
 
@@ -62,49 +62,10 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         public GameObject()
         {
-            
+
         }
 
-     
-
-
-        public void CalculateProjectedX()
-        {
-            Vector2 start = new Vector2();
-            Vector2 end = new Vector2();
-
-            start.X = Position.X;
-            start.Y = 4;
-
-            end.X = Position.X + Texture.Width;
-            end.Y = 4;
-
-            Vector2 edge = end - start;
-
-            _ProXAngle = (float)Math.Atan2(edge.Y, edge.X);
-
-            _ProjectedX = new Rectangle((int)start.X, (int)start.Y, (int)edge.Length(), 1);
-        }
-
-        public void CalculateProjectedY()
-        {
-            Vector2 start = new Vector2();
-            Vector2 end = new Vector2();
-
-            start.X = 4;
-            start.Y = Position.Y;
-
-            end.X = 4;
-            end.Y = Position.Y - Texture.Height;
-
-            Vector2 edge = end - start;
-
-            _ProYAngle = (float)Math.Atan2(edge.X, edge.Y);
-
-            _ProjectedY = new Rectangle((int)start.X, (int)start.Y, 1, (int)edge.Length());
-        }
-
-        //This Declares a method that will calculate the location of the vertexes of each object dependant on their position 
+        //This Declares a method that will calculate the location of the vertexes of each object dependant on their position
         protected virtual void CalculateVertexes()
         {
 
@@ -127,18 +88,20 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         public void playSound(string soundClip)
         {
-           
+
         }
 
         public override void Update(GameTime gameTime)
         {
-            
+
         }
 
         public virtual void CollReact(Vector2 pMTV)
         {
 
         }
+
+      
 
         public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID, float pRednLayer, bool pVisible)
         {
@@ -173,11 +136,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
             _mRigid = pRigid;
 
-            // Run this once so objects get their starting axies projected
-            // if an object is static then there is no need to run this more than once
-            // if an object is not static then run the methods below in that objects update method
-            CalculateProjectedX();
-            CalculateProjectedY();
+            _mRigid = pRigid;
 
             //Calls the calculate vertexes method
             CalculateVertexes();
