@@ -94,65 +94,65 @@ namespace Game1.GameCode.Scenes.Levels
             IDictionary<string, IAnimation> BoxAnim = new Dictionary<string, IAnimation>();
             BoxAnim.Add("Idle", _mAnimFac.CreatAnimation("Player2", 1, false, 1));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(875, 1140, FloorAnim, "Office floor", 1, false, false, 0.001f, true));
+              _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(875, 1140, FloorAnim, "Office floor", 1, false, false, 1, true));
 
             #region Vertical Corridors
             #region Corridor V Collum One
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(5, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(5, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(5, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(5, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 145, FloorAnim, "Corridor V", 1, false, false, 0.0001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+              _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
             #endregion
 
             #region Corridor V Collum Two
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(725, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(725, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(725, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(725, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
             #endregion
 
             #region Corridor V Collum Three
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1005, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1005, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1005, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1005, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+              _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
             #endregion
 
             #region Corridor V Collum Four
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1725, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1725, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1725, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1725, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1725, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1725, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1725, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1725, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
             #endregion
 
             #endregion
 
             #region Horizontal Corridors
             #region Corridor H Collum One
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(10, 150, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(10, 995, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(10, 1283, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(10, 2130, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
+                _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(10, 150, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
+               _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(10, 995, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
+                _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(10, 1283, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
+               _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(10, 2130, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
             #endregion
 
             #region Corridor H Collum One
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(810, 150, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(810, 995, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(810, 1283, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(810, 2130, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
+                  _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(810, 150, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
+                 _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(810, 995, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
+                _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(810, 1283, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
+               _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(810, 2130, FloorAnim, "Corridor H", 1, false, false, 0.001f, true));
             #endregion
             #endregion
 
             #region Rooms
 
             #region Room Collum One
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(293, 434, FloorAnim, "Room left", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(293, 1567, FloorAnim, "Room left", 1, false, false, 0.001f, true));
+              _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(293, 434, FloorAnim, "Room left", 1, false, false, 0.001f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(293, 1567, FloorAnim, "Room left", 1, false, false, 0.001f, true));
             #endregion
 
             #region Room Collum Two
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1293, 434, FloorAnim, "Room left", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(1293, 1567, FloorAnim, "Room left", 1, false, false, 0.001f, true));
+              _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1293, 434, FloorAnim, "Room left", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1293, 1567, FloorAnim, "Room left", 1, false, false, 0.001f, true));
             #endregion
 
             #endregion

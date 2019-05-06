@@ -404,3 +404,86 @@ C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\roo
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_left room.xnb
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_right room.xnb
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\middle wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\corridor room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\corridor room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\corridor_H.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\corridor_V.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\left wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\middle wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\office floor.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\picture wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\right wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\room_left top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\room_right top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top middle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top_left room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top_right room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\corridor room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\corridor room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\corridor_H.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\corridor_V.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\left wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\middle wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\office floor.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\picture wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\right wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\room_left top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\room_right top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top middle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top_left room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top_right room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\cabinet.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\glass cabinet.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\side_left_dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\side_right_clean bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\side_right_dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\side_right_empty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\top_ clean window bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\top_ dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\top_ empty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\tray angle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\tray side.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\tray top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\cup.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\mop.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\newspaper.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\saw.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\scissors.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\spilt bear bottle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\surgeon tool.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\syringe.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\corridor_H.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\corridor_V.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\office floor.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\top_left room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\top_right room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\cabinet.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\glass cabinet.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_left_dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_clean bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_empty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ clean window bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ empty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray angle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray side.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\cup.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\mop.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\newspaper.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\saw.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\scissors.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\spilt bear bottle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\surgeon tool.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\syringe.xnb

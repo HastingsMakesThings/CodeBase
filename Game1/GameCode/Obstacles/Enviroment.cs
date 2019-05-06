@@ -14,19 +14,18 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Game1.GameCode.Obstacles
 {
-     class Enviroment : GameObject
+     class Enviroment : Obstacle
     {
 
         // Use this for initialization
         public Enviroment()
         {
-
+            Type = "Enviroment";
         }
 
-        // Update is called once per frame
-        void Update()
+        public override void Update(GameTime gameTime)
         {
-
+            
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Game1.GameCode.PlayerCode
             _MyMind.Initalize(this);
             _MyMind.AddState<TextureEdit>("Tex", this);
             _MyMind.AddState<PlayerTexEdit>("PlayTex", this);
-            _MyMind.AddState<_2DMove>("Mover",this);
+           
 
             _currAnim = "Idle";
             _mMass = 20;
