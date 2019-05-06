@@ -51,7 +51,7 @@ namespace Game1.GameCode.States
         protected float speed;
 
         protected Vector2 _mDrag;
-        public virtual void Run()
+        public virtual void Run(GameTime gametime)
         {
 
         }

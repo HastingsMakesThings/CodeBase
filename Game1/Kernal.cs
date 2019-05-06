@@ -19,7 +19,8 @@ namespace Game1
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        
+        SpriteFont Octin_vintage;
+
         public static int ScreenHeight;
         public static int ScreenWidth;
 
@@ -50,6 +51,7 @@ namespace Game1
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.GraphicsProfile = GraphicsProfile.HiDef;
 
             // Define resolution
             graphics.PreferredBackBufferWidth = 1600;
@@ -109,7 +111,7 @@ namespace Game1
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            Octin_vintage = Content.Load<SpriteFont>("Octin_Vintage");
             _EntityMgr.LoadLevel("Test");
             _SceneMgr.LoadScene("Test");
             _CollisionMgr.GrabGameList(_EntityMgr.GameObjectList);
@@ -142,7 +144,7 @@ namespace Game1
 
             foreach (IManager m in _MList)
             {
-                m.Update();
+                m.Update(gameTime);
             }
             
             base.Update(gameTime);
@@ -156,14 +158,13 @@ namespace Game1
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-
             // TODO: Add your drawing code here
             // DRAW GameObjectList
             _RenderMgr.Draw(spriteBatch, _EntityMgr.GameObjectList);
             // DRAW SceneList
             _RenderMgr.Draw(spriteBatch, _SceneMgr.SceneList);
-            // DRAW Axis
-            _RenderMgr.DrawAxies(spriteBatch, _EntityMgr.GameObjectList);
+            // DRAW TextList
+            _RenderMgr.Draw(spriteBatch, Octin_vintage, _SceneMgr.TextList);
 
             base.Draw(gameTime);
         }

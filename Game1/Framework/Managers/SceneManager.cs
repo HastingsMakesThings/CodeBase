@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.Factories;
 using Game1.GameCode.Scenes.Menus;
+using Microsoft.Xna.Framework;
 
 namespace Game1.Framework.Managers
 {
@@ -30,12 +31,16 @@ namespace Game1.Framework.Managers
 
         protected List<IMenuItem> _SceneList;
 
+        protected List<ITextElement> _TextList;
+
 
         public SceneManager(ContentManager pContent)
         {
             _Content = pContent;
 
             _SceneList = new List<IMenuItem>();
+
+            _TextList = new List<ITextElement>();
 
             _EntityFac = new EntityFactory(_Content);
         }
@@ -60,17 +65,31 @@ namespace Game1.Framework.Managers
                     menu.setup(_Content, _EntityFac);
 
                     _SceneList = menu.MenuList;
+
+                    _TextList = menu.TextList;
                     break;
             }
             
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             foreach (IMenuItem s in _SceneList)
             {
-                s.Update();
+                s.Update(gameTime);
             }
+        }
+
+        //this method is used to remove an entity from the sceene list
+        public void RemoveEntity(int entID)
+        {
+            throw new NotImplementedException();
+        }
+
+        //this method is used to add an entity to the scene list
+        public void AddEntity(IEntity pNewEnt)
+        {
+            throw new NotImplementedException();
         }
 
         #region Properties
@@ -78,6 +97,11 @@ namespace Game1.Framework.Managers
         public List<IMenuItem> SceneList
         {
             get { return _SceneList; }
+        }
+
+        public List<ITextElement> TextList
+        {
+            get { return _TextList; }
         }
 
         #endregion

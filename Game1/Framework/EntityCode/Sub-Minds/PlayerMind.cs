@@ -8,6 +8,8 @@ using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.GameCode.States;
 using Game1.Framework.Managers;
+using Microsoft.Xna.Framework;
+
 namespace Game1.Framework.EntityCode.Sub_Minds
 {
     class PlayerMind : AIMind
@@ -22,7 +24,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
 
         
 
-        public override void Run()
+        public override void Run(GameTime gametime)
         {
             IState temp;
             
@@ -30,10 +32,10 @@ namespace Game1.Framework.EntityCode.Sub_Minds
             {
                 States.TryGetValue(_currentState, out temp);
                
-                temp.Run();
+                temp.Run(gametime);
 
                 States.TryGetValue("Tex", out temp);
-                temp.Run();
+                temp.Run(gametime);
             }
 
             if (KeyboardManager.oneKey)
@@ -42,6 +44,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
                 _event = "Seek Me";
             if (KeyboardManager.threeKey)
                 _event = "Pursue Me";
+
         }
 
         public override void EventData(string pEvent, IGameObject pTrigger)
@@ -67,7 +70,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
 
             States = new Dictionary<string, IState>();
 
-            _event = "";
+            _event = "PlayerCreated";
 
             this._pTarget = (IGameObject)_pTarget;
 

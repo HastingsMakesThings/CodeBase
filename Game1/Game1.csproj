@@ -41,11 +41,15 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Framework\Animations\Animation.cs" />
+    <Compile Include="Framework\Animations\IAnimation.cs" />
     <Compile Include="Framework\EntityCode\AIMind.cs" />
     <Compile Include="Framework\EntityCode\Entity.cs" />
+    <Compile Include="Framework\EntityCode\Sub-Entities\TriggerObject.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\EnemyMind.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\GenericNPC.cs" />
     <Compile Include="Framework\EntityCode\Sub-Minds\PlayerMind.cs" />
+    <Compile Include="Framework\Factories\AnimationFactory.cs" />
     <Compile Include="Framework\Factories\EntityFactory.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\GameObject.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\MenuItem.cs" />
@@ -56,8 +60,10 @@
     <Compile Include="Framework\Interfaces\IEntityFactory.cs" />
     <Compile Include="Framework\Interfaces\IMoveBehaviour.cs" />
     <Compile Include="Framework\Interfaces\Managers\IAIManager.cs" />
+    <Compile Include="Framework\Interfaces\Managers\IAnimationFactory.cs" />
     <Compile Include="Framework\Interfaces\Managers\ICollisionManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IEntityManager.cs" />
+    <Compile Include="Framework\Interfaces\Managers\IGameManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IKeyboardManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\IMouseManager.cs" />
@@ -66,8 +72,12 @@
     <Compile Include="Framework\Interfaces\Managers\IRenderManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISceneManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISoundManager.cs" />
+    <Compile Include="Framework\Interfaces\Scenes\IScene.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IGameObject.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMenuItem.cs" />
+    <Compile Include="Framework\Interfaces\Sub-Entities\ITextElement.cs" />
+    <Compile Include="Framework\Interfaces\Sub-Entities\ITriggerArea.cs" />
+    <Compile Include="Framework\Interfaces\Sub-Entities\ITriggerObject.cs" />
     <Compile Include="Framework\Managers\AIManager.cs" />
     <Compile Include="Framework\Managers\CollisionManager.cs" />
     <Compile Include="Framework\Managers\Collision\QuadTree.cs" />
@@ -79,23 +89,36 @@
     <Compile Include="Framework\Managers\Collision\SATCollision.cs" />
     <Compile Include="Framework\Managers\SceneManager.cs" />
     <Compile Include="Framework\Managers\SoundManager.cs" />
+    <Compile Include="GameCode\Managers\MakeHasteManager.cs" />
+    <Compile Include="GameCode\Managers\PatientManager.cs" />
+    <Compile Include="GameCode\Minds\PlayerTrigBoxMind.cs" />
     <Compile Include="GameCode\NPCs\Buddy.cs" />
     <Compile Include="GameCode\NPCs\Hunter.cs" />
+    <Compile Include="GameCode\NPCs\Patient.cs" />
     <Compile Include="GameCode\NPCs\ScaredyCat.cs" />
+    <Compile Include="Framework\EntityCode\Sub-Entities\TriggerBox.cs" />
     <Compile Include="GameCode\States\2DirectionalMove.cs" />
+    <Compile Include="GameCode\States\Carried.cs" />
     <Compile Include="GameCode\States\Flee.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMover.cs" />
+    <Compile Include="GameCode\States\Follow.cs" />
     <Compile Include="GameCode\States\Pursue.cs" />
     <Compile Include="GameCode\States\Seek.cs" />
+    <Compile Include="GameCode\States\Shadow.cs" />
     <Compile Include="GameCode\States\State.cs" />
     <Compile Include="Framework\EntityCode\Sub-Entities\Mover.cs" />
     <Compile Include="GameCode\Obstacles\Triangle.cs" />
     <Compile Include="GameCode\Obstacles\Obstacle.cs" />
     <Compile Include="GameCode\Scenes\Menus\TestMenu.cs" />
     <Compile Include="GameCode\States\TextureEdit.cs" />
+    <Compile Include="GameCode\Triggers\PlayerTrigBox.cs" />
+    <Compile Include="GameCode\Triggers\ScoreBox.cs" />
+    <Compile Include="GameCode\UI\Clipboard.cs" />
     <Compile Include="GameCode\UI\Cursor.cs" />
     <Compile Include="GameCode\PlayerCode\Player.cs" />
     <Compile Include="GameCode\Scenes\Levels\TestScene.cs" />
+    <Compile Include="Framework\EntityCode\Sub-Entities\TextElement.cs" />
+    <Compile Include="GameCode\UI\Text.cs" />
     <Compile Include="Kernal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

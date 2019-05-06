@@ -22,7 +22,7 @@ namespace Game1.GameCode.Obstacles
             Type = "Obstacle";
         }
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             CalculateVertexes();
         }

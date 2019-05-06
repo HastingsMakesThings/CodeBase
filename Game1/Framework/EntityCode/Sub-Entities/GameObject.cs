@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.Framework.EntityCode;
+using Game1.Framework.Animations;
 
 namespace Game1.Framework.EntityCode.Sub_Entities
 {
@@ -28,7 +29,12 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Rectangle _ProjectedX;
         // Rectangle for Projected Y prefix with '_'
         protected Rectangle _ProjectedY;
-        protected int _texNum;
+
+        //a value for the active animation string
+        protected string _mAnimstr;
+
+        //a value for the active animation
+        protected IAnimation _mActiveAnim;
 
         //Deffine an array to hold all of the vertex of the object
         protected Vector2[] _Vertexes;
@@ -42,97 +48,41 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Boolean _CollideL;
 
         protected Boolean _CollideR;
-
-
         
+        //Holds a library of animations
+        protected IDictionary<string, IAnimation> _mAnim;
+
+        //declares if the objecft collides with other objects
+        protected bool _mRigid;
+
+        //declares which layer the sprite gets rendered to
+        protected float _mRenderLayer;
+
+        protected bool _mVisibility;
 
         public GameObject()
         {
-            _texNum = 0;
-        }
-
-        public void Initialise(float pX, float pY, float pScale, Boolean pStatic, int pTexNums)
-        {
-           
-
-          
-
-            _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
-            _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
-
-            _Scale = pScale;
-
-            _Static = pStatic;
-
-            _textures = new Texture2D[pTexNums];
-           
-
-
-           
-        }
-
-        public void AddTexture(Texture2D pTexture)
-        {
-            _textures[_texNum] = pTexture;
             
-
-            _textureBounds = new Vector2(pTexture.Width, pTexture.Height);
-
-            _Texture = _textures[_texNum];
-            _texNum++;
-        }
-
-        public void CalculateProjectedX()
-        {
-            Vector2 start = new Vector2();
-            Vector2 end = new Vector2();
-
-            start.X = Position.X;
-            start.Y = 4;
-
-            end.X = Position.X + Texture.Width;
-            end.Y = 4;
-
-            Vector2 edge = end - start;
-
-            _ProXAngle = (float)Math.Atan2(edge.Y, edge.X);
-
-            _ProjectedX = new Rectangle((int)start.X, (int)start.Y, (int)edge.Length(), 1);
-        }
-
-        public void CalculateProjectedY()
-        {
-            Vector2 start = new Vector2();
-            Vector2 end = new Vector2();
-
-            start.X = 4;
-            start.Y = Position.Y;
-
-            end.X = 4;
-            end.Y = Position.Y - Texture.Height;
-
-            Vector2 edge = end - start;
-
-            _ProYAngle = (float)Math.Atan2(edge.X, edge.Y);
-
-            _ProjectedY = new Rectangle((int)start.X, (int)start.Y, 1, (int)edge.Length());
         }
 
         //This Declares a method that will calculate the location of the vertexes of each object dependant on their position 
         protected virtual void CalculateVertexes()
         {
+
             _Vertexes = new Vector2[4];
 
-            _Vertexes[0] = this.Position;
+            _Vertexes[0].X = this.Position.X;
+            _Vertexes[0].Y = this.Position.Y + (_textureBounds.Height * (_Scale * 0.75f));
 
-            _Vertexes[1].X = this.Position.X + _Texture.Width;
-            _Vertexes[1].Y = this.Position.Y;
+            _Vertexes[1].X = this.Position.X + (_textureBounds.Width * _Scale);
+            _Vertexes[1].Y = this.Position.Y + (_textureBounds.Height * (_Scale * 0.75f));
 
-            _Vertexes[2].X = this.Position.X + _Texture.Width;
-            _Vertexes[2].Y = this.Position.Y + _Texture.Height;
+            _Vertexes[2].X = this.Position.X + (_textureBounds.Width * _Scale);
+            _Vertexes[2].Y = this.Position.Y + (_textureBounds.Height *_Scale);
 
             _Vertexes[3].X = this.Position.X;
-            _Vertexes[3].Y = this.Position.Y + _Texture.Height;
+            _Vertexes[3].Y = this.Position.Y + (_textureBounds.Height * _Scale);
+
 
         }
 
@@ -141,7 +91,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             
         }
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             
         }
@@ -151,26 +101,41 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Setup()
+        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID, float pRednLayer, bool pVisible)
         {
-            if (Type != "Obstacle")
-            {
-                Console.WriteLine("{0} Created!", _Texture);
-                Console.WriteLine("X:{0}, Y:{1}", _Position.X, _Position.Y);
-                Console.WriteLine("Scale:{0}, Static:{1}", _Scale, _Static);
-            }
+            //sets up ID
+            _mID = pID;
+            //sets up th animation
+            _mAnim = pAnim;
 
+            //sets the active animation stign to the provided string
+            _mAnimstr = pStartAnim;
 
-            // Run this once so objects get their starting axies projected
-            // if an object is static then there is no need to run this more than once
-            // if an object is not static then run the methods below in that objects update method
-            CalculateProjectedX();
-            CalculateProjectedY();
+            //this grabs the animation from the animation list
+            _mAnim.TryGetValue(_mAnimstr, out _mActiveAnim);
+
+            //this starts the animation in motion
+            _mActiveAnim.Start();
+
+            //finds the animation frame that shoudl be played first
+            _Texture = _mActiveAnim.aActiveTexture;
+            _textureBounds = _mActiveAnim.aActiveFrame;
+
+            _mRenderLayer = pRednLayer;
+
+            _mVisibility = pVisible;
+
+            _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
+            _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
+
+            _Scale = pScale;
+
+            _Static = pStatic;
+
+            _mRigid = pRigid;
 
             //Calls the calculate vertexes method
             CalculateVertexes();
-
-            _texNum = _texNum - 1;
         }
 
         //The purpose of this method is to move the game object in a realistic manner
@@ -253,6 +218,34 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             get { return _Vertexes; }
         }
 
+        public bool Rigid
+        {
+            get { return _mRigid; }
+        }
+
+        public float lowestPoint
+        {
+            get
+            {
+               return Position.Y + (_textureBounds.Height * _Scale);
+            }
+        }
+
+        public float RenderLayer
+        {
+            get
+            {
+                return _mRenderLayer;
+            }
+        }
+
+        public bool Visible
+        {
+            get
+            {
+                return _mVisibility;
+            }
+        }
 
         #endregion
     }

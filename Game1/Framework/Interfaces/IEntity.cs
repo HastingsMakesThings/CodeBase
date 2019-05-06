@@ -10,7 +10,8 @@ namespace Game1.Framework.Interfaces
 {
     interface IEntity
     {
-        void Update();
+        int EntityID { get; }
+        void Update(GameTime gameTime);
 
         Vector2 Origin { get; }
 

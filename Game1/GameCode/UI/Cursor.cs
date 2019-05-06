@@ -21,7 +21,7 @@ namespace Game1.GameCode.UI
         {
         }
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             _Position.X = MouseManager._X;
             _Position.Y = MouseManager._Y;

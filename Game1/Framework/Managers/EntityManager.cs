@@ -12,6 +12,7 @@ using Game1.Framework.EntityCode;
 using Game1.GameCode.PlayerCode;
 using Game1.GameCode.Scenes.Levels;
 using Game1.Framework.Interfaces.Sub_Entities;
+using Game1.Framework.Interfaces.Scenes;
 
 namespace Game1.Framework.Managers
 {
@@ -54,7 +55,7 @@ namespace Game1.Framework.Managers
                     Console.WriteLine("Settings Loaded!");
                     break;
                 default:
-                    TestScene scene = new TestScene();
+                    IScene scene = new TestScene();
 
                     scene.setup(_Content, _EntityFac);
 
@@ -69,13 +70,22 @@ namespace Game1.Framework.Managers
             get { return _GameList; }
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             foreach (IGameObject g in _GameList)
             {
-                g.Update();
+                g.Update(gameTime);
             }
         }
 
+        public void RemoveEntity(int entID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddEntity(IEntity pNewEnt)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
