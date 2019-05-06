@@ -40,14 +40,14 @@ namespace Game1.Framework.Managers
 
         public void Draw(SpriteBatch pSprite, List<IMenuItem> pEnts)
         {
+            pSprite.Begin();
             foreach (IMenuItem temp in pEnts)
             {
 
-                    if(temp.Visible)
-                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (temp.RenderLayer + layer));
+                  
+                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, 1);
 
 
-                layer += 0.001f;
             }
             pSprite.End();
         }

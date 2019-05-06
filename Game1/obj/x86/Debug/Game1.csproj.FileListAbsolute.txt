@@ -281,7 +281,6 @@ C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Clipboard_sprite.xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Octin_Vintage.xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Octin_Vintage.xnb
-
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\C.H.Idle_Front.xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheetC.H..xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Back_ArmsRaised01.xnb

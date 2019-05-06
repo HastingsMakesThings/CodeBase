@@ -101,32 +101,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
-        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID, float pRednLayer, bool pVisible)
-        {
-            //sets up ID
-            _mID = pID;
-            //sets up th animation
-            _mAnim = pAnim;
-
-            //sets the active animation stign to the provided string
-            _mAnimstr = pStartAnim;
-
-            //this grabs the animation from the animation list
-            _mAnim.TryGetValue(_mAnimstr, out _mActiveAnim);
-
-            //this starts the animation in motion
-            _mActiveAnim.Start();
-
-            //finds the animation frame that shoudl be played first
-            _Texture = _mActiveAnim.aActiveTexture;
-            _textureBounds = _mActiveAnim.aActiveFrame;
-
-            _mRenderLayer = pRednLayer;
-
-            _mVisibility = pVisible;
-
-            _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
-            _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
+      
 
         public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID, float pRednLayer, bool pVisible)
         {
