@@ -277,3 +277,7 @@ C:\Users\Jenk\Desktop\CodeBase\Game1\obj\x86\Debug\Game1.exe
 C:\Users\Jenk\Desktop\CodeBase\Game1\obj\x86\Debug\Game1.pdb
 C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Clipboard_sprite.xnb
 C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Octin_Vintage.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Clipboard_sprite.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Clipboard_sprite.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Octin_Vintage.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Octin_Vintage.xnb
