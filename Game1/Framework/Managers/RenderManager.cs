@@ -28,24 +28,28 @@ namespace Game1.Framework.Managers
             pSprite.Begin();
             foreach (IGameObject temp in tempEnts)
             {
-                
+
                     if(temp.Visible)
                     pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (temp.RenderLayer + layer));
-               
+
 
                 layer += 0.001f;
             }
             pSprite.End();
         }
-        
+
         public void Draw(SpriteBatch pSprite, List<IMenuItem> pEnts)
         {
             foreach (IMenuItem temp in pEnts)
             {
-                pSprite.Begin();
-                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, 0f);
-                pSprite.End();
+
+                    if(temp.Visible)
+                    pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (temp.RenderLayer + layer));
+
+
+                layer += 0.001f;
             }
+            pSprite.End();
         }
 
         public void Draw(SpriteBatch pSprite, SpriteFont pFont, List<ITextElement> pText)
@@ -68,9 +72,9 @@ namespace Game1.Framework.Managers
                 pSprite.End();
             }
         }
-        
+
         //the funciton of this method ius to srt the entities so that entites which have a lower y value are rendered first so that the layering of objects looks correct
-      
+
         public void Update(GameTime gameTime)
         {
 

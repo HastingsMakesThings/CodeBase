@@ -35,6 +35,8 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         protected Boolean _Static;
 
+        protected string _Path;
+
         public MenuItem()
         {
 
@@ -77,7 +79,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         public override void Update(GameTime gameTime)
         {
-            
+
         }
     }
 }

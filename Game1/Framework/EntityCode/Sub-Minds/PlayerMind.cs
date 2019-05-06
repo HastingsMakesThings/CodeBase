@@ -14,27 +14,29 @@ namespace Game1.Framework.EntityCode.Sub_Minds
 {
     class PlayerMind : AIMind
     {
-        
+        //instance variables
+        string _CurrentSet;
 
-       
+
         public PlayerMind()
         {
-            
+            _CurrentSet = "Tex";
         }
 
-        
+
 
         public override void Run(GameTime gametime)
         {
+            _event = "";
             IState temp;
-            
+
             if(States.Count > 0)
             {
                 States.TryGetValue(_currentState, out temp);
-               
+
                 temp.Run(gametime);
 
-                States.TryGetValue("Tex", out temp);
+                States.TryGetValue(_CurrentSet, out temp);
                 temp.Run(gametime);
             }
 
@@ -44,18 +46,26 @@ namespace Game1.Framework.EntityCode.Sub_Minds
                 _event = "Seek Me";
             if (KeyboardManager.threeKey)
                 _event = "Pursue Me";
+            if(KeyboardManager.KeyJump)
+            {
+                _event = "PlayerPickup";
+            }
 
         }
 
         public override void EventData(string pEvent, IGameObject pTrigger)
         {
-           if(pEvent == "Flee")
+            //this should chaneg the texture sets of the player when an object is beign carried
+          if(pEvent == "PickedUp")
             {
-                IState temp;
-                States.TryGetValue(pEvent, out temp);
-
-                temp.NewTarget(pTrigger);
+                _CurrentSet = "PlayTex";
             }
+
+            if (pEvent == "Dropped")
+            {
+                _CurrentSet = "Tex";
+            }
+            base.EventData(pEvent, pTrigger);
         }
 
         //THis method is used to asses if the mind is creating an event

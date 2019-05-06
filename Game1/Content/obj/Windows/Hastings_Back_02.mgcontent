@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Back_02.png</SourceFile>
-  <SourceTime>2019-05-06T09:35:48.0372789+01:00</SourceTime>
+  <SourceTime>2019-05-06T09:36:06.8835937+01:00</SourceTime>
   <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Hastings_Back_02.xnb</DestFile>
-  <DestTime>2019-05-06T09:43:11.6708257+01:00</DestTime>
+  <DestTime>2019-05-06T09:37:24.1578308+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2015-04-29T18:14:44+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

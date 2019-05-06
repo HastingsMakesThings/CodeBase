@@ -29,12 +29,14 @@ namespace Game1.Framework.EntityCode
 
         public virtual void EventData(string pEvent, IGameObject pTrigger)
         {
-           
+            //clears event data
+            if (pEvent == _event)
+                _event = "";
         }
 
         public abstract string CreateEvent();
 
-
+        //this grabbs the 
         public virtual IGameObject EventTrigger()
         {
             _event = "";
@@ -42,9 +44,10 @@ namespace Game1.Framework.EntityCode
             {
                 return _pTarget;
             }
-                
+
             else
-                return null;
+                _pTarget = (IGameObject)_mMover;
+            return _pTarget;
         }
 
         //this method allos for States to be created 
@@ -59,7 +62,7 @@ namespace Game1.Framework.EntityCode
                 nState.Initalize(pMover);
 
                 //Sends the state a new target
-                nState.NewTarget(_pTarget);
+               // nState.NewTarget(_pTarget);
                 
                 //Adds the new state to the States list
                 States.Add(pKey, nState);
@@ -81,6 +84,11 @@ namespace Game1.Framework.EntityCode
 
             _event = "";
 
+            
+        }
+
+        public virtual void SetCondition(string pCondition)
+        {
             
         }
     }

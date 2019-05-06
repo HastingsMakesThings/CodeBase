@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Jenk/Desktop/CodeBase/Game1/Content/Hastings_4tile.png</SourceFile>
-  <SourceTime>2019-05-04T17:01:47.7279891+01:00</SourceTime>
-  <DestFile>C:/Users/Jenk/Desktop/CodeBase/Game1/Content/bin/Windows/Content/Hastings_4tile.xnb</DestFile>
-  <DestTime>2019-05-04T17:02:16.2309914+01:00</DestTime>
+  <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_4tile.png</SourceFile>
+  <SourceTime>2019-04-29T14:54:53.0505325+01:00</SourceTime>
+  <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Content/Hastings_4tile.xnb</DestFile>
+  <DestTime>2019-04-29T15:07:43.9588164+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

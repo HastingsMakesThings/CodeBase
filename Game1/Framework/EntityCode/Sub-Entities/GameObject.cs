@@ -48,7 +48,7 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         protected Boolean _CollideL;
 
         protected Boolean _CollideR;
-        
+
         //Holds a library of animations
         protected IDictionary<string, IAnimation> _mAnim;
 
@@ -62,10 +62,10 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         public GameObject()
         {
-            
+
         }
 
-        //This Declares a method that will calculate the location of the vertexes of each object dependant on their position 
+        //This Declares a method that will calculate the location of the vertexes of each object dependant on their position
         protected virtual void CalculateVertexes()
         {
 
@@ -88,12 +88,12 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         public void playSound(string soundClip)
         {
-            
+
         }
 
         public override void Update(GameTime gameTime)
         {
-            
+
         }
 
         public virtual void CollReact(Vector2 pMTV)
@@ -128,9 +128,38 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
             _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
 
+        public void Initialise(IDictionary<string, IAnimation> pAnim,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int pID, float pRednLayer, bool pVisible)
+        {
+            //sets up ID
+            _mID = pID;
+            //sets up th animation
+            _mAnim = pAnim;
+
+            //sets the active animation stign to the provided string
+            _mAnimstr = pStartAnim;
+
+            //this grabs the animation from the animation list
+            _mAnim.TryGetValue(_mAnimstr, out _mActiveAnim);
+
+            //this starts the animation in motion
+            _mActiveAnim.Start();
+
+            //finds the animation frame that shoudl be played first
+            _Texture = _mActiveAnim.aActiveTexture;
+            _textureBounds = _mActiveAnim.aActiveFrame;
+
+            _mRenderLayer = pRednLayer;
+
+            _mVisibility = pVisible;
+
+            _Position.X = pX /*- ((_Texture.Width / 2) * pScale)*/;
+            _Position.Y = pY /*- ((_Texture.Height / 2) * pScale)*/;
+
             _Scale = pScale;
 
             _Static = pStatic;
+
+            _mRigid = pRigid;
 
             _mRigid = pRigid;
 

@@ -18,7 +18,7 @@ namespace Game1.GameCode.PlayerCode
 {
     class Player : Mover
     {
-      
+
         public Player()
         {
             // Initialise Type
@@ -27,6 +27,7 @@ namespace Game1.GameCode.PlayerCode
             _MyMind = new PlayerMind();
             _MyMind.Initalize(this);
             _MyMind.AddState<TextureEdit>("Tex", this);
+            _MyMind.AddState<PlayerTexEdit>("PlayTex", this);
             _MyMind.AddState<_2DMove>("Mover",this);
 
             _currAnim = "Idle";
@@ -65,6 +66,6 @@ namespace Game1.GameCode.PlayerCode
             this.Position = Position + pMTV;
         }
 
-       
+
     }
 }

@@ -28,5 +28,8 @@ namespace Game1.Framework.Interfaces
         void AddState<T>(String pKey, IMover pMover) where T : IState, new();
 
         void Initalize(IMover _pTarget);
+
+        //this lets the object holding the mind to set a condition for the AIMIND
+        void SetCondition(string pCondition);
     }
 }

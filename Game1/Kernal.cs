@@ -56,9 +56,9 @@ namespace Game1
             // Define resolution
             graphics.PreferredBackBufferWidth = 1600;
             graphics.PreferredBackBufferHeight = 900;
-            
 
-            // Allow mouse to be seen 
+
+            // Allow mouse to be seen
             IsMouseVisible = true;
         }
 
@@ -97,7 +97,7 @@ namespace Game1
             _MList.Add(_SoundMgr);
             _MList.Add(_AIMgr);
             _MList.Add(_CollisionMgr);
-           
+
 
             // _RenderMgr doesnt get added as its called from within the draw method
             base.Initialize();
@@ -146,7 +146,7 @@ namespace Game1
             {
                 m.Update(gameTime);
             }
-            
+
             base.Update(gameTime);
         }
 
