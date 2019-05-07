@@ -23,7 +23,7 @@ namespace Game1.GameCode.NPCs
             //initalise mind
             _MyMind = new GenericNPC();
             _MyMind.Initalize(this);
-            _MyMind.AddState<Seek>("Seek", this);
+            _MyMind.AddState<Carried>("Seek", this);
 
             _mMass = 3;
             _maxSpeed = 5;
@@ -36,9 +36,11 @@ namespace Game1.GameCode.NPCs
         }
 
 
-        public override void Update()
+        public override void Update(GameTime gameTime)
         {
             CalculateVertexes();
         }
+
+
     }
 }

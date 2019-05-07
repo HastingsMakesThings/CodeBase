@@ -14,5 +14,10 @@ namespace Game1.Framework.Interfaces.Managers
 
         List<IGameObject> GameObjectList { get; }
 
+        //Method for removing an entity form the scene
+        void RemoveEntity(int entID);
+        //Method for adding entity to the scene 
+        void AddEntity(IEntity pNewEnt);
+
     }
 }

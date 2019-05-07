@@ -26,13 +26,20 @@ namespace Game1.Framework.EntityCode
         // DECLARE a protected String and call it '_Type'
         protected string _Type;
 
-        public abstract void Update();
+        protected Rectangle _textureBounds;
 
+        //protected Entity ID
+        protected int _mID;
+
+        public abstract void Update(GameTime gameTime);
+
+        protected Texture2D[] _textures;
         #region Properties
 
         public Rectangle Bounds
         {
-            get { return new Rectangle(Convert.ToInt32(Position.X), Convert.ToInt32(Position.Y), Texture.Width, Texture.Height); } 
+            get { return _textureBounds; }
+           
         }
 
         public string Type
@@ -79,6 +86,14 @@ namespace Game1.Framework.EntityCode
         public Texture2D Texture
         {
             get { return _Texture; }
+        }
+
+        public int EntityID
+        {
+            get
+            {
+                return _mID;
+            }
         }
 
         #endregion

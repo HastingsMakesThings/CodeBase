@@ -49,7 +49,7 @@ namespace Game1.Framework.Managers
                             
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             // Check if game is focused
             if (Kernal._Focused)

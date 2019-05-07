@@ -23,8 +23,7 @@ namespace Game1.Framework.Managers
         protected List<IGameObject> _EnemyList;
         // _InteractableList holds all projectiles and pickups in the level
         protected List<IGameObject> _InteractableList;
-        // DECLARE a variable of type IGameObject to hold the player
-        protected IGameObject _Player;
+
         protected IQuadTree _QuadTree;
         protected ISATCollision _CollisionCheck;
 
@@ -137,13 +136,30 @@ namespace Game1.Framework.Managers
                             }
                             else
                             {
+                                //checks if the objects are can trigger eachother
+                                if (first is ITriggerObject)
+                                    if (second is ITriggerArea)
+                                    {
+                                        //casts them to the correct objects
+                                        ITriggerObject firstTrigObj = (ITriggerObject)first;
+
+                                        ITriggerArea secondTrigArea = (ITriggerArea)second;
+
+                                        //this mess of a call figures out if these objkects have a related trigger
+                                        firstTrigObj.ActiveTrigger(secondTrigArea.IsTrigger(firstTrigObj.objTriggers));
+                                    }
+
                                 if (Math.Abs(mMTV1.Length()) >= Math.Abs(mMTV2.Length()))
                                 {
+                                    //checks if the object can be passed through
+                                    if(second.Rigid)
                                     first.CollReact(mMTV1);
+                                   
                                 }
                                 else
-                                {
-                                    first.CollReact(mMTV2);
+                                {   //checks if the object can be passed through
+                                    if (second.Rigid)
+                                        first.CollReact(mMTV2);
                                 }
                             }
                         }
@@ -168,19 +184,27 @@ namespace Game1.Framework.Managers
             // create list of gameObjects
             List<IGameObject> _FinalObjList = new List<IGameObject>();
 
-            foreach (IRegion R in _RegListTier1)
+            for (int ter1 = 0; ter1 < _RegListTier1.Count; ter1++)
             {
+                
+                IRegion R = _RegListTier1[ter1];
                 // create list to hold game objects
                 List<IGameObject> _RegObjListTier1 = new List<IGameObject>();
 
                 foreach(IGameObject G in _GameList)
                 {
-                    // check if current entity is within bounds
-                    if (R.CheckBounds(G.XPosition,G.YPosition))
+                    foreach(Vector2 vert in G.Verts)
                     {
-                        // if it is add it to the list
-                        _RegObjListTier1.Add(G);
+                        // check if current entity has a vertex is within bounds
+                        if (R.CheckBounds(vert.X, vert.Y))
+                        {
+                            // if it is add it to the list
+                            _RegObjListTier1.Add(G);
+
+                            break;
+                        }
                     }
+                    
                 }
                 // check to see if the object list for teir 1 is empty
                 if (_RegObjListTier1.Count > 1)
@@ -196,23 +220,31 @@ namespace Game1.Framework.Managers
 
                         foreach (IGameObject g in _RegObjListTier1)
                         {
-                            // check if current entity is within bounds
-                            if (r.CheckBounds(g.XPosition, g.YPosition))
+                            foreach(Vector2 vert in g.Verts)
                             {
-                                // if it is add it to the list
-                                _RegObjListTier2.Add(g);
+                                // check if current entity is within bounds
+                                if (r.CheckBounds(vert.X, vert.Y))
+                                {
+                                    // if it is add it to the list
+                                    _RegObjListTier2.Add(g);
+
+                                    break;
+                                }
                             }
+                           
                         }
 
-                        if (_RegObjListTier2.Count > 2)
+                        if (_RegObjListTier2.Count > 1)
                         {
                             _FinalObjList = _RegObjListTier2;
+
+                            Collision(_FinalObjList);
                         }
                     }
                 }
             }
 
-            Collision(_FinalObjList);
+           
         }
 
         public void GrabGameList(List<IGameObject> pGameList)
@@ -220,10 +252,10 @@ namespace Game1.Framework.Managers
             _GameList = pGameList;
         }
 
-        public void Update()
+        public void Update(GameTime gameTime)
         {
             CheckCollision();
-
+           // Collision(_GameList);
         }
 
         #region Properties

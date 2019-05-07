@@ -8,29 +8,38 @@ using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.GameCode.States;
 using Game1.Framework.Managers;
+using Microsoft.Xna.Framework;
+using Game1.GameCode.PlayerCode;
+using Game1.GameCode.NPCs;
+
 namespace Game1.Framework.EntityCode.Sub_Minds
 {
     class PlayerMind : AIMind
     {
-        
+        //instance variables
+        protected string _CurrentSet;
 
-       
+
         public PlayerMind()
         {
-            
+            _CurrentSet = "Tex";
         }
 
-        
 
-        public override void Run()
+
+        public override void Run(GameTime gametime)
         {
+            _event = "";
             IState temp;
-            
+
             if(States.Count > 0)
             {
                 States.TryGetValue(_currentState, out temp);
 
-                temp.Run();
+                temp.Run(gametime);
+
+                States.TryGetValue(_CurrentSet, out temp);
+                temp.Run(gametime);
             }
 
             if (KeyboardManager.oneKey)
@@ -39,17 +48,16 @@ namespace Game1.Framework.EntityCode.Sub_Minds
                 _event = "Seek Me";
             if (KeyboardManager.threeKey)
                 _event = "Pursue Me";
+            if(KeyboardManager.KeyJump)
+            {
+                _event = "PlayerPickup";
+            }
+
         }
 
         public override void EventData(string pEvent, IGameObject pTrigger)
         {
-           if(pEvent == "Flee")
-            {
-                IState temp;
-                States.TryGetValue(pEvent, out temp);
-
-                temp.NewTarget(pTrigger);
-            }
+            base.EventData(pEvent, pTrigger);
         }
 
         //THis method is used to asses if the mind is creating an event
@@ -64,7 +72,7 @@ namespace Game1.Framework.EntityCode.Sub_Minds
 
             States = new Dictionary<string, IState>();
 
-            _event = "";
+            _event = "PlayerCreated";
 
             this._pTarget = (IGameObject)_pTarget;
 

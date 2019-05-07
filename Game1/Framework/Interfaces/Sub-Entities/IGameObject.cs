@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Game1.Framework.Animations;
 
 namespace Game1.Framework.Interfaces.Sub_Entities
 {
@@ -28,8 +29,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
 
         int VerDir { get; set; }
 
-        void Initialise(float pX, float pY, Texture2D pTexture, float pScale, Boolean pStatic);
-
+        void Initialise(IDictionary<string, IAnimation> pAnim ,string pStartAnim, float pX, float pY, float pScale, bool pStatic, bool pRigid, int ID, float pRednLayer, bool pVisibility);
+    
         void playSound(string soundClip);
 
         float ProXAngle { get; }
@@ -43,6 +44,17 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         Vector2[] Verts { get; }
 
         void CollReact(Vector2 pMTV);
+
+        bool Rigid { get; }
+
+        float lowestPoint { get; }
+
+        float RenderLayer { get; }
+
+        bool Visible { get; }
+
+        bool Static { get; }
+
 
     }
 }

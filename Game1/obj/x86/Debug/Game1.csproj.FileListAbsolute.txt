@@ -127,14 +127,6 @@ C:\Users\Jenk\Desktop\CodeBase-Test\Game1\bin\Windows\x86\Debug\SharpDX.XInput.x
 C:\Users\Jenk\Desktop\CodeBase-Test\Game1\obj\x86\Debug\Game1.csproj.CopyComplete
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_4tile.xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\NPCBoard.xnb
-C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Black_right_angled_triangle_2.xnb
-C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Cursor.xnb
-C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_4tile.xnb
-C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\NPCBoard.xnb
-C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Obstacle.xnb
-C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player.xnb
-C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
-C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
 C:\Users\Jenk\Desktop\CodeBase-master\Game1\obj\x86\Debug\Game1.csprojAssemblyReference.cache
 C:\Users\Jenk\Desktop\CodeBase-master\Game1\obj\x86\Debug\Game1.csproj.CoreCompileInputs.cache
 C:\Users\Jenk\Desktop\CodeBase-master\Game1\obj\x86\Debug\Game1.exe
@@ -164,35 +156,337 @@ C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\SharpDX.Direct
 C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
 C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
 C:\Users\Jenk\Desktop\CodeBase-master\Game1\obj\x86\Debug\Game1.csproj.CopyComplete
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Black_right_angled_triangle_2.xnb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Cursor.xnb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_4tile.xnb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\NPCBoard.xnb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Obstacle.xnb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player.xnb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Game1.exe
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Game1.pdb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\MonoGame.Framework.dll
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.dll
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XInput.dll
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\MonoGame.Framework.xml
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.xml
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\obj\x86\Debug\Game1.csprojAssemblyReference.cache
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\obj\x86\Debug\Game1.csproj.CoreCompileInputs.cache
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\obj\x86\Debug\Game1.csproj.CopyComplete
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\obj\x86\Debug\Game1.exe
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\obj\x86\Debug\Game1.pdb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\EH.xnb
-C:\Users\Jenk\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\OH.xnb
-
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\obj\x86\Debug\Game1.exe
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\obj\x86\Debug\Game1.pdb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Black_right_angled_triangle_2.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Cursor.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_4tile.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\NPCBoard.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Obstacle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Black_right_angled_triangle_2.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Cursor.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_4tile.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\NPCBoard.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Obstacle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Game1.exe
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Game1.pdb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\obj\x86\Debug\Game1.csprojResolveAssemblyReference.cache
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player1.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player2.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player3.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\EH.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\OH.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\EH.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\OH.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\EH.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\OH.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player1.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player2.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player3.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Back_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Front_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Left_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Right_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player1.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player2.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player3.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Back_02.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Front_02.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Left_02.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Right_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Back_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Front_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Left_02.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Right_02.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Black_right_angled_triangle_2.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Cursor.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\EH.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_4tile.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Back_02.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Front_02.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Left_02.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Hastings_Right_02.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\NPCBoard.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Obstacle.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\OH.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player1.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player2.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Player3.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Black_right_angled_triangle_2.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Cursor.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\EH.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_4tile.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Back_02.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Front_02.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Left_02.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Hastings_Right_02.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\NPCBoard.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Obstacle.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\OH.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player1.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player2.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Player3.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Game1.exe
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Game1.pdb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Jenk\Desktop\CodeBase\Game1\obj\x86\Debug\Game1.csprojAssemblyReference.cache
+C:\Users\Jenk\Desktop\CodeBase\Game1\obj\x86\Debug\Game1.csproj.CoreCompileInputs.cache
+C:\Users\Jenk\Desktop\CodeBase\Game1\obj\x86\Debug\Game1.csproj.CopyComplete
+C:\Users\Jenk\Desktop\CodeBase\Game1\obj\x86\Debug\Game1.exe
+C:\Users\Jenk\Desktop\CodeBase\Game1\obj\x86\Debug\Game1.pdb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Clipboard_sprite.xnb
+C:\Users\Jenk\Desktop\CodeBase\Game1\bin\Windows\x86\Debug\Content\Octin_Vintage.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Clipboard_sprite.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Clipboard_sprite.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Octin_Vintage.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Octin_Vintage.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\C.H.Idle_Front.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheetC.H..xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Back_ArmsRaised01.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Front_ArmsRaised01.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Left_ArmsRaised01.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Right_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\C.H.Idle_Front.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Clipboard_sprite.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\EH.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Hastings_Back_02.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Hastings_Front_02.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Hastings_Left_02.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Hastings_Right_02.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Octin_Vintage.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\OH.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Player1.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Player2.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\Player3.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\SpriteSheetC.H..xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Back_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Front_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Left_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-master\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Right_ArmsRaised01.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\C.H.Idle_Front.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Clipboard_sprite.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Octin_Vintage.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheetC.H..xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Back_ArmsRaised01.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Front_ArmsRaised01.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Left_ArmsRaised01.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Right_ArmsRaised01.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\C.H.Idle_Front.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Clipboard_sprite.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Octin_Vintage.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\SpriteSheetC.H..xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\SpriteSheet_Back_ArmsRaised01.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\SpriteSheet_Front_ArmsRaised01.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\SpriteSheet_Left_ArmsRaised01.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\SpriteSheet_Right_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Black_right_angled_triangle_2.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\C.H.Idle_Front.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Clipboard_sprite.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Cursor.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\EH.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Hastings_4tile.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Hastings_Back_02.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Hastings_Front_02.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Hastings_Left_02.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Hastings_Right_02.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\NPCBoard.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Obstacle.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Octin_Vintage.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\OH.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Player.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Player1.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Player2.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Player3.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\SpriteSheetC.H..xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Back_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Front_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Left_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\SpriteSheet_Right_ArmsRaised01.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Game1.exe
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Game1.pdb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\obj\x86\Debug\Game1.csprojAssemblyReference.cache
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\obj\x86\Debug\Game1.csproj.CoreCompileInputs.cache
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\obj\x86\Debug\Game1.csproj.CopyComplete
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\obj\x86\Debug\Game1.exe
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\obj\x86\Debug\Game1.pdb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\cup.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\mop.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\newspaper.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\saw.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\scissors.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\spilt bear bottle.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\surgeon tool.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\syringe.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\corridor room_left.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\corridor room_right.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\left wall.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\picture wall.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\right wall.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\room_left top.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\room_right top.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top left.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top middle.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top right.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\corridor_H.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\corridor_V.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\office floor.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\room_left.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\room_right.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_left room.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_right room.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\middle wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\corridor room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\corridor room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\corridor_H.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\corridor_V.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\left wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\middle wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\office floor.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\picture wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\right wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\room_left top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\room_right top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top middle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top_left room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\top_right room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\corridor room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\corridor room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\corridor_H.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\corridor_V.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\left wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\middle wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\office floor.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\picture wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\right wall.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\room_left top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\room_right top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top middle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top_left room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\top_right room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\cabinet.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\glass cabinet.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\side_left_dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\side_right_clean bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\side_right_dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\side_right_empty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\top_ clean window bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\top_ dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\top_ empty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\tray angle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\tray side.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\furniture\tray top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\cup.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\mop.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\newspaper.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\saw.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\scissors.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\spilt bear bottle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\surgeon tool.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Content\Environmental assets\props\syringe.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\corridor_H.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\corridor_V.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\office floor.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\room_left.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\room_right.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\top_left room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\floors\top_right room.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\cabinet.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\glass cabinet.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_left_dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_clean bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_empty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ clean window bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ dirty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ empty bed.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray angle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray side.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray top.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\cup.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\mop.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\newspaper.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\saw.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\scissors.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\spilt bear bottle.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\surgeon tool.xnb
+C:\Users\Finn\Desktop\Temp_Folder_forWorkTransfer\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\syringe.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\cabinet.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\glass cabinet.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\side_left_dirty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\side_right_clean bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\side_right_dirty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\side_right_empty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_ clean window bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_ dirty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_ empty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\tray angle.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\tray side.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\tray top.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_clean window bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_dirty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\top_empty bed.xnb

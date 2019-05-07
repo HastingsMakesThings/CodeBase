@@ -14,7 +14,7 @@ namespace Game1.GameCode.States
         {
 
         }
-        public override void Run()
+        public override void Run(GameTime gametime)
         {
             //checks that the mover is not null
             if(_mMover != null)

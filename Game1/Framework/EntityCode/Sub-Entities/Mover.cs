@@ -34,6 +34,9 @@ namespace Game1.Framework.EntityCode.Sub_Entities
         // Player Mind prefix with '_'
         protected IAIMind _MyMind;
 
+        //strign that represents the curent animation beign played
+        protected string _currAnim;
+
 
 
         //This allows the objects mass to be obtained
@@ -129,6 +132,25 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             }
         }
 
-       
+        public string currentText
+        {
+            get
+            {
+                return _currAnim;
+            }
+
+            set
+            {
+                _currAnim = value;
+            }
+        }
+
+        public bool SetRigid
+        {
+            set
+            {
+                _mRigid = value;
+            }
+        }
     }
 }
