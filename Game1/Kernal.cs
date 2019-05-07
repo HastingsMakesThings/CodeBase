@@ -46,6 +46,8 @@ namespace Game1
         IAIManager _AIMgr;
         // _SoundMgr will be used to handle the sound
         ISoundManager _SoundMgr;
+        //_CameraMgr will be used to manage the camra in the game
+        ICamearaManager _CameraMgr;
 
         public Kernal()
         {
@@ -88,6 +90,7 @@ namespace Game1
             _SoundMgr = new SoundManager(Content);
             _CollisionMgr = new CollisionManager();
             _AIMgr = new AIManager();
+            _CameraMgr = new CamearaManager(7);
 
             // Add managers to _MList
             _MList.Add(_SceneMgr);
@@ -97,6 +100,7 @@ namespace Game1
             _MList.Add(_SoundMgr);
             _MList.Add(_AIMgr);
             _MList.Add(_CollisionMgr);
+            _MList.Add(_CameraMgr);
 
 
             // _RenderMgr doesnt get added as its called from within the draw method
@@ -116,6 +120,7 @@ namespace Game1
             _SceneMgr.LoadScene("Test");
             _CollisionMgr.GrabGameList(_EntityMgr.GameObjectList);
             _AIMgr.GrabAllMovers(_EntityMgr.GameObjectList);
+            _CameraMgr.GrabGameList(_EntityMgr.GameObjectList);
             // TODO: use this.Content to load your game content here
         }
 

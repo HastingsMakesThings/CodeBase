@@ -73,12 +73,12 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
             _Vertexes[0].X = this.Position.X;
             _Vertexes[0].Y = this.Position.Y + (_textureBounds.Height * (_Scale * 0.75f));
-
+            //
             _Vertexes[1].X = this.Position.X + (_textureBounds.Width * _Scale);
             _Vertexes[1].Y = this.Position.Y + (_textureBounds.Height * (_Scale * 0.75f));
 
             _Vertexes[2].X = this.Position.X + (_textureBounds.Width * _Scale);
-            _Vertexes[2].Y = this.Position.Y + (_textureBounds.Height *_Scale);
+            _Vertexes[2].Y = this.Position.Y + (_textureBounds.Height * _Scale);
 
             _Vertexes[3].X = this.Position.X;
             _Vertexes[3].Y = this.Position.Y + (_textureBounds.Height * _Scale);
@@ -249,6 +249,11 @@ namespace Game1.Framework.EntityCode.Sub_Entities
             {
                 return _mVisibility;
             }
+        }
+
+        public bool Static
+        {
+            get { return _Static; }
         }
 
         #endregion

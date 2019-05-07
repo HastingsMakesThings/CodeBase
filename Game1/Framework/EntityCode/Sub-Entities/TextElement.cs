@@ -41,11 +41,16 @@ namespace Game1.Framework.EntityCode.Sub_Entities
 
         }
 
+        public virtual string AdaptiveValue()
+        {
+            return _Value;
+        }
+
         #region Properties
 
         public string getValue
         {
-            get { return _Value; }
+            get { return AdaptiveValue(); }
         }
 
         public IMenuItem getParent

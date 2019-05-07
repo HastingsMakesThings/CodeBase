@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Game1.Framework.Interfaces;
 using Game1.Framework.Interfaces.Managers;
 using Game1.Framework.Interfaces.Sub_Entities;
+using Game1.GameCode.Obstacles;
 
 namespace Game1.Framework.Managers
 {
@@ -28,12 +29,25 @@ namespace Game1.Framework.Managers
             pSprite.Begin();
             foreach (IGameObject temp in tempEnts)
             {
+                
 
                     if(temp.Visible)
+                    if(temp.Type == "Enviroment")
                     pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (temp.RenderLayer + layer));
 
 
-                layer += 0.001f;
+               
+            }
+           
+            foreach (IGameObject temp in tempEnts)
+            {
+
+                if (temp.Visible)
+                    if (!(temp.Type == "Enviroment"))
+                        pSprite.Draw(temp.Texture, temp.Position, temp.Bounds, Color.White, temp.Angle, temp.Origin, temp.Scale, SpriteEffects.None, (temp.RenderLayer + layer));
+
+
+                layer += 0.000001f;
             }
             pSprite.End();
         }

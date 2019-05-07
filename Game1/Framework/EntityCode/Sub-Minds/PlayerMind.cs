@@ -9,13 +9,15 @@ using Game1.Framework.Interfaces.Sub_Entities;
 using Game1.GameCode.States;
 using Game1.Framework.Managers;
 using Microsoft.Xna.Framework;
+using Game1.GameCode.PlayerCode;
+using Game1.GameCode.NPCs;
 
 namespace Game1.Framework.EntityCode.Sub_Minds
 {
     class PlayerMind : AIMind
     {
         //instance variables
-        string _CurrentSet;
+        protected string _CurrentSet;
 
 
         public PlayerMind()
@@ -55,16 +57,6 @@ namespace Game1.Framework.EntityCode.Sub_Minds
 
         public override void EventData(string pEvent, IGameObject pTrigger)
         {
-            //this should chaneg the texture sets of the player when an object is beign carried
-          if(pEvent == "PickedUp")
-            {
-                _CurrentSet = "PlayTex";
-            }
-
-            if (pEvent == "Dropped")
-            {
-                _CurrentSet = "Tex";
-            }
             base.EventData(pEvent, pTrigger);
         }
 

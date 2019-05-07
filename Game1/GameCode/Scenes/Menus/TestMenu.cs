@@ -48,11 +48,11 @@ namespace Game1.GameCode.Scenes.Menus
             // Cast Clipboard as type Clipboard
             Clipboard tempBoard = (Clipboard)PatientClipboard;
             // Clipboard patient name text
-            _TextList.Add(pEntityFac.CreateTextElement<Text>(PatientClipboard, "" + tempBoard.getName, 285, 175));
+            _TextList.Add(pEntityFac.CreateTextElement<TextName>(PatientClipboard, "" + tempBoard.getName, 285, 175));
             // Clipboard patient age text
-            _TextList.Add(pEntityFac.CreateTextElement<Text>(PatientClipboard, "", 285, 275));
+            _TextList.Add(pEntityFac.CreateTextElement<TextAge>(PatientClipboard, "", 285, 275));
             // Clipboard patient Gender text
-            _TextList.Add(pEntityFac.CreateTextElement<Text>(PatientClipboard, "Male", 285, 375));
+            _TextList.Add(pEntityFac.CreateTextElement<TextGender>(PatientClipboard, "", 285, 375));
 
         }
 

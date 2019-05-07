@@ -11,16 +11,18 @@ using Game1.Framework.Managers;
 using Game1.GameCode.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Game1.GameCode.PlayerCode;
 
 namespace Game1.GameCode.UI
 {
     class Clipboard : MenuItem
     {
-        public string testName = "Gerald";
+        public string testName;
 
 
         public override void Update(GameTime gameTime)
         {
+            testName = PatientInformation._Name;
         }
 
         #region Properties

@@ -14,12 +14,13 @@ namespace Game1.GameCode.Minds
     {
         //instance variables
         //this bool identifies if the object is within the players triggerbox
-        private bool _byPlayer;
+        protected bool _byPlayer;
 
         public PickUpMind()
         {
             _currentState = "InActive";
         }
+
         //this is the run method
         public override void Run(GameTime gametime)
         {
@@ -43,7 +44,7 @@ namespace Game1.GameCode.Minds
         //This  handles event Data and thus adjusts the states of the mind
         public override void EventData(string pEvent, IGameObject pTrigger)
         {
-            //thios checks if the opbject is beign carried and drops them if thwe player presses the space button
+            //this checks if the opbject is beign carried and drops them if thwe player presses the space button
            if(pEvent == "PlayerPickup" && _currentState == "Carried")
             {
                  if (States.ContainsKey("InActive"))
