@@ -101,6 +101,7 @@
     <Compile Include="GameCode\Minds\RoomTriggerBoxMind.cs" />
     <Compile Include="GameCode\NPCs\Buddy.cs" />
     <Compile Include="GameCode\NPCs\Hunter.cs" />
+    <Compile Include="GameCode\NPCs\TBPatient.cs" />
     <Compile Include="GameCode\NPCs\Spawner.cs" />
     <Compile Include="GameCode\NPCs\PickupAble.cs" />
     <Compile Include="GameCode\NPCs\Patient.cs" />

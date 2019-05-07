@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
+using Game1.GameCode.NPCs;
 
 namespace Game1.GameCode.Minds
 {
@@ -13,11 +15,29 @@ namespace Game1.GameCode.Minds
         //instance variables
         bool _NeedsSpawn;
 
+        //variable for score
+        protected float _myScore;
+
+        //varibale for score cap
+        protected float _scoreCap;
         public PatientMind()
         {
             _NeedsSpawn = false;
 
-          
+            _scoreCap = -30;
+            _myScore = 30;
+        }
+
+        public override void Run(GameTime gametime)
+        {
+            base.Run(gametime);
+
+            //this checks if the patient is in a waitign state
+            if((_currentState =="InActive")||(_currentState == "Carried"))
+            {
+                //thios adjust the score
+                _myScore -= (float)gametime.ElapsedGameTime.TotalSeconds;
+            }
         }
         //This  handles event Data and thus adjusts the states of the mind
         public override void EventData(string pEvent, IGameObject pTrigger)
@@ -91,7 +111,29 @@ namespace Game1.GameCode.Minds
             }
 
             if (pCondition == "Spawned")
+            {
                 _currentState = "InActive";
+                _myScore = Math.Abs(_scoreCap);
+                SetScore();
+            }
+
+            if (pCondition == "TreatmentFailure")
+            {
+                _event = pCondition;
+
+                _myScore =  - Math.Abs(_scoreCap);
+                _myScore -= 10;
+                SetScore();
+            }
+
+        }
+
+        //thgis sets the patients score
+        private void SetScore()
+        {
+            Patient tempPatient = (Patient)_mMover;
+
+            tempPatient.PatientScore = _myScore;
         }
 
     }

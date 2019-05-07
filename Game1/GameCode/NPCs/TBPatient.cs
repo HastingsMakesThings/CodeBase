@@ -9,19 +9,11 @@ using Game1.GameCode.States;
 
 namespace Game1.GameCode.NPCs
 {
-    class Patient : PickupAble
+    class TBPatient : Patient
     {
-        // Variable to store basic info on patient
-        protected string _Name;
-        protected string _Gender;
-        protected int _Age;
-        // Variable to store the illness of patient
-        protected string _Illness;
-        // Variable to store the wellness raiting of the patient
-        protected int _WellnessRating;
+       
 
-        protected float _mScore;
-        public Patient()
+        public TBPatient()
         {
             // Initialise Patient
             Initialise();
@@ -35,13 +27,13 @@ namespace Game1.GameCode.NPCs
             // Add to list of triggers to be listend for
             _mTriggers = new string[3];
             _mTriggers[0] = "PlayerTrigger";
-            _mTriggers[1] = "TreatmentSuccess";
-            _mTriggers[2] = "TreatmentFailure";
+            _mTriggers[1] = "TBSuccess";
+            _mTriggers[2] = "TBFailure";
 
             _Name = "Gerald";
             _Gender = "Male";
             _Age = 37;
-            _Illness = "Gout";
+            _Illness = "Terburculosis";
 
         }
 
@@ -54,20 +46,17 @@ namespace Game1.GameCode.NPCs
                 
             }
 
-            if (pEvent == "TreatmentSuccess")
+            if (pEvent == "TBSuccess")
             {
                 
                 
-                _MyMind.SetCondition(pEvent);
+                _MyMind.SetCondition("TreatmentSuccess");
             }
 
-            if (pEvent == "TreatmentFailure")
+            if (pEvent == "TBFailure")
             {
                
-                _MyMind.SetCondition(pEvent);
-
-              
-                
+                _MyMind.SetCondition("TreatmentFailure");
             }
 
         }
@@ -102,11 +91,6 @@ namespace Game1.GameCode.NPCs
             get { return _WellnessRating; }
         }
 
-        public float PatientScore
-        {
-            get { return _mScore; }
-            set { _mScore = value; }
-        }
         #endregion
 
     }

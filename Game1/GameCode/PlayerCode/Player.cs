@@ -23,6 +23,7 @@ namespace Game1.GameCode.PlayerCode
         //variable for preventign tracking
         private bool _stopTrack;
 
+      
         public Player()
         {
             // Initialise Type
@@ -41,6 +42,8 @@ namespace Game1.GameCode.PlayerCode
 
             _isColliding = false;
             _stopTrack = false;
+
+            
         }
 
         public override void Update(GameTime gameTime)
