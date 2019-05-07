@@ -74,6 +74,7 @@
     <Compile Include="Framework\Interfaces\Managers\ISceneManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISoundManager.cs" />
     <Compile Include="Framework\Interfaces\Scenes\IScene.cs" />
+    <Compile Include="Framework\Interfaces\Sub-Entities\ICarrier.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\ICameraTarget.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IGameObject.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMenuItem.cs" />
@@ -101,6 +102,8 @@
     <Compile Include="GameCode\Minds\RoomTriggerBoxMind.cs" />
     <Compile Include="GameCode\NPCs\Buddy.cs" />
     <Compile Include="GameCode\NPCs\Hunter.cs" />
+    <Compile Include="GameCode\NPCs\CholeraPatient.cs" />
+    <Compile Include="GameCode\NPCs\TBPatient.cs" />
     <Compile Include="GameCode\NPCs\Spawner.cs" />
     <Compile Include="GameCode\NPCs\PickupAble.cs" />
     <Compile Include="GameCode\NPCs\Patient.cs" />
@@ -128,6 +131,8 @@
     <Compile Include="GameCode\States\TextureEdit.cs" />
     <Compile Include="GameCode\Triggers\PlayerTrigBox.cs" />
     <Compile Include="GameCode\Triggers\Room.cs" />
+    <Compile Include="GameCode\Triggers\Rooms\ChTreatmentRoom.cs" />
+    <Compile Include="GameCode\Triggers\Rooms\TBTreatmentRoom.cs" />
     <Compile Include="GameCode\Triggers\ScoreBox.cs" />
     <Compile Include="GameCode\UI\Clipboard.cs" />
     <Compile Include="GameCode\UI\Cursor.cs" />

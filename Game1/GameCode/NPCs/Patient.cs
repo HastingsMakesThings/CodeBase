@@ -20,11 +20,12 @@ namespace Game1.GameCode.NPCs
         // Variable to store the wellness raiting of the patient
         protected int _WellnessRating;
 
+        protected float _mScore;
         public Patient()
         {
             // Initialise Patient
             Initialise();
-            
+
             _MyMind = new PatientMind();
             _MyMind.Initalize(this);
             _MyMind.AddState<Carried>("Carried", this);
@@ -46,29 +47,29 @@ namespace Game1.GameCode.NPCs
 
         public override void ActiveTrigger(string pEvent)
         {
-            
+
             if (pEvent == "PlayerTrigger")
             {
                 _MyMind.SetCondition("ByPlayer");
-                
+
             }
 
             if (pEvent == "TreatmentSuccess")
             {
-                
-                
+
+
                 _MyMind.SetCondition(pEvent);
             }
 
             if (pEvent == "TreatmentFailure")
             {
-               
+
                 _MyMind.SetCondition(pEvent);
             }
 
         }
 
-      
+
 
         #region Properties
 
@@ -80,7 +81,7 @@ namespace Game1.GameCode.NPCs
         public int PatientAge
         {
             get { return _Age; }
-            
+
         }
 
         public string PatientGender
@@ -98,6 +99,11 @@ namespace Game1.GameCode.NPCs
             get { return _WellnessRating; }
         }
 
+        public float PatientScore
+        {
+            get { return _mScore; }
+            set { _mScore = value; }
+        }
         #endregion
 
     }

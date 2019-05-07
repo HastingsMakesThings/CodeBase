@@ -374,6 +374,18 @@ C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Env
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\spilt bear bottle.xnb
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\surgeon tool.xnb
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\syringe.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\cabinet.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\glass cabinet.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_left_dirty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_clean bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_dirty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\side_right_empty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ clean window bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ dirty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\top_ empty bed.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray angle.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray side.xnb
+C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\Environmental assets\furniture\tray top.xnb
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\corridor room_left.xnb
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\corridor room_right.xnb
 C:\Users\Jenk\Desktop\CodeBase-MenuMerge\Game1\bin\Windows\x86\Debug\Content\left wall.xnb

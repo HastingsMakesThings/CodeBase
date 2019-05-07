@@ -49,7 +49,7 @@ namespace Game1.Framework.Managers
                 {
                     _mTarget = (ICameraTarget)g;
 
-                    _TargetPosition = _mTarget.TargetPosition;
+                    _TargetPosition = new Vector2(500, 600);
                     break;
                 }
             }

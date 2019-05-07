@@ -19,10 +19,13 @@ namespace Game1.Framework.EntityCode.Sub_Minds
         //instance variables
         protected string _CurrentSet;
 
-
+        //variable for score
+        private float _PlayerScore;
         public PlayerMind()
         {
             _CurrentSet = "Tex";
+
+            _PlayerScore = 0;
         }
 
 
@@ -58,6 +61,16 @@ namespace Game1.Framework.EntityCode.Sub_Minds
         public override void EventData(string pEvent, IGameObject pTrigger)
         {
             base.EventData(pEvent, pTrigger);
+
+            if (pEvent == "TreatmentSuccess" || pEvent == "TreatmentFailure")
+            {
+                //this adjusts the player score
+                Patient tempPat = (Patient)pTrigger;
+                _PlayerScore += tempPat.PatientScore;
+
+                Console.WriteLine(_PlayerScore);
+            }
+
         }
 
         //THis method is used to asses if the mind is creating an event

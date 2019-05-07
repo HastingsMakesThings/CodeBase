@@ -91,6 +91,7 @@ namespace Game1.GameCode.Scenes.Levels
             FloorAnim.Add("Top right", _mAnimFac.CreatAnimation("top_right room", 1, false, 1));
             #endregion
 
+
             //Animation for the furniture
             #region Furniture sprites
             IDictionary<string, IAnimation> FurnitureAnim = new Dictionary<string, IAnimation>();
@@ -109,33 +110,38 @@ namespace Game1.GameCode.Scenes.Levels
             FurnitureAnim.Add("Tray ver", _mAnimFac.CreatAnimation("tray top", 1, false, 1));
             #endregion
 
+            IDictionary<string, IAnimation> DoctorAnim = new Dictionary<string, IAnimation>();
+            IDictionary<string, IAnimation> NurseAnim = new Dictionary<string, IAnimation>();
+
+
             IDictionary<string, IAnimation> BoxAnim = new Dictionary<string, IAnimation>();
             BoxAnim.Add("Idle", _mAnimFac.CreatAnimation("Player2", 1, false, 1));
 
-            // Placement code for floors
-            #region Floor placement
+            IDictionary<string, IAnimation> ChPatAnim = new Dictionary<string, IAnimation>();
+            ChPatAnim.Add("Idle", _mAnimFac.CreatAnimation("Player3", 1, false, 1));
+
+              _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(875, 1140, FloorAnim, "Office floor", 1, false, false, 1, true));
 
             #region Vertical Corridors
-
             #region Corridor V Collum One
             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 145, FloorAnim, "Corridor V", 1, false, false, 0.0001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+              _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(5, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
             #endregion
 
             #region Corridor V Collum Two
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(725, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
             #endregion
 
             #region Corridor V Collum Three
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 145, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 837, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 1278, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
+              _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(1005, 1718, FloorAnim, "Corridor V", 1, false, false, 0.001f, true));
             #endregion
 
             #region Corridor V Collum Four
@@ -414,20 +420,27 @@ namespace Game1.GameCode.Scenes.Levels
             }
             #endregion
 
-            #endregion
+
+
+
 
             #region Player and NPC's
-            _GameList.Add(pEntityFac.CreateGameObject<Player>(500, 600, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Player>(1000, 2000, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Patient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 200, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 200, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Spawner>(64, 64, BoxAnim, "Idle", 1, false, false, 0.001f, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Spawner>(1000, 1800, BoxAnim, "Idle", 1, false, false, 0.001f, false));
             #endregion
 
             #region Triggers
-            _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, false));
+            _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Room>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, false));
+            _GameList.Add(pEntityFac.CreateGameObject<TBTreatmentRoom>(500, 500, BoxAnim, "Idle", 2, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<ChTreatmentRoom>(1500, 500, ChPatAnim, "Idle", 2, false, false, 0.01f, true));
             #endregion
 
         }

@@ -16,13 +16,14 @@ using Game1.GameCode.Minds;
 
 namespace Game1.GameCode.PlayerCode
 {
-    class Player : Mover , ICameraTarget
+    class Player : Mover, ICameraTarget, ICarrier
     {
         //instance variables
         private bool _isColliding;
         //variable for preventign tracking
         private bool _stopTrack;
 
+        private bool Carry;
         public Player()
         {
             // Initialise Type
@@ -32,7 +33,7 @@ namespace Game1.GameCode.PlayerCode
             _MyMind.Initalize(this);
             _MyMind.AddState<TextureEdit>("Tex", this);
             _MyMind.AddState<PlayerTexEdit>("PlayTex", this);
-           
+
 
             _currAnim = "Idle";
             _mMass = 20;
@@ -41,6 +42,9 @@ namespace Game1.GameCode.PlayerCode
 
             _isColliding = false;
             _stopTrack = false;
+
+            Carry = false;
+
         }
 
         public override void Update(GameTime gameTime)
@@ -57,7 +61,7 @@ namespace Game1.GameCode.PlayerCode
         private void TextureChange()
         {
             //if the animationstring is not the same as the current animation then the animation is changed to the new value
-           if(_mAnimstr != _currAnim)
+            if (_mAnimstr != _currAnim)
             {
                 _mAnim.TryGetValue(_currAnim, out _mActiveAnim);
                 _mActiveAnim.Start();
@@ -93,6 +97,12 @@ namespace Game1.GameCode.PlayerCode
         {
             get { return _isColliding; }
             set { _isColliding = value; }
+        }
+
+        public bool isCarrying
+        {
+            get { return Carry; }
+            set { Carry = value; }
         }
     }
 }
