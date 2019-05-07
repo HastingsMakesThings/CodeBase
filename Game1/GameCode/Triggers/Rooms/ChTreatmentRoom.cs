@@ -10,18 +10,18 @@ using Microsoft.Xna.Framework;
 
 namespace Game1.GameCode.Triggers
 {
-    class TBTreatmentRoom :Room
+    class ChTreatmentRoom : Room
     {
         private string[] _myTriggers;
 
-        public TBTreatmentRoom()
+        public ChTreatmentRoom()
         {
             _MyMind = new RoomTriggerBoxMind();
             _MyMind.Initalize(this);
 
             _myTriggers = new string[2];
-            _myTriggers[0] = "TBSuccess";
-            _myTriggers[1] = "ChFailure";
+            _myTriggers[0] = "ChSuccess";
+            _myTriggers[1] = "TBFailure";
 
 
         }

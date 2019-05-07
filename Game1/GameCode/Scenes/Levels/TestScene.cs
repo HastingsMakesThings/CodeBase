@@ -94,6 +94,9 @@ namespace Game1.GameCode.Scenes.Levels
             IDictionary<string, IAnimation> BoxAnim = new Dictionary<string, IAnimation>();
             BoxAnim.Add("Idle", _mAnimFac.CreatAnimation("Player2", 1, false, 1));
 
+            IDictionary<string, IAnimation> ChPatAnim = new Dictionary<string, IAnimation>();
+            ChPatAnim.Add("Idle", _mAnimFac.CreatAnimation("Player3", 1, false, 1));
+
               _GameList.Add(pEntityFac.CreateGameObject<Enviroment>(875, 1140, FloorAnim, "Office floor", 1, false, false, 1, true));
 
             #region Vertical Corridors
@@ -178,9 +181,9 @@ namespace Game1.GameCode.Scenes.Levels
             _GameList.Add(pEntityFac.CreateGameObject<Player>(1000, 2000, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
-            //_GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 200, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
             _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
-           // _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 200, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
             _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<Spawner>(1000, 1800, BoxAnim, "Idle", 1, false, false, 0.001f, false));
@@ -190,6 +193,7 @@ namespace Game1.GameCode.Scenes.Levels
             _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<TBTreatmentRoom>(500, 500, BoxAnim, "Idle", 2, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<ChTreatmentRoom>(1500, 500, ChPatAnim, "Idle", 2, false, false, 0.01f, true));
             #endregion
 
         }

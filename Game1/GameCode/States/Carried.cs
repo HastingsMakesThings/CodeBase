@@ -23,8 +23,10 @@ namespace Game1.GameCode.States
         //this method assings a new target for the IMover to move towards
         public override void NewTarget(IGameObject pTarget)
         {
+            //makes sure the target is only carrying one object
             _mTarget = pTarget;
 
+            
 
         }
 

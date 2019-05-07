@@ -65,19 +65,27 @@ namespace Game1.GameCode.Minds
             //this checks if the player is next to the object and lets the object get 'picked up  by the player'
            if (_byPlayer && pEvent == "PlayerPickup")
             {
-                if (States.ContainsKey("Carried"))
+                ICarrier tempCarry = (ICarrier)pTrigger;
+
+                if(!tempCarry.isCarrying)
                 {
-                    IState tempState;
-                    States.TryGetValue("Carried", out tempState);
+                    if (States.ContainsKey("Carried"))
+                    {
+                        IState tempState;
+                        States.TryGetValue("Carried", out tempState);
 
-                    tempState.NewTarget(pTrigger);
+                        tempState.NewTarget(pTrigger);
 
-                    _currentState = "Carried";
+                        _currentState = "Carried";
 
-                    _mMover.SetRigid = false;
+                        _mMover.SetRigid = false;
 
-                    _event = "PickedUp";
+                        _event = "PickedUp";
+
+                        tempCarry.isCarrying = true;
+                    }
                 }
+                
             }
 
             base.EventData(pEvent, pTrigger);

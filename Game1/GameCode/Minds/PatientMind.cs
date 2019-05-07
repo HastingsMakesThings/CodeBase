@@ -101,6 +101,8 @@ namespace Game1.GameCode.Minds
                     tempState.NewTarget(pTrigger);
 
                     _currentState = "Spawning";
+
+                    _event = "Dropped";
                 }
 
             }
