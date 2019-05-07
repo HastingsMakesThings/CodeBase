@@ -9,11 +9,11 @@ using Game1.GameCode.States;
 
 namespace Game1.GameCode.NPCs
 {
-    class TBPatient : Patient
+    class CholeraPatient : Patient
     {
         bool hasSetup;
 
-        public TBPatient()
+        public CholeraPatient()
         {
             // Initialise Patient
             Initialise();
@@ -27,8 +27,8 @@ namespace Game1.GameCode.NPCs
             // Add to list of triggers to be listend for
             _mTriggers = new string[3];
             _mTriggers[0] = "PlayerTrigger";
-            _mTriggers[1] = "TBSuccess";
-            _mTriggers[2] = "TBFailure";
+            _mTriggers[1] = "ChSuccess";
+            _mTriggers[2] = "ChFailure";
 
             _Name = "Gerald";
             _Gender = "Male";
@@ -50,12 +50,12 @@ namespace Game1.GameCode.NPCs
                 
             }
 
-            if (pEvent == "TBSuccess")
+            if (pEvent == "ChSuccess")
             {
                 _MyMind.SetCondition("TreatmentSuccess");
             }
 
-            if (pEvent == "TBFailure")
+            if (pEvent == "ChFailure")
             {
                
                 _MyMind.SetCondition("TreatmentFailure");

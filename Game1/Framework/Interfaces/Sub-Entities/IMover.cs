@@ -40,5 +40,7 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         string currentText { get; set; }
 
         bool SetRigid { set; }
+
+        int MoverID { get; }
     }
 }

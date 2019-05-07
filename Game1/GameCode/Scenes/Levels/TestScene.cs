@@ -159,33 +159,37 @@ namespace Game1.GameCode.Scenes.Levels
 
 
 
-            //_GameList.Add(pEntityFac.CreateGameObject<Obstacle>(0, 0, WallAnim, "Left wall", 1, false, false, 0f, true));
-            //_GameList.Add(pEntityFac.CreateGameObject<Obstacle>(300, 304, WallAnim, "Middle wall", 1, false, false, 0f, true));
-            //_GameList.Add(pEntityFac.CreateGameObject<Obstacle>(745, 304, WallAnim, "Middle wall", 1, false, false, 0f, true));
-            //_GameList.Add(pEntityFac.CreateGameObject<Obstacle>(305, 294, WallAnim, "Room left top", 1, false, false, 0f, true));
-            //_GameList.Add(pEntityFac.CreateGameObject<Obstacle>(305, 850, WallAnim, "Room left top", 1, false, false, 0f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(0, 0, WallAnim, "Left wall", 1, false, true, 0f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(300, 304, WallAnim, "Middle wall", 1, false, true, 0f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(745, 304, WallAnim, "Middle wall", 1, false, true, 0f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(305, 294, WallAnim, "Room left top", 1, false, true, 0f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(305, 850, WallAnim, "Room left top", 1, false, true, 0f, true));
 
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(5 + (400 * i), 3, WallAnim, "Top right", 1, false, false, 0.01f, true));
-            //}
+            for (int i = 0; i < 5; i++)
+            {
+                _GameList.Add(pEntityFac.CreateGameObject<Obstacle>(5 + (400 * i), 3, WallAnim, "Top right", 1, false, true, 0.01f, true));
+            }
 
 
 
 
 
             #region Player and NPC's
-            _GameList.Add(pEntityFac.CreateGameObject<Player>(500, 600, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Player>(1000, 2000, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Patient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
+            //_GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
+           // _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Spawner>(64, 64, BoxAnim, "Idle", 1, false, false, 0.001f, false));
+            _GameList.Add(pEntityFac.CreateGameObject<Spawner>(1000, 1800, BoxAnim, "Idle", 1, false, false, 0.001f, false));
             #endregion
 
             #region Triggers
-            _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, false));
+            _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<Room>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, false));
+            _GameList.Add(pEntityFac.CreateGameObject<TBTreatmentRoom>(500, 500, BoxAnim, "Idle", 2, false, false, 0.01f, true));
             #endregion
 
         }

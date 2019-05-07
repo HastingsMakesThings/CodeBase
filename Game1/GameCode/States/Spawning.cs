@@ -21,6 +21,9 @@ namespace Game1.GameCode.States
         //sets a value for the position they wait in when off screen
         Vector2 _mWaitingPosition;
 
+        //IGameObject
+        IGameObject _mSpawner;
+
         //this position sets the Spawner position
         Vector2 _mSpawnPos;
         public Spawning()
@@ -31,11 +34,11 @@ namespace Game1.GameCode.States
 
         public override void NewTarget(IGameObject pTarget)
         {
-            _mSpawnPos = pTarget.Position;
+            _mSpawner = pTarget;
 
             Random tempRandom = new Random();
 
-            _myTimer = tempRandom.Next(5, 200);
+            _myTimer = tempRandom.Next(((int)Math.Sqrt(3 * _mMover.MoverID)), (50));
 
             _mCounter = 0;
 
@@ -67,8 +70,13 @@ namespace Game1.GameCode.States
                 {
                     Console.WriteLine("Time to spawn");
 
-                    _mMover.oPostion = _mSpawnPos;
+                    Vector2 spawn = _mSpawner.Position;
+                    Random tempRandom = new Random();
 
+                    spawn.X += tempRandom.Next(-200, 200);
+                    _mMover.oPostion = spawn;
+
+                    _mCounter = 0;
                     _mMover.getMind.SetCondition("Spawned");
                 }
             }

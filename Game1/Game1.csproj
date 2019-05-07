@@ -101,6 +101,7 @@
     <Compile Include="GameCode\Minds\RoomTriggerBoxMind.cs" />
     <Compile Include="GameCode\NPCs\Buddy.cs" />
     <Compile Include="GameCode\NPCs\Hunter.cs" />
+    <Compile Include="GameCode\NPCs\CholeraPatient.cs" />
     <Compile Include="GameCode\NPCs\TBPatient.cs" />
     <Compile Include="GameCode\NPCs\Spawner.cs" />
     <Compile Include="GameCode\NPCs\PickupAble.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="GameCode\States\TextureEdit.cs" />
     <Compile Include="GameCode\Triggers\PlayerTrigBox.cs" />
     <Compile Include="GameCode\Triggers\Room.cs" />
+    <Compile Include="GameCode\Triggers\Rooms\TBTreatmentRoom.cs" />
     <Compile Include="GameCode\Triggers\ScoreBox.cs" />
     <Compile Include="GameCode\UI\Clipboard.cs" />
     <Compile Include="GameCode\UI\Cursor.cs" />

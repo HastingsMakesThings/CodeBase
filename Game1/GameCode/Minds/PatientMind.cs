@@ -38,6 +38,11 @@ namespace Game1.GameCode.Minds
                 //thios adjust the score
                 _myScore -= (float)gametime.ElapsedGameTime.TotalSeconds;
             }
+
+            if (_NeedsSpawn)
+            {
+                 _event = "SpawnerNeeded";
+            }
         }
         //This  handles event Data and thus adjusts the states of the mind
         public override void EventData(string pEvent, IGameObject pTrigger)
@@ -99,6 +104,8 @@ namespace Game1.GameCode.Minds
                 }
 
             }
+
+           
         }
 
         public override void SetCondition(string pCondition)
@@ -107,23 +114,36 @@ namespace Game1.GameCode.Minds
 
             if (pCondition == "TreatmentSuccess")
             {
-                _event = pCondition;
+                if(!_NeedsSpawn)
+                {
+                    _event = pCondition;
+
+                    SetScore();
+
+                    _NeedsSpawn = true;
+                }
+               
             }
 
             if (pCondition == "Spawned")
             {
                 _currentState = "InActive";
                 _myScore = Math.Abs(_scoreCap);
-                SetScore();
+                
             }
 
             if (pCondition == "TreatmentFailure")
             {
-                _event = pCondition;
+                if (!_NeedsSpawn)
+                {
+                    _event = pCondition;
 
-                _myScore =  - Math.Abs(_scoreCap);
-                _myScore -= 10;
-                SetScore();
+                    _myScore = -Math.Abs(_scoreCap);
+                    _myScore -= 10;
+                    SetScore();
+
+                    _NeedsSpawn = true;
+                }
             }
 
         }

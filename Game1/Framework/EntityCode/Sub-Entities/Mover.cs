@@ -152,5 +152,13 @@ namespace Game1.Framework.EntityCode.Sub_Entities
                 _mRigid = value;
             }
         }
+
+        public int MoverID
+        {
+            get
+            {
+                return _mID;
+            }
+        }
     }
 }
