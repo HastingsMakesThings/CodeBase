@@ -4,27 +4,127 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Clipboard_sprite.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/EH.wav</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_4tile.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/NPCBoard.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Octin_Vintage.spritefont</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/OH.wav</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player1.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player2.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Player3.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Back_02.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Front_02.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Left_02.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Hastings_Right_02.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/C.H.Idle_Front.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheet_Back_ArmsRaised01.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheet_Front_ArmsRaised01.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheet_Left_ArmsRaised01.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheet_Right_ArmsRaised01.png</File>
-    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/SpriteSheetC.H..png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/C.H.Idle_Front.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/cabinet.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Clipboard_sprite.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/corridor room_left.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/corridor room_right.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/corridor_H.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/corridor_V.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Cursor.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/EH.wav</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Environmental assets/props/cup.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Environmental assets/props/mop.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Environmental assets/props/newspaper.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Environmental assets/props/saw.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Environmental assets/props/scissors.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Environmental assets/props/spilt bear bottle.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Environmental assets/props/surgeon tool.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Environmental assets/props/syringe.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/glass cabinet.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Hastings_4tile.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Hastings_Back_02.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Hastings_Front_02.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Hastings_Left_02.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Hastings_Right_02.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/left wall.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/middle wall.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/NPCBoard.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Obstacle.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Octin_Vintage.spritefont</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/office floor.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/OH.wav</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/picture wall.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Player.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Player1.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Player2.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/Player3.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/right wall.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/room_left top.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/room_left.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/room_right top.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/room_right.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/side_left_dirty bed.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/side_right_clean bed.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/side_right_dirty bed.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/side_right_empty bed.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/SpriteSheet_Back_ArmsRaised01.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/SpriteSheet_Front_ArmsRaised01.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/SpriteSheet_Left_ArmsRaised01.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/SpriteSheet_Right_ArmsRaised01.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/SpriteSheetC.H..png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/top left.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/top middle.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/top right.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/top_clean window bed.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/top_dirty bed.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/top_empty bed.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/top_left room.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/top_right room.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/tray angle.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/tray side.png</File>
+    <File>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/tray top.png</File>
   </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
 </SourceFileCollection>
