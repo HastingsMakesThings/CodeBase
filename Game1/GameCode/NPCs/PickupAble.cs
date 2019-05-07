@@ -69,5 +69,10 @@ namespace Game1.GameCode.NPCs
         {
             throw new NotImplementedException();
         }
+
+        public override void CollReact(Vector2 pMTV)
+        {
+            this.Position = Position + pMTV;
+        }
     }
 }

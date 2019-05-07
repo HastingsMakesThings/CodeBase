@@ -29,6 +29,7 @@ namespace Game1.GameCode.NPCs
             _MyMind.Initalize(this);
             _MyMind.AddState<Carried>("Carried", this);
             _MyMind.AddState<InActive>("InActive", this);
+            _MyMind.AddState<Spawning>("Spawning", this);
 
             // Add to list of triggers to be listend for
             _mTriggers = new string[3];
@@ -49,23 +50,25 @@ namespace Game1.GameCode.NPCs
             if (pEvent == "PlayerTrigger")
             {
                 _MyMind.SetCondition("ByPlayer");
-                Console.WriteLine("TriggerObject activated");
+                
             }
 
             if (pEvent == "TreatmentSuccess")
             {
-                Console.WriteLine("Success");
+                
+                
                 _MyMind.SetCondition(pEvent);
             }
 
             if (pEvent == "TreatmentFailure")
             {
-                Console.WriteLine("Failure");
+               
                 _MyMind.SetCondition(pEvent);
             }
 
         }
 
+      
 
         #region Properties
 

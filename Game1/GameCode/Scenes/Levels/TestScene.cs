@@ -178,6 +178,8 @@ namespace Game1.GameCode.Scenes.Levels
             _GameList.Add(pEntityFac.CreateGameObject<Player>(500, 600, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<Patient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
+
+            _GameList.Add(pEntityFac.CreateGameObject<Spawner>(64, 64, BoxAnim, "Idle", 1, false, false, 0.001f, false));
             #endregion
 
             #region Triggers

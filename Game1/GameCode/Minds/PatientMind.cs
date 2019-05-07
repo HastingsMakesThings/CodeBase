@@ -10,9 +10,19 @@ namespace Game1.GameCode.Minds
 {
     class PatientMind : PickUpMind
     {
+        //instance variables
+        bool _NeedsSpawn;
+
+        public PatientMind()
+        {
+            _NeedsSpawn = false;
+
+          
+        }
         //This  handles event Data and thus adjusts the states of the mind
         public override void EventData(string pEvent, IGameObject pTrigger)
         {
+            //cheks to be dropped
             if (pEvent == "PlayerPickup" && _currentState == "Carried")
             {
                 if (States.ContainsKey("InActive"))
@@ -47,6 +57,28 @@ namespace Game1.GameCode.Minds
                     _event = "PickedUp";
                 }
             }
+
+            if(pEvent == "TreatmentSuccess")
+            {
+                Console.WriteLine("treatment has been sucessfull");
+            }
+
+            //this detects when a spawner is created or when the entity needs to be spawned
+            if(pEvent == "SpawnerCreated" || (pEvent == "SpawnerActive" && _NeedsSpawn))
+            {
+                _NeedsSpawn = false;
+
+                if (States.ContainsKey("Spawning"))
+                {
+                    IState tempState;
+                    States.TryGetValue("Spawning", out tempState);
+
+                    tempState.NewTarget(pTrigger);
+
+                    _currentState = "Spawning";
+                }
+
+            }
         }
 
         public override void SetCondition(string pCondition)
@@ -57,6 +89,9 @@ namespace Game1.GameCode.Minds
             {
                 _event = pCondition;
             }
+
+            if (pCondition == "Spawned")
+                _currentState = "InActive";
         }
 
     }
