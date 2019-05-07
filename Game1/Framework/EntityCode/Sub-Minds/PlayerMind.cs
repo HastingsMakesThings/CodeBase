@@ -67,6 +67,8 @@ namespace Game1.Framework.EntityCode.Sub_Minds
                 //this adjusts the player score
                 Patient tempPat = (Patient)pTrigger;
                 _PlayerScore += tempPat.PatientScore;
+
+                Console.WriteLine(_PlayerScore);
             }
             
         }

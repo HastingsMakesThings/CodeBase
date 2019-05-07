@@ -30,8 +30,8 @@ namespace Game1.GameCode.NPCs
             _mTriggers[1] = "TBSuccess";
             _mTriggers[2] = "TBFailure";
 
-            _Name = "Gerald";
-            _Gender = "Male";
+            _Name = "Woozie Suizie";
+            _Gender = "Female";
             _Age = 37;
             _Illness = "Terburculosis";
 

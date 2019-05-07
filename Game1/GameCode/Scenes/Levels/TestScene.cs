@@ -91,6 +91,9 @@ namespace Game1.GameCode.Scenes.Levels
             FloorAnim.Add("Top right", _mAnimFac.CreatAnimation("top_right room", 1, false, 1));
             #endregion
 
+            IDictionary<string, IAnimation> DoctorAnim = new Dictionary<string, IAnimation>();
+            IDictionary<string, IAnimation> NurseAnim = new Dictionary<string, IAnimation>();
+
             IDictionary<string, IAnimation> BoxAnim = new Dictionary<string, IAnimation>();
             BoxAnim.Add("Idle", _mAnimFac.CreatAnimation("Player2", 1, false, 1));
 

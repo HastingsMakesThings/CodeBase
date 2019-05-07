@@ -74,6 +74,7 @@ namespace Game1.GameCode.States
                     Random tempRandom = new Random();
 
                     spawn.X += tempRandom.Next(-200, 200);
+                    spawn.Y += tempRandom.Next(-200, 200);
                     _mMover.oPostion = spawn;
 
                     _mCounter = 0;

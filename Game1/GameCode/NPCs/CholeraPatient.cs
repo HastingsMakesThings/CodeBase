@@ -30,10 +30,10 @@ namespace Game1.GameCode.NPCs
             _mTriggers[1] = "ChSuccess";
             _mTriggers[2] = "ChFailure";
 
-            _Name = "Gerald";
+            _Name = "Peter the Briggand";
             _Gender = "Male";
             _Age = 37;
-            _Illness = "Terburculosis";
+            _Illness = "Cholera";
 
         }
         private void Setup()
