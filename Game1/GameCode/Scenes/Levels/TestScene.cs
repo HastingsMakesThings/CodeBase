@@ -175,7 +175,7 @@ namespace Game1.GameCode.Scenes.Levels
 
 
             #region Player and NPC's
-            _GameList.Add(pEntityFac.CreateGameObject<Player>(800, 600, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<Player>(500, 600, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<Patient>(1000, 200, BoxAnim, "Idle", 1, false, true, 0.01f, true));
             #endregion

@@ -74,6 +74,7 @@
     <Compile Include="Framework\Interfaces\Managers\ISceneManager.cs" />
     <Compile Include="Framework\Interfaces\Managers\ISoundManager.cs" />
     <Compile Include="Framework\Interfaces\Scenes\IScene.cs" />
+    <Compile Include="Framework\Interfaces\Sub-Entities\ICameraTarget.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IGameObject.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\IMenuItem.cs" />
     <Compile Include="Framework\Interfaces\Sub-Entities\ITextElement.cs" />

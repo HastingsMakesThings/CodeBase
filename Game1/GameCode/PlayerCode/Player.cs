@@ -16,10 +16,12 @@ using Game1.GameCode.Minds;
 
 namespace Game1.GameCode.PlayerCode
 {
-    class Player : Mover
+    class Player : Mover , ICameraTarget
     {
         //instance variables
         private bool _isColliding;
+        //variable for preventign tracking
+        private bool _stopTrack;
 
         public Player()
         {
@@ -38,7 +40,7 @@ namespace Game1.GameCode.PlayerCode
             _mFriction = -6;
 
             _isColliding = false;
-
+            _stopTrack = false;
         }
 
         public override void Update(GameTime gameTime)
@@ -72,13 +74,25 @@ namespace Game1.GameCode.PlayerCode
             _isColliding = true;
         }
 
-        //this is used for the camera
-        public bool IsColl
+        //this property is used  to identfiy if the camera manager needs to stop trackign for any reason
+        public bool StopTrack
+        {
+            get { return _stopTrack; }
+            set { _stopTrack = value; }
+        }
+
+        //this protertty is used by the camera manager to manage the camera position
+        public Vector2 TargetPosition
+        {
+            get { return _Position; }
+            set { _Position = value; }
+        }
+
+        //this property lets the camerra  know if the target is collidign
+        public bool IsColliding
         {
             get { return _isColliding; }
             set { _isColliding = value; }
         }
-
-
     }
 }

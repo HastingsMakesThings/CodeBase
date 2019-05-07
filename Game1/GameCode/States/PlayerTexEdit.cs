@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Game1.Framework.Managers;
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,34 +18,31 @@ namespace Game1.GameCode.States
 
         private void CheckTextures()
         {
-            Vector2 tempPos = _tPosition;
-            UpdateData();
-
-            Vector2 currentPos = _mMover.oPostion;
-
-            Vector2 Change = tempPos - currentPos;
-
-            if (Change.X > 0)
+            if (KeyboardManager.KeyLeft && KeyboardManager.KeyRight)
+            {
+                _mMover.currentText = "Idle_H";
+            }
+            else if (KeyboardManager.KeyLeft)
             {
                 _mMover.currentText = "Left_H";
             }
-
-            if (Change.X < 0)
+            else if (KeyboardManager.KeyRight)
             {
                 _mMover.currentText = "Right_H";
             }
-
-            if (Change.Y > 0)
+            else if (KeyboardManager.KeyUp && KeyboardManager.KeyDown)
+            {
+                _mMover.currentText = "Idle_H";
+            }
+            else if (KeyboardManager.KeyUp)
             {
                 _mMover.currentText = "Up_H";
             }
-
-            if (Change.Y < 0)
+            else if (KeyboardManager.KeyDown)
             {
                 _mMover.currentText = "Down_H";
             }
-
-            if (Change.Y == 0 && Change.X == 0)
+            else
             {
                 _mMover.currentText = "Idle_H";
             }

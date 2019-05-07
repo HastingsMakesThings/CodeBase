@@ -25,8 +25,11 @@ namespace Game1.Framework.Managers
         //vector for movemt
         Vector2 _mCamMove;
 
-        //this holds an object for the player
-        private Player _mPlayer;
+        //postion fo Tragte
+        Vector2 _TargetPosition;
+
+        //this holds an object for the target
+        private ICameraTarget _mTarget;
 
         public CamearaManager(float pSpeed)
         {
@@ -42,10 +45,11 @@ namespace Game1.Framework.Managers
             //this grabs the player
             foreach (IGameObject g in _mGameList)
             {
-               if(g is Player)
+               if(g is ICameraTarget)
                 {
-                    _mPlayer = (Player)g;
+                    _mTarget = (ICameraTarget)g;
 
+                    _TargetPosition = _mTarget.TargetPosition;
                     break;
                 }
             }
@@ -53,7 +57,7 @@ namespace Game1.Framework.Managers
 
         public void Update(GameTime gameTime)
         {
-            if(!_mPlayer.IsColl)
+            if(!_mTarget.IsColliding || !_mTarget.StopTrack)
             {
                 //this cycles around the update loop andmoves objects if they are not static
                 CalculateMove();
@@ -66,7 +70,7 @@ namespace Game1.Framework.Managers
                 }
             }
 
-            _mPlayer.IsColl = false;
+            _mTarget.IsColliding = false;
         }
 
         private void CalculateMove()
@@ -89,6 +93,14 @@ namespace Game1.Framework.Managers
 
             //this extends the magnitued of the the vector by the quantity of the cam speed
             _mCamMove = _mCamMove * _mCameraSpeed;
+
+            //this changes the position of the target if the targets position has changed
+            if(!_mTarget.StopTrack &&(_mTarget.TargetPosition != _TargetPosition))
+            {
+                _mCamMove +=  _TargetPosition - _mTarget.TargetPosition;
+
+                _mTarget.TargetPosition = _TargetPosition;
+            }
         }
     }
 }
