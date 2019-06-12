@@ -534,3 +534,5 @@ C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\spilt bear bottle.xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\surgeon tool.xnb
 C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Environmental assets\props\syringe.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Doctor1_Idle.xnb
+C:\Users\GALF1_16\Documents\GitHub\CodeBase\Game1\bin\Windows\x86\Debug\Content\Nurse4_Idle.xnb

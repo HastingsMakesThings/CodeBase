@@ -26,8 +26,6 @@ namespace Game1.GameCode.States
             //makes sure the target is only carrying one object
             _mTarget = pTarget;
 
-            
-
         }
 
         public override void Run(GameTime gametime)
@@ -38,7 +36,7 @@ namespace Game1.GameCode.States
             {
                
                 UpdateData();
-                Vector2 offset = new Vector2(0, 30);
+                Vector2 offset = new Vector2(0, (_mTarget.Texture.Height* _mTarget.Scale) - 10);
 
                 _mMover.oPostion = (_mTarget.Position - offset);
             }

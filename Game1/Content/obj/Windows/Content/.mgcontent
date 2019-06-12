@@ -12,6 +12,7 @@
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/corridor_H.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/corridor_V.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Cursor.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Doctor1_Idle.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/EH.wav</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Environmental assets/furniture/cabinet.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Environmental assets/furniture/glass cabinet.png</File>
@@ -42,6 +43,7 @@
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/left wall.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/middle wall.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/NPCBoard.png</File>
+    <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Nurse4_Idle.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Obstacle.png</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/Octin_Vintage.spritefont</File>
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/office floor.png</File>
@@ -78,6 +80,8 @@
     <File>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/tray top.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

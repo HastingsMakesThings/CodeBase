@@ -67,6 +67,8 @@ namespace Game1.GameCode.PlayerCode
                 _mActiveAnim.Start();
 
                 _mAnimstr = _currAnim;
+
+                Carry = false;
             }
 
         }

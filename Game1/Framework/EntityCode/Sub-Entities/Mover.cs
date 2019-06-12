@@ -160,5 +160,18 @@ namespace Game1.Framework.EntityCode.Sub_Entities
                 return _mID;
             }
         }
+
+        public float moverAngle
+        {
+            get
+            {
+                return _Angle;
+            }
+
+            set
+            {
+                _Angle = value;
+            }
+        }
     }
 }

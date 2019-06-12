@@ -113,7 +113,9 @@ namespace Game1.GameCode.Scenes.Levels
             IDictionary<string, IAnimation> DoctorAnim = new Dictionary<string, IAnimation>();
             IDictionary<string, IAnimation> NurseAnim = new Dictionary<string, IAnimation>();
 
+            DoctorAnim.Add("Idle", _mAnimFac.CreatAnimation("Doctor1_Idle", 50, true, 8));
 
+            NurseAnim.Add("Idle", _mAnimFac.CreatAnimation("Nurse4_Idle", 50, true, 8));
             IDictionary<string, IAnimation> BoxAnim = new Dictionary<string, IAnimation>();
             BoxAnim.Add("Idle", _mAnimFac.CreatAnimation("Player2", 1, false, 1));
 
@@ -427,11 +429,11 @@ namespace Game1.GameCode.Scenes.Levels
             #region Player and NPC's
             _GameList.Add(pEntityFac.CreateGameObject<Player>(1000, 2000, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 2000, BoxAnim, "Idle", 1, false, false, 0.01f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 2000, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 2000, BoxAnim, "Idle", 1, false, false, 0.01f, true));
-             _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 2000, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 2000, BoxAnim, "Idle", 1, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(800, 2100, NurseAnim, "Idle", 0.07f, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(860, 1700, DoctorAnim, "Idle", 0.07f, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(900, 2100, NurseAnim, "Idle", 0.07f, false, false, 0.01f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1100, 950, DoctorAnim, "Idle", 0.07f, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1200, 2000, NurseAnim, "Idle", 0.07f, false, false, 0.01f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<Spawner>(1000, 1800, BoxAnim, "Idle", 1, false, false, 0.001f, false));
             #endregion

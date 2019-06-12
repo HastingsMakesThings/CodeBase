@@ -109,6 +109,18 @@
 /processorParam:TextureFormat=Color
 /build:Cursor.png
 
+#begin Doctor1_Idle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Doctor1_Idle.png
+
 #begin EH.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
@@ -462,6 +474,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:NPCBoard.png
+
+#begin Nurse4_Idle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Nurse4_Idle.png
 
 #begin Obstacle.png
 /importer:TextureImporter
@@ -859,3 +883,4 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:tray top.png
+

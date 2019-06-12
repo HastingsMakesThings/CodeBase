@@ -49,6 +49,8 @@ namespace Game1.GameCode.Minds
             {
                  if (States.ContainsKey("InActive"))
                 {
+                    ICarrier tempCarry = (ICarrier)pTrigger;
+                    tempCarry.isCarrying = false;
                     IState tempState;
                     States.TryGetValue("InActive", out tempState);
 
@@ -57,13 +59,12 @@ namespace Game1.GameCode.Minds
 
                     _event = "Dropped";
 
+                    //_mMover.moverAngle = _mMover.moverAngle + 80;
                     _mMover.SetRigid = true;
                 }
             }
-
-
             //this checks if the player is next to the object and lets the object get 'picked up  by the player'
-           if (_byPlayer && pEvent == "PlayerPickup")
+             else if (_byPlayer && pEvent == "PlayerPickup")
             {
                 ICarrier tempCarry = (ICarrier)pTrigger;
 
@@ -83,12 +84,14 @@ namespace Game1.GameCode.Minds
                         _event = "PickedUp";
 
                         tempCarry.isCarrying = true;
+
+                       // _mMover.moverAngle = _mMover.moverAngle -80;
                     }
                 }
                 
             }
 
-            base.EventData(pEvent, pTrigger);
+           
         }
         public override void SetCondition(string pCondition)
         {

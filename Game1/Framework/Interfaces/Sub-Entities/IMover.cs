@@ -42,5 +42,8 @@ namespace Game1.Framework.Interfaces.Sub_Entities
         bool SetRigid { set; }
 
         int MoverID { get; }
+
+        //the angle of the mover
+        float moverAngle { get; set; }
     }
 }
