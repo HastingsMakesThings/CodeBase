@@ -38,7 +38,7 @@ namespace Game1.GameCode.States
 
             Random tempRandom = new Random();
 
-            _myTimer = tempRandom.Next(((int)Math.Sqrt(3 * _mMover.MoverID)), (50));
+            _myTimer = tempRandom.Next(((int)Math.Sqrt(2 * _mMover.MoverID)), (40));
 
             _mCounter = 0;
 

@@ -184,7 +184,7 @@ namespace Game1.GameCode.Scenes.Levels
             #endregion
 
 
-            #endregion
+            
 
             // Placement code for walls
             #region Wall placement
@@ -420,27 +420,27 @@ namespace Game1.GameCode.Scenes.Levels
             }
             #endregion
 
-
+            #endregion
 
 
 
             #region Player and NPC's
             _GameList.Add(pEntityFac.CreateGameObject<Player>(1000, 2000, PlayerAnim, "Idle", 0.07f, true, true, 0.1f, true));
 
-            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 200, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
-             _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 200, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 200, BoxAnim, "Idle", 1, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 2000, BoxAnim, "Idle", 1, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 2000, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 2000, BoxAnim, "Idle", 1, false, false, 0.01f, true));
+             _GameList.Add(pEntityFac.CreateGameObject<CholeraPatient>(1000, 2000, ChPatAnim, "Idle", 1, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBPatient>(1000, 2000, BoxAnim, "Idle", 1, false, false, 0.01f, true));
 
             _GameList.Add(pEntityFac.CreateGameObject<Spawner>(1000, 1800, BoxAnim, "Idle", 1, false, false, 0.001f, false));
             #endregion
 
             #region Triggers
-            _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<PlayerTrigBox>(0, 0, WallAnim, "Idle", 2, false, false, 0.01f, false));
 
-            _GameList.Add(pEntityFac.CreateGameObject<TBTreatmentRoom>(500, 500, BoxAnim, "Idle", 2, false, false, 0.01f, true));
-            _GameList.Add(pEntityFac.CreateGameObject<ChTreatmentRoom>(1500, 500, ChPatAnim, "Idle", 2, false, false, 0.01f, true));
+            _GameList.Add(pEntityFac.CreateGameObject<TBTreatmentRoom>(500, 500, BoxAnim, "Idle", 2, false, false, 0.01f, false));
+            _GameList.Add(pEntityFac.CreateGameObject<ChTreatmentRoom>(1500, 500, ChPatAnim, "Idle", 2, false, false, 0.01f, false));
             #endregion
 
         }

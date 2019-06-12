@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/C.H.Idle_Front.png</SourceFile>
-  <SourceTime>2019-05-07T09:51:47.2480173+01:00</SourceTime>
-  <DestFile>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/bin/Windows/Content/C.H.Idle_Front.xnb</DestFile>
-  <DestTime>2019-05-07T09:52:45.9177598+01:00</DestTime>
+  <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/C.H.Idle_Front.png</SourceFile>
+  <SourceTime>2019-06-12T14:31:52.6050937+01:00</SourceTime>
+  <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Content/C.H.Idle_Front.xnb</DestFile>
+  <DestTime>2019-06-12T14:34:43.2946768+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

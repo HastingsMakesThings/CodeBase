@@ -29,9 +29,6 @@ namespace Game1.GameCode.Minds
 
             States = new Dictionary<string, IState>();
 
-            
-
-
         }
 
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/office floor.png</SourceFile>
-  <SourceTime>2019-05-07T09:51:48.2841471+01:00</SourceTime>
-  <DestFile>C:/Users/Jenk/Desktop/CodeBase-MenuMerge/Game1/Content/bin/Windows/Content/office floor.xnb</DestFile>
-  <DestTime>2019-05-07T09:52:56.1768303+01:00</DestTime>
+  <SourceFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/office floor.png</SourceFile>
+  <SourceTime>2019-06-12T14:31:58.4851637+01:00</SourceTime>
+  <DestFile>C:/Users/GALF1_16/Documents/GitHub/CodeBase/Game1/Content/bin/Windows/Content/office floor.xnb</DestFile>
+  <DestTime>2019-06-12T14:34:49.9358763+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
